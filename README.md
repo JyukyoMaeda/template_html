@@ -1,12 +1,12 @@
-# Site-Master
+# Template-Master
 新しいサイトの制作を行う場合、こちらのディレクトリを複製してからWEB開発を行うこと。
 テンプレート化することで、安定したクオリティーのWEBサイトを制作できる。
 
-# directory
-・SCSSディレクトリ構成は、下記の通り。
-・サイト制作を行う際には、まずvscordno拡張機能から『Live Sass Compiler』をインストールしてください。
-  その後、setting.jsonでpassを設定して、必ず「プロジェクトのルートディレクトリ」からVsCordを開き、
-  SassCompilerを起動してください。成功すると、Cssディレクトリが自動生成されます。
+## directory
+* SCSSディレクトリ構成は、下記の通り。
+* サイト制作を行う際には、まずvscordno拡張機能から『Live Sass Compiler』をインストールしてください。
+* その後、setting.jsonでpassを設定して、必ず「プロジェクトのルートディレクトリ」からVsCordを開き、
+* SassCompilerを起動してください。成功すると、Cssディレクトリが自動生成されます。
 
     プロジェクトディレクトリ
       |
@@ -45,28 +45,28 @@
                      | ----------------------
                      | ----------------------
 
-# Rule
-・自身のGithubアカウントで『Create a new repository』からプロジェクトを作成し、
+## Rule
+* 自身のGithubアカウントで『Create a new repository』からプロジェクトを作成し、
   ローカルにCloneしてから開発開始すること。
-・Scssを使用して、Cssへのコンパイルを行うこと。
-・コンパイルには、『Live Sass Compiler』を使うこと。
-・設定 > setting.jsonを編集 →"liveSassCompile.settings.formats"内のパスを合わせること。
-・本番環境にデプロイするまでのFlowを守ること。
-　〈 デプロイまでのFlow 〉
-    1. Githubで『Create a new repository』からプロジェクトを作成。
-    2. Github Desktopからローカル環境にCloneする。（例： C:user/ユーザー/desktop/htdocs）
-    3. 開発終了後は、まず社内サーバーにUPして、支店担当者に確認してもらう。
-    4. 確認後、社内サーバーにupしたデータを本番環境にデプロイする。
-    5. 本番環境から落とす際は、社内サーバー内の『■終了---一次保管』ディレクトリにデータを移すこと。
+* Scssを使用して、Cssへのコンパイルを行うこと。
+* コンパイルには、『Live Sass Compiler』を使うこと。
+* 設定 > setting.jsonを編集 →"liveSassCompile.settings.formats"内のパスを合わせること。
+* 本番環境にデプロイするまでのFlowを守ること。
+####〈 デプロイまでのFlow 〉
+1. Githubで『Create a new repository』からプロジェクトを作成。
+2. Github Desktopからローカル環境にCloneする。（例： C:user/ユーザー/desktop/htdocs）
+3. 開発終了後は、まず社内サーバーにUPして、支店担当者に確認してもらう。
+4. 確認後、社内サーバーにupしたデータを本番環境にデプロイする。
+5. 本番環境から落とす際は、社内サーバー内の『■終了---一次保管』ディレクトリにデータを移すこと。
 
 
-# Note
+## Note
 Cssコーディングには「Scss」を用いているため、コンパイルできる環境が必須となる。
 VsCordの拡張機能である「Live Sass Compiler」の使用をオススメします。
 また、仮想サーバーを使用すると、「 Global site tag (gtag.js) - Google Analytics」の影響でエラーが発生してしまうので、
 面倒ではあるが使用を控え、更新のタイミングでいちいち「Ctrl + r」でリロード確認をすること。
 
-# 各支店情報
+## 各支店情報
 * 入間支店　　　0120-38-6651
 * 大泉支店　　　0120-07-6566
 * 飯能支店　　　0120-74-5900
@@ -78,7 +78,7 @@ VsCordの拡張機能である「Live Sass Compiler」の使用をオススメ�
 * ふじみ野支店　0120-53-2277
 * 朝霞台支店　　0120-64-1200
 
-# Author
+## Author
 * 作成者：前田 龍汰
 * 所属　：広報部
 * E-mail：maeda-r@jyukyo.com
