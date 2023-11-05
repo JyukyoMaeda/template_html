@@ -24,8 +24,17 @@
     <script src="js/menu.js"></script>
     <script src="js/pagetop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-
+    <!-- Fonts -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'lrn3nhs',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics --> 
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48905020-1"></script> 
@@ -40,22 +49,50 @@
             location.replace(location.href.replace(/http:/, 'https:'));
         }
     </script> -->
-
-
-    <!-- Adobi Font -->
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'mvu7twk',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-    </script>
-
 </head>
-<body class="js_humburgerClose">
+<body class="top -testBg js_humburgerClose">
+    <!-- header -->
+    <header class="c-header -fixed">
+        <div class="c-header-wrapper">
+            <div class="c-header__popArea">
+                <ul class="c-header__lists">
+                    <li class="logo"></li>
+                    <li class="salescopy"></li>
+                    <li class="c-header__contactArea">
+                        <p class="top-left lh-1">
+                            <span class="s-M">資料請求</span>
+                            <br>
+                            <span class="s-SS">REQUEST</span>
+                        </p>
+                        <p class="top-right lh-1">
+                            <span class="s-M">見学予約</span>
+                            <br>
+                            <span class="s-SS">RESERV</span>
+                        </p>
+                        <p class="tag s-M">物件名物件名物件名</p>
+                    </li>
+                </ul>
+            </div>
+            <nav class="c-header__navArea">
+                <ul class="c-header__navLists">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+
+
+
+
 
     <script>
         MicroModal.init();//モダール使用

@@ -1,1 +1,12 @@
 // 1. TOPページ
+
+.top{
+	&.-testBg{
+		position: relative;
+		top: 0;
+		left: 0;
+		background: url(../images/top.png);
+		background-size: cover;
+		opacity: 0.5;
+	}
+}

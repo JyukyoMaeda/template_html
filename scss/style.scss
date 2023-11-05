@@ -1,10 +1,11 @@
 // Sass Document
-
+@charset "UTF-8";
 // 基本設定
 @import "./setting/reset";      // リセットCSS
 @import "./setting/color";      // カラー変数
 @import "./setting/structure";  // レスポンシブ変数
 @import "./setting/typography"; // テキスト変数
+@import "./setting/gap";        // 間隔
 
 // サイト内（基本パーツ）
 @import "./components/common";  // 共通
@@ -16,6 +17,7 @@
 @import "./components/banner";  // バナー
 @import "./components/tab";     // タブ
 @import "./components/modal";   // モーダル
+@import "./components/btn";     // ボタン
 
 // 各ページ
 @import "./page/top";
