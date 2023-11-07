@@ -4,7 +4,6 @@
 	height: auto;
 	// background: $main-color--w;
 	background: #3333332e;
-	border: 1px solid $main-color--b;
 	&.-fixed{//固定
 		position: fixed;
 		top: 0;
@@ -22,13 +21,27 @@
 		height: auto;
 		background: #bfbebe2e;
 		@include mq(tb){
-			width: 60%;
+			width: 85%;
 			max-width: 1100px;
+		}
+		@include mq(tb-pc1600){
+			width: 57.4%;
+		}
+		&::after{
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 1px;
+			background: $main-color--b;
 		}
 	}
 	&__popArea{//上部
 		width: 100%;
-		height: 125px;
+		height: auto;
+		// height: 125px;
 		.c-header__lists{
 			display: flex;
 			flex-wrap: wrap;
@@ -38,27 +51,27 @@
 			li{
 				&.logo{
 					@include mq(tb){
-						width: calc(20%);
+						width: calc(72%);
 						height: auto;
 						// height: auto;
 						background: rgba(0, 0, 0, 0.442);
 					}
 				}
-				&.salescopy{
-					width: calc(52%);
-					height: auto;
-					// height: auto;
-					background: rgb(224, 112, 112);
-				}
+				// &.salescopy{
+				// 	width: calc(52%);
+				// 	height: auto;
+				// 	// height: auto;
+				// 	background: rgb(224, 112, 112);
+				// }
 				&.c-header__contactArea{
 					display: grid; 
-					grid-template-rows: 62.5px 62.5px;
-					grid-template-columns: 150px 1fr;
+					grid-template-rows: 1fr 1fr;
+					grid-template-columns: 1fr 1fr;
 					align-items: center;
-					text-align: center;
 					@include mq(tb){
 						width: calc(28%);
-						height: auto;
+						height: 6.45vw;
+						// height: auto;
 						background: rgba(112, 134, 224, 0.333);
 					}
 					.top-left{
@@ -101,8 +114,55 @@
 		}
 	}
 	&__navArea{//下部
-		.c-header__lists{
+		height: 65px;
+		// height: 15vh;
+		.c-header__navLists{
+			height: 100%;
+			@include mq(tb){
+				display: flex;
+				flex-wrap: nowrap;
+				li{
+					width: calc(100%/8);
+					height: auto;
+					a{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
 
+
+
+	
+.navItem{
+	position: relative;
+	&_main{
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap
+	}
+	&_sub{
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap
+	}
+	&_sub02{
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+		@include mq(tb){
+			top: 72%;
+		}
+		@include mq(tb-pc1400){
+			top: 65%;
 		}
 	}
 }

@@ -8,10 +8,11 @@ $f-n: normal;
 $f-b: bold;
 
 // 基本テキスト
-h1,h2,h3,h4,h5,h6,p,span{
+h1,h2,h3,h4,h5,h6,p,a,span{
 	color: $main-color--b;
 	font-family: $f-mincho;
 	font-weight: $f-n;
+	text-align: center;
 	line-height: 1.3;
 	&.lh-1{
 		line-height: 1;
@@ -38,7 +39,7 @@ p, span{
         &.s-M{
             font-size: 12px;
             @include mq(tb){
-                font-size: clamp(12px, 1.3vw, 16px);
+                font-size: clamp(12px, 1.2vw, 16px);
             }
         }
         &.s-L{
