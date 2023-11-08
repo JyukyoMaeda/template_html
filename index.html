@@ -50,11 +50,44 @@
         }
     </script> -->
 </head>
-<body class="top - js_humburgerClose">
+<body class="top -testBg js_humburgerClose">
+    <!-- ハンバーガーメニュー -->
+    <nav id="js-scroll-top" class="c-hnav scroll-top is-hide">
+		<input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
+		<label class="c-hnav__button" for="c-hnav__checkbox">
+            <span></span>
+            <p class="s-SS">MENU</p>
+        </label>
+		<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
+		<!--ハンバーガーメニュー内のコンテンツ-->
+		<div class="c-hnav__content">
+			<ul class="">
+				<li><a class="s-L" href="/index.html">トップ</a></li>
+				<li><a class="s-L" href="/concept.html">コンセプト</a></li>
+				<li><a class="s-L" href="/layout.html">区画・間取</a></li>
+				<li><a class="s-L" href="/plan.html">参考プラン</a></li>
+				<li><a class="s-L" href="/setsubi.html">設備・仕様</a></li>
+                <li><a class="s-L" href="/location.html">周辺環境</a></li>
+                <div class="c-hnav__contactArea">
+                    <a href="" class="c-hnav__top navItem lh-1">
+                        <span class="navItem_main s-L">資料請求</span>
+                        <br>
+                        <span class="navItem_sub02 s-SS">REQUEST</span>
+                    </a>
+                    <a href="" class="c-hnav__bottom navItem lh-1">
+                        <span class="navItem_main s-L">見学予約</span>
+                        <br>
+                        <span class="navItem_sub02 s-SS">RESERV</span>
+                    </a>
+                    <!-- <p class="tag s-M">物件名物件名物件名</p> -->
+                </div>
+			</ul>
+		</div>
+	</nav>
     <!-- header -->
-    <header class="c-header -fixed">
+    <header id="header" class="c-header -move">
         <div class="c-header-wrapper">
-            <div class="c-header__popArea">
+            <div class="pc c-header__popArea">
                 <ul class="c-header__lists">
                     <li class="logo"></li>
                     <!-- <li class="salescopy"></li> -->
@@ -73,8 +106,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="sp c-header__popArea">
+                <ul class="c-header__lists">
+                    <li class="logo"></li>
+                </ul>
+            </div>
         </div>
-        <div class="c-header-wrapper">
+        <div class="pc c-header-wrapper">
             <nav class="c-header__navArea">
                 <ul class="c-header__navLists">
                     <li class="navItem">
@@ -138,14 +176,28 @@
         </div>
     </header>
     <!-- //header -->
-
-
+    <main class="c-container">
+        <div class="c-contents -f-view -slider">
+            <img src="" alt="">
+        </div>
+    </main>
 
 
 
 
     <script>
         MicroModal.init();//モダール使用
+        $(function () {
+            var $header = $("#header");
+            $(window).on("load scroll", function () {
+                var value = $(this).scrollTop();
+                if (value > 0) { //スクロールしたら.scroll付与
+                $header.addClass("scroll");
+                } else {
+                $header.removeClass("scroll");
+                }
+            });
+        });
     </script>
 </body>
 </html>

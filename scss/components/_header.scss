@@ -8,15 +8,27 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		padding: 15px 0px 0px;
+		padding: 10px 0px 0px;
 		box-sizing: border-box;
 		transition: padding .3s;
-		z-index: 9999;
+		z-index: 999;
+		@include mq(tb){
+			padding: 15px 0px 0px;
+		}
+	}
+	&.-move{//スクロール→消える
+		padding: 10px 0px 0px;
+		box-sizing: border-box;
+		transition: padding .3s;
+		z-index: 999;
+		@include mq(tb){
+			padding: 15px 0px 0px;
+		}
 	}
 	&-wrapper{
 		position: relative;
 		align-items: center;
-		width: 95%;
+		width: 76%;
 		margin: auto;
 		height: auto;
 		background: #bfbebe2e;
@@ -43,17 +55,16 @@
 		height: auto;
 		// height: 125px;
 		.c-header__lists{
-			display: flex;
-			flex-wrap: wrap;
 			@include mq(tb){
+				display: flex;
 				flex-wrap: nowrap;
 			}
 			li{
 				&.logo{
+					height: 100px;
 					@include mq(tb){
 						width: calc(72%);
 						height: auto;
-						// height: auto;
 						background: rgba(0, 0, 0, 0.442);
 					}
 				}
@@ -122,8 +133,31 @@
 				display: flex;
 				flex-wrap: nowrap;
 				li{
+					position: relative;
 					width: calc(100%/8);
 					height: auto;
+					&:first-child{
+						&::before{
+							content: "";
+							position: absolute;
+							top: 50%;
+							left: 0;
+							transform: translateY(-50%);
+							height: 100%;
+							width: 1px;
+							background: $main-color--b;
+						}
+					}
+					&::after{
+						content: "";
+						position: absolute;
+						top: 50%;
+						right: 0;
+						transform: translateY(-50%);
+						height: 100%;
+						width: 1px;
+						background: $main-color--b;
+					}
 					a{
 						display: block;
 					}

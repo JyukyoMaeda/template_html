@@ -1,12 +1,29 @@
 // 1. TOPページ
 
 .top{
+	width: 100vw;
+	height: 100vh;
 	&.-testBg{
 		position: relative;
-		top: 0;
-		left: 0;
-		background: url(../images/top.png);
-		background-size: cover;
-		opacity: 0.5;
+		&::after{
+			content: "";
+			width: 100vw;
+    	height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url(../images/top_s.png);
+			background-size: cover;
+			opacity: 0.5;
+			@include mq(tb){
+				background-image: url(../images/top.png);
+				background-size: contain;
+			}
+		}
+	}
+	.testBox{
+		width: 100vw;
+		height: 150vh;
+		background: rgba(0, 0, 0, 0.392);
 	}
 }

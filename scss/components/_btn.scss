@@ -13,10 +13,10 @@ button{
   
 a{
 	transition: .3s;
-	color: $site-color01;
-	text-decoration: underline;
+	color: $main-color--b;
+	// text-decoration: underline;
 }
-a:link {   color: $site-color01; text-decoration: underline;}
-a:visited {color: $site-color01; text-decoration: none;}
-a:hover {  color: $site-color01; text-decoration: none;transition: .3s;opacity: .8;}
-a:active { color: $site-color01; text-decoration: none;}
+// a:link {   color: $site-color01; text-decoration: underline;}
+// a:visited {color: $site-color01; text-decoration: none;}
+// a:hover {  color: $site-color01; text-decoration: none;transition: .3s;opacity: .8;}
+// a:active { color: $site-color01; text-decoration: none;}

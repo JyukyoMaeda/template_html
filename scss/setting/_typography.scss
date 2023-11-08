@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6,p,a,span{
 	}
 }
 
-p, span{
+p,a,span{
 	      // 大きさ
 				&.s-SS{
 					font-size: 10px;
@@ -43,7 +43,7 @@ p, span{
             }
         }
         &.s-L{
-            font-size: 18px;
+            font-size: 16px;
             @include mq(tb){
                 font-size: clamp(10px, 1.8vw, 24px);
             }

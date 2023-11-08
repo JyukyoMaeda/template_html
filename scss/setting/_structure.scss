@@ -18,3 +18,20 @@ $breakpoint: (
     }
 }
 
+@include mq(sp){
+	.sp{
+		display: block !important;
+	}
+	.pc{
+		display: none !important;
+	}
+}
+//下記スマホ以上
+@include mq(tb){
+	.sp{
+		display: none !important;
+	}
+	.pc{
+		display: block !important;
+	}
+}
