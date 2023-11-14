@@ -9,15 +9,15 @@
 		width: 100vw;
 		height: 66.1vh;
 		background: $main-color--beige;
-		@include mq(tb){
+		@include min(768){
 			height: 480px;
 			max-height: 480px;
 		}
-		@include mq(tb-pc1600){
+		@include min(1600){
 			height: 480px;
 		}
 		&.-size-big{
-			@include mq(sp) {
+			@include max(400) {
 				height: 69.1vh;
 			}
 		}
@@ -33,11 +33,11 @@
 	// 横幅
 	&.w1100{
 		margin: auto;
-		@include mq(tb){
+		@include min(768){
 			width: 85%;
 			max-width: 1100px;
 		}
-		@include mq(tb-pc1600){
+		@include min(1600){
 			width: 57.4%;
 		}
 	}

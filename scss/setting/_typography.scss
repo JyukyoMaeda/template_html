@@ -26,31 +26,31 @@ p,a,span{
 	      // 大きさ
 				&.s-SS{
 					font-size: 10px;
-					@include mq(tb){
+					@include min(768){
 							font-size: 12px;
 					}
         }
 				&.s-S{
 					font-size: 12px;
-					@include mq(tb){
+					@include min(768){
 						font-size: clamp(12px, 1vw, 14px);
 					}
         }
         &.s-M{
             font-size: 12px;
-            @include mq(tb){
+            @include min(768){
                 font-size: clamp(12px, 1.2vw, 16px);
             }
         }
         &.s-L{
             font-size: 16px;
-            @include mq(tb){
+            @include min(768){
                 font-size: clamp(10px, 1.8vw, 24px);
             }
         }
         &.s-LL{
             font-size: 18px;
-            @include mq(tb){
+            @include min(768){
                 font-size: clamp(10px, 2.5vw, 28px);
             }
         }

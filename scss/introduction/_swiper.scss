@@ -3,14 +3,14 @@
     height: auto;
     overflow: hidden;
     .swiper-container{
-        @include mq(tb){
+        @include min(768){
             padding: 0 40px;
         }
         &.card-swiper{// カードレイアウト
             margin-bottom: 80px;
             &:last-child{
                 margin-bottom: 30px;
-                @include mq(tb){
+                @include min(768){
                     margin-bottom: 80px;
                 }
             }
@@ -28,11 +28,11 @@
                     opacity: 1;
                     transition: all .5s;
                     z-index: 6 !important;
-                    @include mq(sp){
+                    @include max(400){
                         top: 50%;
                         transform: scale(.5, .5) translateY(-50%);
                     }
-                    @include mq(tb){
+                    @include min(768){
                         top: 50%;
                         transform: translateY(-50%);
                     }
@@ -50,7 +50,7 @@
                     }
                 }
                 .swiper-button-prev {
-                    @include mq(sp){
+                    @include max(400){
                         left: -10px;
                     }
                     &::after {
@@ -60,7 +60,7 @@
                     }
                   }
                 .swiper-button-next {
-                    @include mq(sp){
+                    @include max(400){
                         right: -10px;
                     }
                     &::after {
@@ -75,7 +75,7 @@
             bottom: 4.5%;
             z-index: 5 !important;
 
-            @include mq(tb){
+            @include min(768){
                 bottom: 7%;
             }
 
@@ -84,7 +84,7 @@
             }
             .swiper-pagination-bullet{//ドットの大きさに関する記述
                 transition: .5s all;
-                @include mq(tb){
+                @include min(768){
                     width: .8vw;
                     height: .8vw;
                     margin: 0 .8vw;
@@ -97,7 +97,7 @@
         &.thumbnail{
             width: 100%;
             .swiper-wrapper{
-                @include mq(sp){
+                @include max(400){
                     justify-content: space-between;
                 }
             }
@@ -132,7 +132,7 @@
 
 .g-sliderBox01{
     .swiper-pagination {
-        @include mq(sp){
+        @include max(400){
             bottom: 49.7% !important;
         }
     }
@@ -141,7 +141,7 @@
 .swiper-title{
     width: 100%;
     margin: auto;
-    @include mq(tb){
+    @include min(768){
         width: 85%;
     }
 }
@@ -158,7 +158,7 @@
     width: 85%;
     height: auto;
     margin: auto;
-    @include mq(tb){
+    @include min(768){
         width: 95%;
         max-width: 1260px;
     }

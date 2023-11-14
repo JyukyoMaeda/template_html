@@ -12,7 +12,7 @@
     width: 70px;
     height: 7px;
     z-index: 10;
-    @include mq(tb){
+    @include min(768){
         top: 0;
         right: 0;
         width: 100px;
@@ -32,7 +32,7 @@
         pointer-events: auto;
         color: $main-color--b;
         text-align: center;
-        @include mq(tb){
+        @include min(768){
             display: block;
             padding-top: 10px;
         }
@@ -43,11 +43,11 @@
             width: 34px;
             display: block;
 
-            @include mq(tb){
+            @include min(768){
                 margin-bottom: 5px;
                 width: 33px;
             }
-            @include mq(pc){
+            @include min(1600){
 
             }
         }
@@ -55,7 +55,7 @@
             font-size: 12px;
             letter-spacing: 0.1em;
             font-family: "游ゴシック Medium", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
-            @include mq(sp){
+            @include max(400){
                 font-size: 10px;
                 padding-top: 2px;
             }
@@ -99,7 +99,7 @@
                     text-decoration: none;
                     padding: 12px 12px 13px 50px;
                     border-bottom: #DDDDDD 1px solid;
-                    @include mq(tb){
+                    @include min(768){
                         font-size: 1rem;
                     }
                     &:hover{
@@ -116,10 +116,10 @@
     }
     // ナビ2
     .navi2{
-        @include mq(sp){
+        @include max(400){
             display: none;
         }
-        @include mq(tb){
+        @include min(768){
             position: absolute;
             left: 50%;
             bottom: 0;
@@ -132,7 +132,7 @@
                 &:last-child{
                     margin-bottom: 25px;
                 }
-                @include mq(tb){
+                @include min(768){
                     margin-bottom: 15px;
                     text-align: center;
                     &:last-child{
@@ -144,7 +144,7 @@
                     transition: 0.5s;
                     text-decoration: none;
                     color: $main-color--b;
-                    @include mq(tb){
+                    @include min(768){
                         font-size: 1rem;
                     }
                     &:hover{
@@ -179,7 +179,7 @@
                 padding: 10px 10px 7px;
                 transition: 0.5s;
                 white-space: nowrap;
-                @include mq(tb){
+                @include min(768){
                     font-size: 1rem;
                 }
                 &::before{

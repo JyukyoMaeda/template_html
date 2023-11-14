@@ -15,7 +15,7 @@
 			background-image: url(../images/top_s.png);
 			background-size: cover;
 			opacity: 0.5;
-			@include mq(tb){
+			@include min(768){
 				background-image: url(../images/top.png);
 				background-size: contain;
 			}
