@@ -2,8 +2,7 @@
 .c-header{
 	width: 100vw;
 	height: auto;
-	// background: $main-color--w;
-	background: #3333332e;
+	background: $main-color--w;
 	&.-fixed{//固定
 		position: fixed;
 		top: 0;
@@ -31,7 +30,7 @@
 		width: 76%;
 		margin: auto;
 		height: auto;
-		background: #bfbebe2e;
+		// background: #bfbebe2e;
 		@include min(768){
 			width: 85%;
 			max-width: 1100px;
@@ -39,6 +38,7 @@
 		@include min(1600){
 			width: 57.4%;
 		}
+
 		&::after{
 			content: "";
 			position: absolute;
@@ -125,8 +125,6 @@
 		}
 	}
 	&__navArea{//下部
-		height: 65px;
-		// height: 15vh;
 		.c-header__navLists{
 			height: 100%;
 			@include min(768){
@@ -136,6 +134,7 @@
 					position: relative;
 					width: calc(100%/8);
 					height: auto;
+					padding: 2.1% 0;
 					&:first-child{
 						&::before{
 							content: "";
@@ -163,40 +162,6 @@
 					}
 				}
 			}
-		}
-	}
-}
-
-
-
-	
-.navItem{
-	position: relative;
-	&_main{
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap
-	}
-	&_sub{
-		position: absolute;
-		top: 65%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap
-	}
-	&_sub02{
-		position: absolute;
-		top: 70%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-		@include min(768){
-			top: 72%;
-		}
-		@include min(1400){
-			top: 65%;
 		}
 	}
 }
