@@ -2,8 +2,10 @@
 .c-footer{
 	width: 100vw;
 	height: auto;
-	// background: #3333332e;
-	margin-bottom: 5%;
+	margin-bottom: 25%;
+	@include min(768){
+		margin-bottom: 5%;
+	}
 	&-wrapper{
 		align-items: center;
 		width: 76%;
@@ -117,9 +119,12 @@
 						top: 50%;
 						left: 0;
 						transform: translateY(-50%);
-						height: 100%;
+						height: 80%;
 						width: 1px;
 						background: $main-color--b;
+						@include min(768){
+							height: 40%;
+						}
 					}
 				}
 				&:nth-child(5){
@@ -130,7 +135,7 @@
 							top: 50%;
 							left: 0;
 							transform: translateY(-50%);
-							height: 100%;
+							height: 80%;
 							width: 1px;
 							background: $main-color--b;
 						}
@@ -142,9 +147,12 @@
 					top: 50%;
 					right: 0;
 					transform: translateY(-50%);
-					height: 100%;
+					height: 80%;
 					width: 1px;
 					background: $main-color--b;
+					@include min(768){
+						height: 40%;
+					}
 				}
 				a{
 					display: block;
@@ -167,7 +175,7 @@
 		}
 	}
 	&__shopArea{
-		width: 75%;
+		width: 60%;
 		margin: auto;
 		@include min(768){
 			width: 50%;
