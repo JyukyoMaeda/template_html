@@ -1246,13 +1246,13 @@ button:hover {
 }
 .c-btn-fixed .c-btn-lists li a {
   width: 100%;
-  padding: 20px 20px;
+  padding: 10% 0;
   background: #ffffff;
 }
 @media (width >= 768px) {
   .c-btn-fixed .c-btn-lists li a {
     width: auto;
-    padding: 40px 20px;
+    padding: 30px 10%;
   }
 }
 
