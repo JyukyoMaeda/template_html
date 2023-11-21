@@ -1,0 +1,30 @@
+
+@keyframes scroll-on {
+  0% {
+    opacity: 0;
+    // translate: 0 -20px;
+  }
+  10% {
+    opacity: 0;
+    // translate: 0 -20px;
+  }
+  20% {
+    opacity: 1;
+    // translate: 0 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.scroll-on{
+	opacity: 0;
+  animation: scroll-on;
+  animation-timeline: scroll();
+
+	// &_btn{
+	// 	position: sticky;
+	// 	width: 10%;
+	// }
+}
+

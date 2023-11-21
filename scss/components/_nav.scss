@@ -1,16 +1,20 @@
 // ナビゲーション
 .c-hnav{
-	position: absolute;
+	position: sticky;
+	// position: absolute;
 	top: 10px;
-	right: 10px;
+	left: calc(100% - 10px);
+	// right: 10px;
+	width: 33px;
 	z-index: 9999;
 	@include min(768){
 		top: 1%;
-		right: 1.5%;
+		left: 96.5%;
+		// right: 1.5%;
 	}
 	@include min(1200){
 		top: 1.5%;
-		right: 1.5%;
+		// right: 1.5%;
 	}
 	&__cheakbox{
 		display: none;
@@ -44,7 +48,7 @@
 			filter: drop-shadow(0px 0px 2px $main-color--w);
 			cursor: pointer;
 			@include min(768){
-				width: 100%;
+				// width: 100%;
 			}
 		}
 		span:before {
