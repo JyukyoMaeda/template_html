@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-    <script src="js/jquery-3.6.3.min.js"></script>
-    <script src="js/micromodal.min.js"></script><!-- モーダル -->
-    <script src="js/menu.js"></script>
+    <!-- <script src="js/jquery-3.6.3.min.js"></script> -->
+    <!-- <script src="js/micromodal.min.js"></script>モーダル -->
+    <!-- <script src="js/menu.js"></script> -->
     <script src="js/pagetop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Fonts -->
@@ -292,21 +292,23 @@
             <li><a href="">見学予約</a></li>
         </ul>
     </div>
+    <p id="pageTop" class="c-btb-pageTop"><a href="#">ページ<br>TOP</a></p>
+
     <!-- //固定アイテム -->
 
     <script>
-        MicroModal.init();//モダール使用
-        $(function () {
-            var $header = $("#header");
-            $(window).on("load scroll", function () {
-                var value = $(this).scrollTop();
-                if (value > 0) { //スクロールしたら.scroll付与
-                $header.addClass("scroll");
-                } else {
-                $header.removeClass("scroll");
-                }
-            });
-        });
+        // MicroModal.init();//モダール使用
+        // $(function () {
+        //     var $header = $("#header");
+        //     $(window).on("load scroll", function () {
+        //         var value = $(this).scrollTop();
+        //         if (value > 0) { //スクロールしたら.scroll付与
+        //         $header.addClass("scroll");
+        //         } else {
+        //         $header.removeClass("scroll");
+        //         }
+        //     });
+        // });
     </script>
 </body>
 </html>

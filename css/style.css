@@ -858,7 +858,9 @@ p.s-LL, a.s-LL, span.s-LL {
   top: 10px;
   left: calc(100% - 10px);
   width: 33px;
+  height: 25px;
   z-index: 9999;
+  cursor: pointer;
 }
 @media (width >= 768px) {
   .c-hnav {
@@ -868,7 +870,7 @@ p.s-LL, a.s-LL, span.s-LL {
 }
 @media (width >= 1200px) {
   .c-hnav {
-    top: 1.5%;
+    top: 2%;
   }
 }
 .c-hnav__cheakbox {
@@ -1246,6 +1248,61 @@ button:hover {
     width: auto;
     padding: 30px 10%;
   }
+}
+.c-btn-pageTop {
+  position: fixed;
+  right: 4%;
+  bottom: 6%;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(100px);
+}
+@media (width >= 768px) {
+  .c-btn-pageTop {
+    bottom: 6.5%;
+    right: 2%;
+  }
+}
+.c-btn-pageTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #942D2F;
+  border: 1px solid rgba(255, 255, 255, 0.432);
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s;
+}
+@media (width >= 768px) {
+  .c-btn-pageTop a {
+    width: 60px;
+    height: 60px;
+  }
+}
+.c-btn-pageTop a::before {
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.c-btn-pageTop.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+.c-btn-pageTop.DownMove {
+  animation: DownAnime 0.5s forwards;
 }
 
 /*    Link
@@ -2908,15 +2965,49 @@ header {
     transform: translateY(10%);
   }
 }
-@keyframes scroll-on {
+@keyframes scroll-onLogo {
   0% {
+    pointer-events: none;
+    opacity: 0;
+  }
+  49% {
+    pointer-events: all;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroll-onNav {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+  }
+  49% {
+    pointer-events: all;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroll-onBtn {
+  0% {
+    pointer-events: none;
     opacity: 0;
   }
   10% {
-    opacity: 0;
+    pointer-events: all;
+    opacity: 0.1;
   }
-  20% {
-    opacity: 1;
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -2924,6 +3015,7 @@ header {
 }
 .scroll-on {
   opacity: 0;
-  animation: scroll-on;
+  animation: scroll-onNav;
   animation-timeline: scroll();
+  animation-range: cover 0% cover 100%;
 }/*# sourceMappingURL=style.css.map */
