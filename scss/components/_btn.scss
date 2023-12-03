@@ -14,18 +14,22 @@ button{
 		position: fixed;
 		top: auto;
 		left: 50%;
-		bottom: 1px;
+		bottom: 0;
 		color: $main-color--b;
-		border: 1px solid $main-color--b;
 		cursor: pointer;
-		box-shadow: 0 2px 4px $main-color--b;
 		z-index: 99;
-		@include max(768){transform: translateX(-50%);}
+		@include max(768){
+			border: 1px solid $main-color--b;
+			box-shadow: 0 2px 4px $main-color--b;
+			transform: translateX(-50%);
+		}
 		@include min(768){
 			top: 25%;
 			left: auto;
 			bottom: auto;
-			right: 15px;
+			right: 25px;
+			border: 1px solid $main-color--b;
+			box-shadow: 0 2px 4px $main-color--b;
 		}
 		.c-btn-lists{
 			display: flex;
@@ -38,80 +42,39 @@ button{
 			li{
 				position: relative;
 				width: 50vw;
+				@include max(768){
+					&:first-child a{
+						color: $main-color--w;
+						background: $main-color--b;
+					}
+					&:nth-child(2) a{
+						color: $main-color--w;
+						background: $main-color--b;
+					}
+				}
 				@include min(768){
 					width: auto;
 					writing-mode: vertical-rl;
 				}
 				&:first-child{
-					@include max(768){
-						border-right: 1px solid $main-color--b;
-					}
-					@include min(768){
-						border-bottom: 1px solid $main-color--b;
-					}
+					@include max(768){border-right: 1px solid $main-color--b;}
+					@include min(768){border-bottom: 1px solid $main-color--b;}
 				}
 				a{
 					width: 100%;
-					padding: 10% 0;
+					padding: 6% 0;
 					background: $main-color--w;
 					@include min(768){
 						width: auto;
 						padding: 30px 10%;
 					}
+					&:hover{
+						background: $main-color--b;
+						color: $main-color--w !important;
+					}
 				}
 			}
 		}
-	}
-	&-pageTop{
-			position: fixed;
-			right:4%;
-			bottom:6%;
-			z-index: 9999;
-			opacity: 0;
-			transform: translateY(100px);
-			@include min(768){
-					bottom:6.5%;
-					right:2%;
-			}
-			a{
-					display: flex;
-					justify-content:center;
-					align-items:center;
-					background:#942D2F;
-					border: 1px solid rgba(255, 255, 255, 0.432);
-					border-radius: 5px;
-					width: 45px;
-					height: 45px;
-					color: #fff;
-					text-align: center;
-					text-transform: uppercase; 
-					text-decoration: none;
-					font-size:0.6rem;
-					transition:all 0.3s;
-					@include min(768){
-							width: 60px;
-							height: 60px;
-					}
-					&::before{
-							font-size: 25px;
-							color: #fff;
-							position: absolute;
-							width: 25px;
-							height: 25px;
-							top: -5px;
-							bottom: 0;
-							right: 0;
-							left: 0;
-							margin: auto;
-							text-align: center;
-					}
-			}
-			&.UpMove{
-					animation: UpAnime 0.5s forwards;
-			}
-			&.DownMove{
-					animation: DownAnime 0.5s forwards;
-			}
 	}
 }
 
@@ -123,7 +86,7 @@ a{
 	color: $main-color--b;
 	// text-decoration: underline;
 }
-// a:link {   color: $site-color01; text-decoration: underline;}
-// a:visited {color: $site-color01; text-decoration: none;}
-// a:hover {  color: $site-color01; text-decoration: none;transition: .3s;opacity: .8;}
-// a:active { color: $site-color01; text-decoration: none;}
+// a:link {   color: $main-color--b; text-decoration: underline;}
+// a:visited {color: $main-color--b; text-decoration: none;}
+// a:hover {  color: $main-color--b; text-decoration: none;transition: .3s;opacity: .8;}
+// a:active { color: $main-color--b; text-decoration: none;}

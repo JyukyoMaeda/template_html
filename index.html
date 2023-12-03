@@ -81,9 +81,9 @@
 			</ul>
 		</div>
 	</nav>
-    
+
     <!-- header -->
-    <header id="header" class="c-header">
+    <header id="header" class="c-header mgt-1 mgt-5s">
         <div class="c-header-wrapper">
             <div class="pc c-header__popArea">
                 <ul class="c-header__lists">
@@ -197,7 +197,8 @@
         </div>
     </main>
     <!-- //コンテンツ -->
-    <div class="" style="height: 100vh;"></div>
+
+    <!-- <div class="" style="height: 100vh;"></div> -->
 
     <!-- footer -->
     <footer id="footer" class="c-footer">
@@ -205,29 +206,29 @@
             <div class="c-footer__contactArea">
                 <ul class="c-footer__contactLists">
                     <li class="contactItem">
-                        <a href="index.html" class="lh-1">
-                            <span class="contactItem_main s-M">資料請求</span>
+                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件番号" class="lh-1">
+                            <span class="contactItem_main s-L">資料請求</span>
                             <br>
                             <span class="contactItem_sub s-SS">REQUEST</span>
                         </a>
                     </li>
                     <li class="contactItem">
-                        <a href="concept.html" class="lh-1">
-                            <span class="contactItem_main s-M">見学予約</span>
+                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件番号" class="lh-1">
+                            <span class="contactItem_main s-L">見学予約</span>
                             <br>
                             <span class="contactItem_sub s-SS">RESERV</span>
                         </a>
                     </li>
                     <li class="pc contactItem">
-                        <a href="layout.html" class="lh-1">
-                            <span class="contactItem_main s-M">お問い合わせ</span>
+                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件番号" class="lh-1">
+                            <span class="contactItem_main s-L">お問い合わせ</span>
                             <br>
                             <span class="contactItem_sub s-SS">INQUIRY</span>
                         </a>
                     </li>
                     <li class="pc contactItem">
-                        <a href="plan.html" class="lh-1">
-                            <span class="contactItem_main s-M">住まい情報トップ</span>
+                        <a href="https://www.jyu-g.co.jp/" class="lh-1">
+                            <span class="contactItem_main s-L">住まい情報トップ</span>
                             <br>
                             <span class="contactItem_sub s-SS">HOME</span>
                         </a>
@@ -239,57 +240,73 @@
             <nav class="c-footer__navArea">
                 <ul class="c-footer__navLists">
                     <li class="navItem_footer mgb2">
-                        <a href="index.html" class="lh-1">
-                            <span class="navItem_main s-SS">トップ</span>
+                        <a href="index.html" class="lh-1 -active">
+                            <span class="s-S">トップ</span>
                         </a>
                     </li>
                     <li class="navItem_footer mgb2">
                         <a href="concept.html" class="lh-1">
-                            <span class="navItem_main s-SS">コンセプト</span>
+                            <span class="s-S">コンセプト</span>
                         </a>
                     </li>
                     <li class="navItem_footer mgb2">
                         <a href="layout.html" class="lh-1">
-                            <span class="navItem_main s-SS">区画・間取</span>
+                            <span class="s-S">区画・間取</span>
                         </a>
                     </li>
                     <li class="navItem_footer mgb2">
                         <a href="plan.html" class="lh-1">
-                            <span class="navItem_main s-SS">プラン</span>
+                            <span class="s-S">プラン</span>
                         </a>
                     </li>
                     <li class="navItem_footer mgb2">
                         <a href="equipment.html" class="lh-1">
-                            <span class="navItem_main s-SS">設備・仕様</span>
+                            <span class="s-S">設備・仕様</span>
                         </a>
                     </li>
                     <li class="navItem_footer mgb2">
                         <a href="location.html" class="lh-1">
-                            <span class="navItem_main s-SS">周辺環境</span>
+                            <span class="s-S">周辺環境</span>
                         </a>
                     </li>
                     <li class="navItem_footer mgb2">
                         <a href="quality.html" class="lh-1">
-                            <span class="navItem_main s-SS">住協の家づくり</span>
+                            <span class="s-S">住協の家づくり</span>
                         </a>
                     </li>
-                    <li class="navItem_footer mgb2">
+                    <!-- <li class="navItem_footer mgb2">
                         <a href="/" class="lh-1">
-                            <span class="navItem_main s-SS">物件概要</span>
+                            <span class="navItem_main s-S">物件概要</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </div>
-        <div class="c-footer__btnArea mgb2 mgb10s">
-            <a href="">
-                <span class="s-M">物件概要はこちら</span>
-            </a>
+        <div class="c-footer__btnArea mgb4 mgb10s">
+            <label class="popup popup-open" for="popup">物件概要はこちら</label>
+            <!-- 01.物件概要 -->
+            <input type="checkbox" id="popup" >
+            <label class="popup-overlay" for="popup"></label>
+            <div class="popup-window">
+                <!-- 閉じるボタン -->
+                <label class="popup-close" for="popup">
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                    </svg>
+                </label>
+                <!-- iframe -->
+                <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/物件番号"></iframe>
+            </div>
+            
         </div>
         <div class="c-footer__shopArea">
             <ul class="c-footer__shopFlex">
-                <li><a href=""><img src="images/logo/SVG/hannou-shop.svg" alt="支店情報"></a></li>
-                <li><a href=""><img src="images/logo/SVG/hannou-tel.svg" alt="支店電話番号"></a></li>
+                <li><a href="https://www.jyu-g.co.jp/contents/office_info/営業所ID" target="_blank"><img src="images/logo/SVG/支店名-shop.svg" alt="住協 支店名 情報"></a></li>
+                <li>
+                    <img class="pc" src="images/logo/SVG/支店名-tel.svg" alt="住協 支店名 電話番号">
+                    <a class="sp" href="tel:支店電話番号"><img src="images/logo/SVG/支店名-tel.svg" alt="住協 支店名 電話番号"></a>
+                </li>
             </ul>
         </div>
     </footer>
@@ -298,12 +315,10 @@
     <!-- 固定アイテム -->
     <div class="c-btn-fixed">
         <ul class="c-btn-lists">
-            <li><a href="">資料請求</a></li>
-            <li><a href="">見学予約</a></li>
+            <li><a class="" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件番号">資料請求</a></li>
+            <li><a class="" href="https://www.jyu-g.co.jp/contents/tour?checkid=物件番号">見学予約</a></li>
         </ul>
     </div>
-    <p id="pageTop" class="c-btb-pageTop"><a href="#">ページ<br>TOP</a></p>
-
     <!-- //固定アイテム -->
 
     <script>

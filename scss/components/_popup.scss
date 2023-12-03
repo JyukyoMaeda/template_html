@@ -1,0 +1,73 @@
+
+#popup,
+#popup-madori01 {
+    display: none;
+    &:checked ~ .popup-overlay {
+        background-color: #00000070;
+        z-index: 99998;
+        opacity: 1;
+    }
+    &:checked ~ .popup-window {
+        z-index: 99999;
+        opacity: 1;
+    }
+}
+
+.popup{
+    &-open {
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        @include max(768){
+            color: $main-color--w;
+        }
+    }
+    &-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $main-color--w;
+        z-index: -1;
+        opacity: 0;
+        transition: .5s all;
+    }
+    &-window {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 90vw;
+        max-width: 1280px;
+        height: 80vh;
+        padding: 20px;
+        background-color: $main-color--w;
+        border-radius: 6px;
+        transition: .1s all;
+        z-index: -1;
+        opacity: 0;
+        #inlineFrame{
+            width: 100%;
+            height: 100%;
+        }
+        &.-madoriImg {
+            height: auto;
+        }
+    }
+    &-close {
+        cursor: pointer;
+        position: absolute;
+        top: -26px;
+        right: 0;
+    }
+}
+
+.popup-text {
+    margin: 0;
+    &:not(:last-of-type) {
+        margin-bottom: 1em
+    }
+}
