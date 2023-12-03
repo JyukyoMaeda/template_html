@@ -52,8 +52,8 @@
 
 .scroll-on{
 	opacity: 0;
-  animation: scroll-onNav;
-  animation-timeline: scroll();
+  	animation: scroll-onNav;
+	animation-timeline: scroll();
 	animation-range: cover 0% cover 100%;
 
 	// &_btn{
