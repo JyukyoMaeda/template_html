@@ -7,6 +7,9 @@
 @import "./setting/typography"; // テキスト変数
 @import "./setting/gap";        // 間隔
 
+// 導入
+@import "./introduction/swiper.min";
+
 // サイト内（基本パーツ）
 @import "./components/common";  // 共通
 @import "./components/header";  // ヘッダー
@@ -19,6 +22,7 @@
 @import "./components/tab";     // タブ
 @import "./components/modal";   // モーダル
 @import "./components/btn";     // ボタン
+@import "./components/popup";   // ポップアップ
 
 // 各ページ
 @import "./page/top";
@@ -28,9 +32,6 @@
 @import "./page/location";
 @import "./page/quality";       // 基本使わない。
 @import "./page/overview";      // 基本使わない。
-
-// 導入
-@import "./introduction/swiper.min";
 
 // アニメーション
 @import "./animation/fade";
