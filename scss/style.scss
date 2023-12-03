@@ -30,13 +30,9 @@
 @import "./page/overview";      // 基本使わない。
 
 // 導入
-@import "./introduction/accordion";
-@import "./introduction/aos";
-@import "./introduction/menu";
-@import "./introduction/pageTop";
-@import "./introduction/swiper";
+@import "./introduction/swiper.min";
 
 // アニメーション
 @import "./animation/fade";
-@import "./animation/slide";
 @import "./animation/on";       // スクロール表示
+@import "./animation/move";

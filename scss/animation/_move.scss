@@ -1,0 +1,39 @@
+@keyframes moveUpAnime{
+    0% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0px) scale(1.2);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes moveDownAnime{
+    0% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0px) scale(.8);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+.a{
+    &-moveUp{
+        animation: moveUpAnime infinite;
+        animation-duration:5s;
+    }
+    &-moveDown{
+        animation: moveDownAnime infinite;
+        animation-duration:5s;
+    }
+}

@@ -26,19 +26,46 @@
 
 	}
 	&.-imgBg{//背景画像
-
+		.imgBox{position: relative;}
+		.c-contentsBox{
+			position: absolute;
+			// ロゴ関係
+			&.-logo{
+				&-item01{//緑色の鳥
+					top: 11%;
+					left: 83.5%;
+					width: 6.5%;
+					@include min(768){
+						top: 18%;
+						left: 26.5%;
+						width: 2.5%;
+					}
+				}
+				&-item02{//黄色の鳥
+					top: 1%;
+					left: 90%;
+					width: 4%;
+					@include min(768){
+						top: 10%;
+						left: 30%;
+						width: 1.5%;
+					}
+				}
+			}
+		}
 	}
+
 
 
 	// 横幅
 	&.w1100{
 		margin: auto;
 		@include min(768){
-			width: 85%;
+			width: 90%;
 			max-width: 1100px;
 		}
 		@include min(1600){
-			width: 57.4%;
+			width: 70.4%;
 		}
 	}
 }
