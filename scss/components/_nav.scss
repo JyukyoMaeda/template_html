@@ -4,6 +4,7 @@
 	top: 15px;
     left: 88%;
 	width: 33px;
+	height: 0;
 	z-index: 9999;
 	@include min(768){
 		top: 1.5%;

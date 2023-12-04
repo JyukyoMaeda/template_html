@@ -22,6 +22,7 @@
 @import "./components/tab";     // タブ
 @import "./components/modal";   // モーダル
 @import "./components/btn";     // ボタン
+@import "./components/slider";  // スライダー
 @import "./components/popup";   // ポップアップ
 
 // 各ページ
@@ -34,6 +35,11 @@
 @import "./page/overview";      // 基本使わない。
 
 // アニメーション
+@import "./animation/color";
 @import "./animation/fade";
-@import "./animation/on";       // スクロール表示
+@import "./animation/flip";
 @import "./animation/move";
+@import "./animation/scroll";   // スクロール表示
+@import "./animation/slide";
+@import "./animation/zoom";
+

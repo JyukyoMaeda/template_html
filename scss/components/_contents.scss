@@ -5,31 +5,22 @@
 }
 
 .c-contents{
-	&.-f-view{//ファーストビュー
-		width: 100vw;
-		height: 66.1vh;
-		background: $main-color--beige;
+	&.-f-slider{//ファーストビュー
+		width: 100%;
+		height: auto;
 		@include min(768){
-			height: 480px;
-			max-height: 480px;
-		}
-		@include min(1600){
-			height: 480px;
-		}
-		&.-size-big{
-			@include max(400) {
-				height: 69.1vh;
-			}
+			// min-height: 480px;
 		}
 	}
 	&.-slider{//カルーセル
 
 	}
 	&.-imgBg{//背景画像
-		.imgBox{position: relative;}
+		position: relative;
+		// .imgBox{position: relative;}
 		.c-contentsBox{
 			position: absolute;
-			// ロゴ関係
+			// ヘッダーロゴ関係
 			&.-logo{
 				&-item01{//緑色の鳥
 					top: 11%;
@@ -52,20 +43,127 @@
 					}
 				}
 			}
-		}
-	}
+			// ファーストビュー関係
+			&.-f-title{
+				top: 29%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 75%;
+				filter: drop-shadow(.5px .5px 0px #ffffff6c);
+				@include min(768){// tb
+					top: 50%;
+					left: 80%;
+					width: 33%;
+				}
+				@include min(1400){
+					top: 50%;
+					left: 70%;
+					width: 30%;
+				}
+			}
+			&.-f-logo_s{
+				@include max(768){
+					top: 8%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 75%;
+					z-index: 1;
+				}
+			}
+			&.-f-des{
+				bottom: 0;
+				left: 85%;
+				transform: translateX(-50%);
+				white-space: nowrap;
+				// width: auto;
+				@include min(768){
+					left: 60%;
+					transform: scale(.8);
+				}
+				&.-w{
+					@include min(768){
+						left: 75%;
+					}
+				}
+			}
+			&.-f-bird{
+				&_01{// 青
+					@include min(768){// tb
+						top: 10%;
+						left: 2%;
+						width: 4%;
+					}
+					@include min(1400){// pc
+						top: 10%;
+						left: 15%;
+						width: 3%;
+					}
+				}
+				&_02{// うすい
+					@include min(768){// tb
+						top: 7%;
+						left: 7%;
+						width: 3%;
+					}
+					@include min(1400){// pc
+						left: 18%;
+						width: 2%;
+					}
+				}
+				&_03{// 黄色
+					@include min(768){// tb
+						top: 7%;
+						left: 89%;
+						width: 3%;
+					}
+					@include min(1400){// pc
+						left: 85%;
+						width: 2%;
+					}
+				}
+				&_04{// 緑
+					@include min(768){// tb
+						top: 59%;
+						left: 62%;
+						width: 2%;
+					}
+					@include min(1400){// pc
+						top: 62%;
+						left: 53%;
+						width: 1.8%;
+					}
+				}
+			}
 
-
-
-	// 横幅
-	&.w1100{
-		margin: auto;
-		@include min(768){
-			width: 90%;
-			max-width: 1100px;
-		}
-		@include min(1600){
-			width: 70.4%;
+			&.-f-border{
+				@include min(768){// tb
+					top: 10%;
+					left: 64%;
+					width: 25%;
+				}
+				@include min(1400){// pc
+					top: 10%;
+					left: 60%;
+				}
+			}
 		}
 	}
 }
+
+	// 横幅
+	.w1100{
+		@include min(768){
+			width: 100%;
+			margin: auto;
+		}
+		@include min(1100){
+			width: 70.4%;
+			max-width: 1100px;
+		}
+	}
+	.w95s{
+		@include max(768){
+			width: 95%;
+			margin: auto;
+		}
+	}
