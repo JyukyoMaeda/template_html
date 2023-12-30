@@ -1,15 +1,23 @@
 // フォントカラー（基本）
-$main-color--b: #333333;
+$main-color--b: #3b3b3b;
 $main-color--w: #ffffff;
 $main-color--gray: #ebebeb;
+$main-color--Dgray: #636363;
 $main-color--beige: #b1a595;
 $main-color--tel: #df2323;
 
 // サイト独自のカラー(3色)
-$site-color01: #9b2c2c;
-$site-color02: #4392aa;
-$site-color03: #0f548d;
-$site-color01-hover: #792a2a;
+$site-color01: #96bbc7;
+$site-color02: #5a8190;
+$site-color03: #f2d341;
+$site-color_kome: #dacebc;
+
+$house-color01: #b6b343;
+$house-color02: #6d5847;
+$house-color03: #599465;
+$house-color04: #00c5d5;
+
+$site-color01-hover: #5a8190;
 $site-color02-hover: #246579;
 $site-color03-hover: #024c63;
 
@@ -27,10 +35,10 @@ $item-hover--b:#dfdddd94;
 
 
 // お問い合わせ
-$contact-item-1: #002a37;
-$contact-item-2: hsl(194, 100%, 11%, 80%);
-$contact-item-3: hsl(194, 100%, 11%, 60%);
-$contact-item-4: hsl(194, 100%, 11%, 40%);
+$contact-item-1: #333333;
+$contact-item-2: #333333a4;
+$contact-item-3: #3333335b;
+$contact-item-4: #33333344;
 
 
 // ホバー関係
