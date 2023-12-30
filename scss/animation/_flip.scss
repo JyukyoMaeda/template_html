@@ -1,47 +1,63 @@
-@keyframes flipLeft{
-    from {
-        transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
-        opacity: 0;
-    }
-    to {
-        transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
-        opacity: 1;
-    }
-}
 
-.a-flipLeft{
-    animation-name: flipLeft;
-    animation-fill-mode:forwards;
-    perspective-origin: left center;
-    opacity: 0;
-    &.-item01{
-        animation-duration:0.5s;
+
+.a{
+    /* ----------------------------
+    ・flipDownAnime： 下回転
+    ----------------------------- */
+    &-flipDown{
+        animation-name: flipDownAnime;
+        animation-fill-mode:forwards;
+        opacity: 0;
+        img{transition: 1s all;}
     }
-    &.-item02{
-        animation-duration:0.75s;
-    }
-    &.-item03{
-        animation-duration:1.25s;
-    }
-    &.-item04{
-        animation-duration:1.75s;
-    }
-    &.-item05{
-        animation-duration:2.25s;
-    }
-    &.-c-item{
-        animation-duration:1.25s;
-        animation-timeline: view();
-        animation-range: entry 0% contain 80%;
-        img{
-            filter: drop-shadow(2px 2px 2px gray);
-            transition: 1s all;
+    @keyframes flipDownAnime{
+        from {
+            transform: perspective(2500px) rotateX(100deg);
+            opacity: 0;
         }
-        &:hover{
-            img{
-                filter: drop-shadow(2px 2px 4px gray);
-                // transform: scale(1.05);
-            }
+        to {
+            transform: perspective(2500px) rotateX(0);
+            opacity: 1;
         }
     }
+    
+    /* --------------------------------
+    ・flipLeftAnime： 左回転
+    -------------------------------- */
+    &-flipLeft{
+        animation-name: flipLeftAnime;
+        animation-fill-mode:forwards;
+        opacity: 0;
+        img{transition: 1s all;}
+    }
+    @keyframes flipLeftAnime{
+        from {
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+            opacity: 0;
+        }
+        to {
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+            opacity: 1;
+        }
+    }
+    /* --------------------------------
+    ・flipRightAnime：右回転
+    -------------------------------- */
+    &-flipRight{
+        animation-name: flipRightAnime;
+        animation-fill-mode:forwards;
+        opacity: 0;
+        img{transition: 1s all;}
+    }
+    @keyframes flipRightAnime{
+        from {
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(-30deg);
+            opacity: 0;
+        }
+        to {
+            transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+            opacity: 1;
+        }
+    }
+
 }

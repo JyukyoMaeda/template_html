@@ -1,11 +1,34 @@
-@keyframes ZoomIn{
-    0% {
-        transform: scale(1.01);
-        opacity: 1;
+
+/* ---------------------------------
+    画像：ホバー > 画像拡大
+--------------------------------- */
+.a-zoomImg{
+    .imgBox{
+        background: black;
+        overflow: hidden;
+        transition: 3s all;
+        img{
+            transform: scale(1.01);
+            transition: 1s all;
+        }
+        &:hover{
+            img{transform: scale(1.05);}
+        }
     }
-    100% {
-        transform: scale(1.1);
-        opacity: .95;
+}
+
+
+/* ---------------------------------
+    ファーストビュー > 画像縮小
+--------------------------------- */
+.a-fviewOutImg{
+    overflow: hidden;
+    transition: 4s all;
+    img{
+        animation-name: ZoomOut;
+        animation-fill-mode:forwards;
+        animation-duration:1s;
+        transform: scale(1.01);
     }
 }
 @keyframes ZoomOut{
@@ -18,29 +41,40 @@
         opacity: 1;
     }
 }
-
-
-.a-moveImg{
-    .imgBox{
-        background: black;
-        overflow: hidden;
-        transition: 3s all;
-        img{
-            transform: scale(1.01);
-            animation-name: ZoomOut;
-            animation-fill-mode:forwards;
-            animation-duration:1s;
-        }
+/* ---------------------------------
+    ファーストビュー > 画像拡大
+--------------------------------- */
+.a-fviewInImg{
+    overflow: hidden;
+    transition: 4s all;
+    img{
+        animation-name: ZoomIn;
+        animation-fill-mode:forwards;
+        animation-duration:1s;
+        transform: scale(1.01);
     }
-    &:hover{
-        transition: 1s all;
-        .imgBox{
-            img{
-                animation-name: ZoomIn;
-                animation-fill-mode:forwards;
-                animation-duration:.5s;
-            }
-        }
+}
+@keyframes ZoomIn{
+    0% {
+        transform: scale(.95);
+        opacity: 1;
     }
+    100% {
+        transform: scale(1);
+        opacity: .95;
+    }
+}
 
+/* ---------------------------------
+    スクロール > 画像拡大
+--------------------------------- */
+.a-scOutImg{
+    width: 100%;
+    overflow: hidden;
+    transition: 4s all;
+    img{
+        animation-name: ZoomOut;
+        animation-fill-mode:forwards;
+        transform: scale(1.5);
+    }
 }
