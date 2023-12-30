@@ -1,0 +1,185 @@
+
+// コンテンツ_メインタイトル
+.c-contents_title{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -45%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        font-size: 12px;
+    }
+    &::after{
+        content: "";
+        display: block;
+        position: relative;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1100px;
+        height: 1px;
+        background: $site-color02;
+        @include min(768){
+            bottom: -30px;
+        }
+    }
+    &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}
+    &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}
+    &.-gaikou{&::before{content: "EXTERIOR";}}
+    &.-kitchen{&::before{content: "KITCHEN";}}
+    &.-bathroom{&::before{content: "BATHROOM";}}
+    &.-window{&::before{content: "WINDOW";}}
+    &.-entrance{&::before{content: "ENTRANCE";}}
+    &.-koutsu{&::before{content: "ACCESS";}}
+    &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
+    &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
+
+}
+
+// コンテンツ_メインタイトル
+.c-contents_MainTitle{
+    position: relative;
+    // font-family: $f-cezanne;
+    .s-LL{padding: 0 1px;}
+    &.-icon{
+        &::after{
+            content: "";
+            background: url(../images/logo/page-title-icon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translateY(-50%);
+            @include min(768){
+                left: 0;
+                width: 25px;
+                height: 25px;
+            }
+            @include min(1400){
+                top: 56%;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+// コンテンツ_サブタイトル
+.c-contents_subTitle{
+    position: relative;
+    &::before{// ボーダー系
+        content: "";
+        display: block;
+        position: absolute;
+    }
+    &::after{// アイコン系
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        @include min(768){
+            left: 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    span{padding:0 5px 0 5px;}
+    &.-iconBox{
+        padding-left: 5%;
+        @include min(768){
+            padding-left: 8%;
+        }
+        &::after{
+            background-image: url(../images/logo/icon_box.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        // 指定のテキスト内 > フォントサイズが異なる場合に使用すること。
+        //（基本全体に小さいサイズ、要素には大きいサイズをすること。）
+        &.-iconBtm{
+            &::after{
+                top: auto;
+                bottom: 22%;
+                transform: inherit;
+                @include min(768){bottom: 13%;}
+            }
+        }
+    }
+    &.-stationBox{
+        padding-left: 15%;
+        @include min(768){
+            padding-left: 15%;
+        }
+        @include min(1400){
+            padding-left: 12%;
+        }
+        // 一駅の場合
+        &.-s_1 {
+            &::after{
+                content: "西武池袋線";
+                top: 42%;
+                font-size: 10px;
+                text-align: center;
+                width: 16%;
+                @include min(768){
+                    top: 65%;
+                    font-size: 10px;
+                    width: 16%;
+                }
+                @include min(1400){
+                    top: 56%;
+                    font-size: 12px;
+                    width: 13%;
+                }
+            }
+        }
+        // 二駅の場合
+        &.-s_2 {
+            &::after{
+                content: "西武秩父線 JR八高線";
+                top: 0%;
+                font-size: 10px;
+                text-align: center;
+                width: 16%;
+                @include min(768){
+                    top: 38%;
+                    font-size: 10px;
+                    text-align: center;
+                    width: 16%;
+                }
+                @include min(1400){
+                    top: 38%;
+                    width: 13%;
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+
+    &.-borderBtm{
+        margin-bottom: 5%;
+        @include min(768){
+            margin-bottom: 5%;
+        }
+        &::before{
+            bottom: -15%;
+            left: 50%;
+            transform: translateX(-50%) scaleY(0.75);
+            width: 100%;
+            color: $site-color01;
+        }
+        // アイコン文頭にある場合のみ、ボーダーの位置を変更する。
+        &.-dot{&::before{border-bottom: 3px dotted;}}
+        &.-line{&::before{border-bottom: 1px solid;}}
+    }
+}

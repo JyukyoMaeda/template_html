@@ -1,10 +1,10 @@
 
 .swiper{
     .swiper-wrapper{
-        padding-bottom: 20px;
-        @include min(768){
-            padding-bottom: 30px;
-        }
+        // padding-bottom: 20px;
+        // @include min(768){
+        //     padding-bottom: 30px;
+        // }
         .swiper-slide{
             text-align: end;
             opacity: .5;
@@ -127,12 +127,26 @@
                 }
                 &-active{
                     width: 50px;
-                    background: $main-color--gray;
-                    border: 1px solid $main-color--b;
+                    background: $main-color--gray !important;
+                    border: 1px solid $main-color--b !important;
                     @include min(768){
-                        background: $main-color--b;
+                        background: $main-color--b !important;
                     }
                 }
+            }
+        }
+    }
+    // ドット
+    .swiper-pagination{
+        &.-type01{
+            .swiper-pagination-bullet{
+                box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.692);
+                transition: all 1s;
+            }
+            .swiper-pagination-bullet-active {
+                width: 20px;
+                border-radius: 5px;
+                background: $site-color02;
             }
         }
     }

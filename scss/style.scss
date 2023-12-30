@@ -16,13 +16,15 @@
 @import "./components/footer";  // フッター
 @import "./components/nav";     // ナビゲーション
 @import "./components/contents";// コンテンツ
+@import "./components/title";   // コンテンツ > タイトル
 @import "./components/contact"; // お問い合わせ
 @import "./components/flex";    // 横並び要素
 @import "./components/banner";  // バナー
 @import "./components/tab";     // タブ
 @import "./components/modal";   // モーダル
 @import "./components/btn";     // ボタン
-@import "./components/slider";  // スライダー
+@import "./components/link";    // リンク
+@import "./components/slider";  // カルーセル
 @import "./components/popup";   // ポップアップ
 
 // 各ページ

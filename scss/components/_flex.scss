@@ -1,1 +1,287 @@
 // フレックス
+.c-flex{
+    display: flex;
+
+    // 縦 > 真ん中
+    &.-h-c{align-items: center;}
+    &.-h-c_s{@include max(768){align-items: center;}}
+    &.-h-c_pc{@include min(768){align-items: center;}}
+
+    // 反転
+    &.-r{ flex-direction: row-reverse !important;}
+    &.-r_s{ @include max(768){flex-direction: row-reverse !important;}}
+    &.-cr{ flex-direction: column-reverse !important;}
+    &.-cr_s{ @include max(768){flex-direction: column-reverse !important;}}
+
+    // コンテンツ_タイトル
+    &.-title-Icon{
+        flex-wrap: nowrap;
+        li{
+            &:nth-child(1){
+                width: 8%;
+                img{
+                    width: 85%;
+                    vertical-align: top;
+                }
+                @include min(768){width: 3%;}
+                @include min(1400){width: 4%;}
+            }
+            &:nth-child(2){
+
+            }
+        }
+    }
+    // コンテンツ_カラム（sp:pc 1:2）
+    &.-col1_2{
+        flex-wrap: wrap;
+        @include min(768){
+            flex-wrap: nowrap;
+        }
+        li{
+            width: 100%;
+            @include min(768){
+                width: calc(50% - 15px);
+                &:nth-child(1){
+                    margin-right: 15px;
+                }
+                &:nth-child(2){
+                    margin-left: 15px;
+                }
+            }
+            &.text{
+                @include min(768){
+                    width: calc(35% - 15px);
+                }
+            }
+            &.img{
+                @include min(768){
+                    width: calc(65% - 15px);
+                }
+            }
+        }
+        &.-r{
+            li{
+                width: 100%;
+                @include min(768){
+                    width: calc(50% - 15px);
+                    &:nth-child(1){
+                        margin-left: 15px;
+                    }
+                    &:nth-child(2){
+                        margin-right: 15px;
+                    }
+                }
+                &.text{
+                    @include min(768){
+                        width: calc(35% - 15px);
+                    }
+                }
+                &.img{
+                    @include min(768){
+                        width: calc(65% - 15px);
+                    }
+                }
+            }
+        }
+    }
+    // コンテンツカラム（sp:pc 2:2）
+    &.-col2_2{
+        li{
+            width: calc(50% - 5px);
+            margin: 0;
+            &:nth-child(1){margin-right: 5px !important;}
+            &:nth-child(2){margin-left: 5px !important;}
+            @include min(768){
+                width: calc(50% - 15px);
+                &:nth-child(1){margin-right: 15px !important;}
+                &:nth-child(2){margin-left: 15px !important;}
+            }
+            &.text{
+                @include min(768){width: calc(35% - 15px);}
+            }
+            &.img{
+                @include min(768){width: calc(65% - 15px);}
+            }
+        }
+        &.-r{
+            li{
+                width: calc(50% - 5px);
+                margin: 0 !important;
+                &:nth-child(1){margin-left: 5px !important;}
+                &:nth-child(2){margin-right: 5px !important;}
+                @include min(768){
+                    width: calc(50% - 15px);
+                    &:nth-child(1){margin-left: 15px !important;}
+                    &:nth-child(2){margin-right: 15px !important;}
+                }    
+                &.text{
+                    @include min(768){width: calc(35% - 15px);}
+                }
+                &.img{
+                    @include min(768){width: calc(65% - 15px);}
+                }
+            }
+        }
+    }
+    // コンテンツ_カラム（sp:大1小2、pc:3）
+    &.-col2M1_3{
+        @include max(768){
+            flex-wrap: wrap;
+        }
+        li{
+            @include max(768){
+                width: calc(50% - 5px);
+                &:nth-child(2),//左
+                &:nth-child(5){margin-right: 5px;}
+                &:nth-child(1),//真ん中
+                &:nth-child(4){
+                    width: 100%;
+                    margin: auto;
+                }
+                &:nth-child(3),//右
+                &:nth-child(6){margin-left: 5px;}
+            }
+            @include min(768){
+                width: calc(33.3333% - 15px);
+                &:nth-child(1),//左
+                &:nth-child(4){margin-right: 15px;}
+                &:nth-child(2),//真ん中
+                &:nth-child(5){margin: 0 7.5px;}
+                &:nth-child(3),//右
+                &:nth-child(6){margin-left: 15px;}
+            }
+        }
+    }
+    // コンテンツ_カラム（sp:1 pc:大1小2）
+    &.-col1_2M1{
+        flex-wrap: wrap;
+        li{
+            width: 100%;
+            @include min(768){
+                width: calc(50% - 10px);
+                &:nth-child(2),//左
+                &:nth-child(5){margin-right: 10px;}
+                &:nth-child(1),//真ん中
+                &:nth-child(4){
+                    width: 100%;
+                    margin: auto;
+                }
+                &:nth-child(3),//右
+                &:nth-child(6){margin-left: 10px;}
+
+            }
+        }
+    }
+    // コンテンツ_カラム（sp:2 pc:3）
+    &.-col2_3{
+        flex-wrap: wrap;
+        li{
+            width: calc(50% - 5px);
+            @include max(768){
+                &:nth-child(odd){margin-right: 5px;}
+                &:nth-child(even){margin-left: 5px;}
+            }
+            @include min(768){
+                width: calc(33% - 15px);
+                &:nth-child(1),
+                &:nth-child(4),
+                &:nth-child(7){margin-right: 15px;}
+                &:nth-child(2),
+                &:nth-child(5),
+                &:nth-child(8){margin: 0 7.5px;}
+                &:nth-child(3),
+                &:nth-child(6),
+                &:nth-child(9){margin-left: 15px;}
+            }    
+        }
+    }
+
+
+    // コンテンツ_カラム（sp,pc:5）
+    &.-col5{
+        li{
+            width: calc(100%/5);
+        }
+    }
+
+
+    // ------------- お店の情報 --------------
+    &.-shop-information{
+        flex-wrap: wrap;
+        @include min(768){flex-wrap: nowrap;}
+        li{
+            &:nth-child(1){width: 100%;}
+            &:nth-child(2){width: 20%;}
+            &:nth-child(3){width: 80%;}
+
+            &:nth-child(2),
+            &:nth-child(3){
+                margin: 0 !important;
+            }
+            @include min(768){
+                &:nth-child(1){width: 43%;}
+                &:nth-child(2){width: 9%;}
+                &:nth-child(3){width: 48%;}
+            }
+            @include min(1400){
+                margin: 0 !important;
+                &:nth-child(1){width: 47%;}
+                &:nth-child(2){width: 8%;}
+                &:nth-child(3){width: 45%;}
+            }
+        }
+        &_col2{
+            flex-wrap: wrap;
+            @include min(768){flex-wrap: nowrap;}
+            li{
+                &:nth-child(1){width: 60%;}
+                &:nth-child(2){width: 14%;}
+                &:nth-child(3){width: 25%;}
+                @include min(768){
+                    &:nth-child(1){width: 61%;}
+                    &:nth-child(2){width: 15%;}
+                    &:nth-child(3){width: 24%;}
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){margin: 0 !important;}
+
+                }
+                @include min(1400){
+                    &:nth-child(1){width: 60%;}
+                    &:nth-child(2){width: 13%;}
+                    &:nth-child(3){width: 27%;}
+                }
+            }
+            
+        }
+        &_col3{
+            flex-wrap: wrap;
+            li{
+                margin: 0 !important;
+                &:nth-child(1){width: 100%;}
+                &:nth-child(2){width: 28%;}
+                &:nth-child(3){width: 72%;}
+                @include min(768){
+                    &:nth-child(1){width: 100%;}
+                    &:nth-child(2){width: 24%;}
+                    &:nth-child(3){width: 76%;padding: 1% 0;}
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){margin: 0 !important;}
+                }
+                @include min(1000){
+                      &:nth-child(2),
+                      &:nth-child(3){padding: 1% 0;}
+                }
+                @include min(1400){
+                    &:nth-child(1){width: 100%;}
+                    &:nth-child(2){width: 18%;}
+                    &:nth-child(3){width: 82%;}
+                }
+            }
+            
+        }
+    }
+}

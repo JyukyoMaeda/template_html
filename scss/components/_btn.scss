@@ -15,11 +15,11 @@ button{
 		top: auto;
 		left: 50%;
 		bottom: 0;
-		color: $main-color--b;
+		color: $site-color02;
 		cursor: pointer;
 		z-index: 99;
 		@include max(768){
-			border: 1px solid $main-color--b;
+			border: 1px solid $site-color02;
 			box-shadow: 0 2px 4px $main-color--b;
 			transform: translateX(-50%);
 		}
@@ -28,8 +28,8 @@ button{
 			left: auto;
 			bottom: auto;
 			right: 25px;
-			border: 1px solid $main-color--b;
-			box-shadow: 0 2px 4px $main-color--b;
+			border: 1px solid $site-color02;
+			box-shadow: 0 2px 4px $site-color02;
 		}
 		.c-btn-lists{
 			display: flex;
@@ -45,11 +45,11 @@ button{
 				@include max(768){
 					&:first-child a{
 						color: $main-color--w;
-						background: $main-color--b;
+						background: $site-color01;
 					}
 					&:nth-child(2) a{
 						color: $main-color--w;
-						background: $main-color--b;
+						background: $site-color02;
 					}
 				}
 				@include min(768){
@@ -57,8 +57,8 @@ button{
 					writing-mode: vertical-rl;
 				}
 				&:first-child{
-					@include max(768){border-right: 1px solid $main-color--b;}
-					@include min(768){border-bottom: 1px solid $main-color--b;}
+					@include max(768){border-right: 1px solid $site-color01;}
+					@include min(768){border-bottom: 1px solid $site-color01;}
 				}
 				a{
 					width: 100%;
@@ -69,7 +69,7 @@ button{
 						padding: 30px 10%;
 					}
 					&:hover{
-						background: $main-color--b;
+						background: $site-color02;
 						color: $main-color--w !important;
 					}
 				}
@@ -86,7 +86,7 @@ a{
 	color: $main-color--b;
 	// text-decoration: underline;
 }
-// a:link {   color: $main-color--b; text-decoration: underline;}
-// a:visited {color: $main-color--b; text-decoration: none;}
-// a:hover {  color: $main-color--b; text-decoration: none;transition: .3s;opacity: .8;}
-// a:active { color: $main-color--b; text-decoration: none;}
+// a:link {   color: $site-color01; text-decoration: underline;}
+// a:visited {color: $site-color01; text-decoration: none;}
+// a:hover {  color: $site-color01; text-decoration: none;transition: .3s;opacity: .8;}
+// a:active { color: $site-color01; text-decoration: none;}

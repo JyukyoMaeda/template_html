@@ -2,11 +2,13 @@
 .c-header{
 	width: 100vw;
 	height: auto;
+	background: $main-color--w;
+	// padding: 5px 0px 10px;
 	box-sizing: border-box;
 	transition: padding .3s;
-	// @include max(768){
-	// 	position: relative;
-	// }
+	@include min(768){
+		padding: 15px 0px 0px;
+	}
 	&.-fixed{//固定
 		position: fixed;
 		top: 0;
@@ -16,27 +18,28 @@
 	&-wrapper{
 		position: relative;
 		align-items: center;
-		width: 76%;
+		width: 95%;
 		height: auto;
+		padding: 18px 0px 16px;
 		margin: auto;
+		// background: #bfbebe2e;
 		@include min(768){
 			width: 90%;
 			max-width: 1100px;
+			padding: 0;
 		}
 		@include min(1600){
 			width: 70.4%;
 		}
 		&::after{
-			@include min(768){
-				content: "";
-				position: absolute;
-				left: 50%;
-				bottom: 0;
-				transform: translateX(-50%);
-				width: 100vw;
-				height: 1px;
-				background: $main-color--b;
-			}
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 1px;
+			background: $site-color01;
 		}
 	}
 	&__popArea{//上部
@@ -50,9 +53,12 @@
 			}
 			li{
 				&.logo{
+					width: 50%;
+					height: auto;
+					margin: auto auto auto 0;
 					@include min(768){
 						width: calc(72%);
-						height: auto;
+						margin: auto;
 						img{vertical-align: baseline;}
 					}
 				}
@@ -63,15 +69,20 @@
 				// 	background: rgb(224, 112, 112);
 				// }
 				&.c-header__contactArea{
-					display: grid; 
-					grid-template-rows: 1fr 1fr;
-					grid-template-columns: 1fr 1fr;
-					align-items: center;
+					@include max(768){
+						display: none;
+					}
 					@include min(768){
+						display: grid; 
+						grid-template-rows: 1.5fr 1fr;
+						grid-template-columns: 1fr 1fr;
+						align-items: center;
 						width: calc(28%);
+						// height: 6vw;
 					}
 					@include min(1600){
-						height: 6.45vw;
+						// height: 7.75vw;
+						// height: 6.45vw;
 					}
 					.top-left{
 						grid-column: 1/2;
@@ -89,22 +100,23 @@
 					&::before{
 						content: "";
 						position: absolute;
-						top: 25%;
+						top: 30%;
 						left: 50%;
 						transform: translate(-50%, -50%);
 						height: 40%;
 						width: 1px;
-						background: $main-color--b;
+						background: $site-color02;
 					}
 					&::after{
 						content: "";
 						position: absolute;
-						top: 50%;
+						top: 55%;
+						// top: 50%;
 						left: 50%;
 						transform: translate(-50%, -50%);
 						height: 1px;
 						width: 98%;
-						background: $main-color--b;
+						background: $site-color02;
 					}
 				}
 			}
@@ -120,11 +132,11 @@
 					position: relative;
 					width: calc(100%/8);
 					height: auto;
-					padding: 2.1% 0;
+					// padding: 2.1% 0;
 					background: $main-color--w;
 					transition: .5s all;
 					&:hover{
-						background: $main-color--b;
+						background: $site-color01;
 						a,span{color: $main-color--w !important;}
 					}
 					&:first-child{
@@ -136,7 +148,7 @@
 							transform: translateY(-50%);
 							height: 100%;
 							width: 1px;
-							background: $main-color--b;
+							background: $site-color01;
 						}
 					}
 					&::after{
@@ -147,18 +159,19 @@
 						transform: translateY(-50%);
 						height: 100%;
 						width: 1px;
-						background: $main-color--b;
+						background: $site-color01;
 					}
 					a{
 						display: block;
 						width: 100%;
 						height: 100%;
+						padding: 15% 0;
 					}
 					&.-active{
-						background: $main-color--b;
+						background: $site-color02;
+						pointer-events: none;
 						a,span{
 							color: $main-color--w;
-							background: $main-color--b;
 						}
 					}
 				}

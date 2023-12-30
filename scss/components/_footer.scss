@@ -8,7 +8,7 @@
 	}
 	&-wrapper{
 		align-items: center;
-		width: 76%;
+		width: 90%;
 		margin: auto;
 		height: auto;
 		// background: #bfbebe2e;
@@ -24,16 +24,16 @@
 				width: 90%;
 			}
 		}
-		// &::after{
-		// 	content: "";
-		// 	position: absolute;
-		// 	left: 50%;
-		// 	bottom: 0;
-		// 	transform: translateX(-50%);
-		// 	width: 100vw;
-		// 	height: 1px;
-		// 	background: $main-color--b;
-		// }
+		&::after{
+			content: "";
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			width: 100vw;
+			height: 1px;
+			background: $main-color--b;
+		}
 	}
 	&__contactArea{
 		.c-footer__contactLists{
@@ -48,7 +48,7 @@
 				transform: translateX(-50%);
 				width: 100vw;
 				height: 1px;
-				background: $main-color--b;
+				background: $site-color02;
 			}
 			&::after{
 				content: "";
@@ -58,7 +58,7 @@
 				transform: translateX(-50%);
 				width: 100vw;
 				height: 1px;
-				background: $main-color--b;
+				background: $site-color02;
 			}
 			li{
 				position: relative;
@@ -68,9 +68,10 @@
 				transition: .5s all;
 				@include min(768){
 					width: calc(100%/4);
+					padding: 4% 0;
 				}
 				&:hover{
-					background: $main-color--b;
+					background: $site-color02;
 					a,span{color: $main-color--w !important;}
 				}
 				&:first-child{
@@ -82,7 +83,7 @@
 						transform: translateY(-50%);
 						height: 100%;
 						width: 1px;
-						background: $main-color--b;
+						background: $site-color02;
 					}
 				}
 				&::after{
@@ -93,7 +94,7 @@
 					transform: translateY(-50%);
 					height: 100%;
 					width: 1px;
-					background: $main-color--b;
+					background: $site-color02;
 				}
 				a{
 					display: block;
@@ -121,14 +122,14 @@
 					&::before{
 						content: "";
 						position: absolute;
-						top: 50%;
+						top: 59%;
 						left: 0;
 						transform: translateY(-50%);
-						height: 80%;
+						height: 40%;
 						width: 1px;
-						background: $main-color--b;
+						background: $site-color02;
 						@include min(768){
-							height: 40%;
+							height: 25%;
 						}
 					}
 				}
@@ -137,26 +138,26 @@
 						&::before{
 							content: "";
 							position: absolute;
-							top: 50%;
+							top: 59%;
 							left: 0;
 							transform: translateY(-50%);
-							height: 80%;
+							height: 40%;
 							width: 1px;
-							background: $main-color--b;
+							background: $site-color02;
 						}
 					}
 				}
 				&::after{
 					content: "";
 					position: absolute;
-					top: 50%;
+					top: 59%;
 					right: 0;
 					transform: translateY(-50%);
-					height: 80%;
+					height: 40%;
 					width: 1px;
-					background: $main-color--b;
+					background: $site-color02;
 					@include min(768){
-						height: 40%;
+						height: 25%;
 					}
 				}
 				a{
@@ -169,30 +170,30 @@
 		width: 50%;
 		margin: auto;
 		@include min(768){
-			width: 13%;
-			max-width: 250px;
+			width: 16%;
+			max-width: 300px;
 		}
 		label{
 			&.popup{
 				display: block;
 				padding: 5% 0;
 				text-align: center;
-				border: 1px solid $main-color--b;
-				background: $main-color--b;
+				border: 1px solid $site-color02;
+				background: $site-color02;
 				transition: .5s all;
 				@include min(768){
-					color: $main-color--b;
+					color: $site-color02;
 					background: $main-color--w;
 				}
 				span{
 					color: $main-color--w;
 					@include min(768){
-						color: $main-color--b;
+						color: $site-color02;
 					}
 				}
 				&:hover{
 					color: $main-color--w !important;
-					background: $main-color--b;
+					background: $site-color02 !important;
 					// border-radius: 10px;
 					box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
 				}
@@ -203,7 +204,7 @@
 		width: 60%;
 		margin: auto;
 		@include min(768){
-			width: 50%;
+			width: 40%;
 			max-width: 1000px;
 		}
 		.c-footer__shopFlex{
