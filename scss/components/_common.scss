@@ -7,7 +7,7 @@
         margin: auto;
     }
     @include min(1100){
-        width: 83% !important;
+        width: 90% !important;
         max-width: 1100px;
     }
 }
@@ -52,7 +52,8 @@
 .c-borderBox{
     padding: 3%;
     @include min(768){
-        width: 95%;
+        // width: 95%;
+        width: 100%;
         padding: 1% 1% 2%;
         margin-right: 0;
         margin-left: auto;

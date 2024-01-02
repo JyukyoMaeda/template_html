@@ -37,6 +37,7 @@
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
 
+    &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}
 }
 
 // コンテンツ_メインタイトル

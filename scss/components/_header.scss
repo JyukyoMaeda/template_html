@@ -39,7 +39,7 @@
 			transform: translateX(-50%);
 			width: 100vw;
 			height: 1px;
-			background: $site-color01;
+			background: $main-color--b;
 		}
 	}
 	&__popArea{//上部
@@ -105,7 +105,7 @@
 						transform: translate(-50%, -50%);
 						height: 40%;
 						width: 1px;
-						background: $site-color02;
+						background: $main-color--b;
 					}
 					&::after{
 						content: "";
@@ -116,7 +116,7 @@
 						transform: translate(-50%, -50%);
 						height: 1px;
 						width: 98%;
-						background: $site-color02;
+						background: $main-color--b;
 					}
 				}
 			}
@@ -148,7 +148,7 @@
 							transform: translateY(-50%);
 							height: 100%;
 							width: 1px;
-							background: $site-color01;
+							background: $main-color--b;
 						}
 					}
 					&::after{
@@ -159,7 +159,7 @@
 						transform: translateY(-50%);
 						height: 100%;
 						width: 1px;
-						background: $site-color01;
+						background: $main-color--b;
 					}
 					a{
 						display: block;
