@@ -329,6 +329,8 @@
                         <div class="swiper-slide"><a href="images/slider/example/build-pic04.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 4/5"><img src="images/slider/example/build-pic04.png" alt="施工事例　4/5"/></a></div>
                         <div class="swiper-slide"><a href="images/slider/example/build-pic05.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 5/5"><img src="images/slider/example/build-pic05.png" alt="施工事例　5/5"/></a></div>
                     </div>
+                    <div class="sp swiper-button-prev"></div>
+                    <div class="sp swiper-button-next"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
@@ -462,7 +464,6 @@
         // 施工例スライダー
         const buildSwiper = new Swiper(".swiper-Build", {
             centeredSlides: true,
-            slidesPerView: 3,
             fadeEffect: {crossFade: true,},
             loop: true,
             speed: 3000,
@@ -473,10 +474,20 @@
             },
             grabCursor: true,
             followFinger: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
             pagination: {
                 el: '.swiper-Fview .swiper-pagination',
                 clickable: true,
             },
+            slidesPerView: 1,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+            }
         });
         // ポップアップ
         var luminousTrigger = document.querySelectorAll('.luminous');

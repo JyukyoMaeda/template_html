@@ -186,7 +186,17 @@
         }
     }
 
+    // 次に進む・前に戻るボタン
+    .swiper-button-prev,
+    .swiper-button-next{
+        &::after{
+            color: white !important;
+            filter: drop-shadow(1px 1px 3px black);
+            @include min(768){
 
+            }
+        }
+    }
 
     // 各スライダー > 共通パーツ > ドット
     .swiper-pagination{

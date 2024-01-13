@@ -5059,6 +5059,11 @@ a {
     background: #3b3b3b;
   }
 }
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  color: white !important;
+  filter: drop-shadow(1px 1px 3px black);
+}
 .swiper .swiper-pagination.-type01 .swiper-pagination-bullet {
   box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.692);
   transition: all 1s;
