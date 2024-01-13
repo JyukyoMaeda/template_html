@@ -36,6 +36,7 @@
     &.-koutsu{&::before{content: "ACCESS";}}
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
+    &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}
 
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}
 }

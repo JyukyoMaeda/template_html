@@ -1,4 +1,5 @@
 
+// 物件概要ポップアップ
 #popup,
 #popup-madori01 {
     display: none;
@@ -14,7 +15,6 @@
         opacity: 1;
     }
 }
-
 .popup{
     &-open {
         display: block;
@@ -68,10 +68,58 @@
         right: 0;
     }
 }
-
 .popup-text {
     margin: 0;
     &:not(:last-of-type) {
         margin-bottom: 1em
+    }
+}
+
+// 画像表示用ポップアップ
+.lum{
+    &-closing{
+
+    }
+    &-lightbox{
+        transition: all 1s;
+        z-index: 999;
+        &-inner{
+            top: 50% !important;
+            left: 50% !important;
+            bottom: auto !important;
+            right: auto !important;
+            transform: translate(-50%, -50%) !important;
+            transition: all 1s;
+            img{
+                // filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.459));
+                @include min(768){
+                    width: 85%;
+                    max-width: 750px;
+                }
+            }
+        }
+        &-image-wrapper{
+            @include max(768){
+                width: 90vw !important;
+                height: 100% !important;
+                max-height: 100% !important;
+            }
+        }
+    }
+    &-gallery-button{
+        &::after{
+            @include max(768){
+                :after {
+                    width: 6vw;
+                    height: 6vw;
+                }
+            }
+        }
+    }
+    &-close-button{
+        display: none;
+        @include max(768){
+            opacity: 0.8;
+        }
     }
 }

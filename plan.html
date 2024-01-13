@@ -13,6 +13,8 @@
     <!--// デプロイ前に確認・サンプル -->
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/luminous.min.js"></script>
 
     <!-- Fonts -->
     <script>
@@ -315,6 +317,21 @@
 
             </div>
 
+            <!-- 施工例 > スライダー関係 -->
+            <div class="c-contents w95 mgb20 mgb20s">
+                <h2 class="c-contents_title -portfolio s-LL -center mgb10 mgb10s">施工例</h2>
+
+                <div class="swiper swiper-Build">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="images/slider/example/build-pic01.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 1/5"><img src="images/slider/example/build-pic01.png" alt="施工事例　1/5"/></a></div>
+                        <div class="swiper-slide"><a href="images/slider/example/build-pic02.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 2/5"><img src="images/slider/example/build-pic02.png" alt="施工事例　2/5"/></a></div>
+                        <div class="swiper-slide"><a href="images/slider/example/build-pic03.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 3/5"><img src="images/slider/example/build-pic03.png" alt="施工事例　3/5"/></a></div>
+                        <div class="swiper-slide"><a href="images/slider/example/build-pic04.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 4/5"><img src="images/slider/example/build-pic04.png" alt="施工事例　4/5"/></a></div>
+                        <div class="swiper-slide"><a href="images/slider/example/build-pic05.png" class="luminous" data-lightbox="build-pic" data-title="施工事例 5/5"><img src="images/slider/example/build-pic05.png" alt="施工事例　5/5"/></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- //コンテンツ -->
@@ -440,6 +457,38 @@
         </ul>
     </div> -->
     <!-- //固定アイテム -->
+
+    <script>
+        // 施工例スライダー
+        const buildSwiper = new Swiper(".swiper-Build", {
+            centeredSlides: true,
+            slidesPerView: 3,
+            fadeEffect: {crossFade: true,},
+            loop: true,
+            speed: 3000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                waitForTransition: true,
+            },
+            grabCursor: true,
+            followFinger: false,
+            pagination: {
+                el: '.swiper-Fview .swiper-pagination',
+                clickable: true,
+            },
+        });
+        // ポップアップ
+        var luminousTrigger = document.querySelectorAll('.luminous');
+        var options = {
+            caption: function (trigger) {
+                return trigger.querySelector('img').getAttribute('alt');
+            },
+        }
+        if( luminousTrigger !== null ) {
+            new LuminousGallery(luminousTrigger,{},options);
+        }
+    </script>
 
 </body>
 </html>
