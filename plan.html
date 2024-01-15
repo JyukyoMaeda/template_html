@@ -463,10 +463,15 @@
     <script>
         // 施工例スライダー
         const buildSwiper = new Swiper(".swiper-Build", {
+            effect: 'slide',
+            mousewheel: {
+                invert: false,
+            },
             centeredSlides: true,
+            slidesPerView: 1,
             fadeEffect: {crossFade: true,},
             loop: true,
-            speed: 3000,
+            // speed: 3000,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
@@ -482,11 +487,9 @@
                 el: '.swiper-Fview .swiper-pagination',
                 clickable: true,
             },
-            slidesPerView: 1,
             breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                },
+                768: {slidesPerView: 3,},
+                980: {slidesPerView: 3,},
             }
         });
         // ポップアップ
