@@ -76,6 +76,18 @@ button{
 			}
 		}
 	}
+	&-top{
+		position: fixed;
+    bottom: 10vh;
+    right: 50px;
+		center / 1rem gray;
+    width: 2.5rem;
+    // height: 55px;
+    z-index: 99;
+    border: 1px solid $main-color--b;
+		box-shadow: 1px 1px 11px 0px #3b3b3b54;
+
+	}
 }
 
 /*    Link
