@@ -5,7 +5,6 @@
 
 html {
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 body,
@@ -21,6 +20,7 @@ ul {
 body {
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -115,7 +115,7 @@ p {
     display: block !important;
   }
 }
-h1, h2, h3, h4, h5, h6, p, a, span, label {
+h1, h2, h3, h4, h5, h6, p, a, span, label, button {
   color: #3b3b3b;
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: normal;
@@ -124,118 +124,118 @@ h1, h2, h3, h4, h5, h6, p, a, span, label {
   word-break: auto-phrase;
   line-height: 1.3;
 }
-h1.b-text, h2.b-text, h3.b-text, h4.b-text, h5.b-text, h6.b-text, p.b-text, a.b-text, span.b-text, label.b-text {
+h1.b-text, h2.b-text, h3.b-text, h4.b-text, h5.b-text, h6.b-text, p.b-text, a.b-text, span.b-text, label.b-text, button.b-text {
   display: inline;
   text-decoration: underline;
 }
-h1.-right, h2.-right, h3.-right, h4.-right, h5.-right, h6.-right, p.-right, a.-right, span.-right, label.-right {
+h1.-right, h2.-right, h3.-right, h4.-right, h5.-right, h6.-right, p.-right, a.-right, span.-right, label.-right, button.-right {
   text-align: right;
 }
-h1.-left, h2.-left, h3.-left, h4.-left, h5.-left, h6.-left, p.-left, a.-left, span.-left, label.-left {
+h1.-left, h2.-left, h3.-left, h4.-left, h5.-left, h6.-left, p.-left, a.-left, span.-left, label.-left, button.-left {
   text-align: left;
 }
-h1.-center, h2.-center, h3.-center, h4.-center, h5.-center, h6.-center, p.-center, a.-center, span.-center, label.-center {
+h1.-center, h2.-center, h3.-center, h4.-center, h5.-center, h6.-center, p.-center, a.-center, span.-center, label.-center, button.-center {
   text-align: center;
 }
-h1.-lh-n, h2.-lh-n, h3.-lh-n, h4.-lh-n, h5.-lh-n, h6.-lh-n, p.-lh-n, a.-lh-n, span.-lh-n, label.-lh-n {
+h1.-lh-n, h2.-lh-n, h3.-lh-n, h4.-lh-n, h5.-lh-n, h6.-lh-n, p.-lh-n, a.-lh-n, span.-lh-n, label.-lh-n, button.-lh-n {
   line-height: normal;
 }
-h1.-lh-1, h2.-lh-1, h3.-lh-1, h4.-lh-1, h5.-lh-1, h6.-lh-1, p.-lh-1, a.-lh-1, span.-lh-1, label.-lh-1 {
+h1.-lh-1, h2.-lh-1, h3.-lh-1, h4.-lh-1, h5.-lh-1, h6.-lh-1, p.-lh-1, a.-lh-1, span.-lh-1, label.-lh-1, button.-lh-1 {
   line-height: 1;
 }
-h1.-lh-1_5, h2.-lh-1_5, h3.-lh-1_5, h4.-lh-1_5, h5.-lh-1_5, h6.-lh-1_5, p.-lh-1_5, a.-lh-1_5, span.-lh-1_5, label.-lh-1_5 {
+h1.-lh-1_5, h2.-lh-1_5, h3.-lh-1_5, h4.-lh-1_5, h5.-lh-1_5, h6.-lh-1_5, p.-lh-1_5, a.-lh-1_5, span.-lh-1_5, label.-lh-1_5, button.-lh-1_5 {
   line-height: 1.5;
 }
-h1.-lh-1_8, h2.-lh-1_8, h3.-lh-1_8, h4.-lh-1_8, h5.-lh-1_8, h6.-lh-1_8, p.-lh-1_8, a.-lh-1_8, span.-lh-1_8, label.-lh-1_8 {
+h1.-lh-1_8, h2.-lh-1_8, h3.-lh-1_8, h4.-lh-1_8, h5.-lh-1_8, h6.-lh-1_8, p.-lh-1_8, a.-lh-1_8, span.-lh-1_8, label.-lh-1_8, button.-lh-1_8 {
   line-height: 1.8;
 }
-h1.-lh-2, h2.-lh-2, h3.-lh-2, h4.-lh-2, h5.-lh-2, h6.-lh-2, p.-lh-2, a.-lh-2, span.-lh-2, label.-lh-2 {
+h1.-lh-2, h2.-lh-2, h3.-lh-2, h4.-lh-2, h5.-lh-2, h6.-lh-2, p.-lh-2, a.-lh-2, span.-lh-2, label.-lh-2, button.-lh-2 {
   line-height: 2;
 }
-h1.-lh-3, h2.-lh-3, h3.-lh-3, h4.-lh-3, h5.-lh-3, h6.-lh-3, p.-lh-3, a.-lh-3, span.-lh-3, label.-lh-3 {
+h1.-lh-3, h2.-lh-3, h3.-lh-3, h4.-lh-3, h5.-lh-3, h6.-lh-3, p.-lh-3, a.-lh-3, span.-lh-3, label.-lh-3, button.-lh-3 {
   line-height: 3;
 }
 @media (768px >= width) {
-  h1.-lh-n_s, h2.-lh-n_s, h3.-lh-n_s, h4.-lh-n_s, h5.-lh-n_s, h6.-lh-n_s, p.-lh-n_s, a.-lh-n_s, span.-lh-n_s, label.-lh-n_s {
+  h1.-lh-n_s, h2.-lh-n_s, h3.-lh-n_s, h4.-lh-n_s, h5.-lh-n_s, h6.-lh-n_s, p.-lh-n_s, a.-lh-n_s, span.-lh-n_s, label.-lh-n_s, button.-lh-n_s {
     line-height: normal;
   }
 }
 @media (768px >= width) {
-  h1.-lh-1_s, h2.-lh-1_s, h3.-lh-1_s, h4.-lh-1_s, h5.-lh-1_s, h6.-lh-1_s, p.-lh-1_s, a.-lh-1_s, span.-lh-1_s, label.-lh-1_s {
+  h1.-lh-1_s, h2.-lh-1_s, h3.-lh-1_s, h4.-lh-1_s, h5.-lh-1_s, h6.-lh-1_s, p.-lh-1_s, a.-lh-1_s, span.-lh-1_s, label.-lh-1_s, button.-lh-1_s {
     line-height: 1;
   }
 }
 @media (768px >= width) {
-  h1.-lh-1_3_s, h2.-lh-1_3_s, h3.-lh-1_3_s, h4.-lh-1_3_s, h5.-lh-1_3_s, h6.-lh-1_3_s, p.-lh-1_3_s, a.-lh-1_3_s, span.-lh-1_3_s, label.-lh-1_3_s {
+  h1.-lh-1_3_s, h2.-lh-1_3_s, h3.-lh-1_3_s, h4.-lh-1_3_s, h5.-lh-1_3_s, h6.-lh-1_3_s, p.-lh-1_3_s, a.-lh-1_3_s, span.-lh-1_3_s, label.-lh-1_3_s, button.-lh-1_3_s {
     line-height: 1.3;
   }
 }
 @media (768px >= width) {
-  h1.-lh-1_5_s, h2.-lh-1_5_s, h3.-lh-1_5_s, h4.-lh-1_5_s, h5.-lh-1_5_s, h6.-lh-1_5_s, p.-lh-1_5_s, a.-lh-1_5_s, span.-lh-1_5_s, label.-lh-1_5_s {
+  h1.-lh-1_5_s, h2.-lh-1_5_s, h3.-lh-1_5_s, h4.-lh-1_5_s, h5.-lh-1_5_s, h6.-lh-1_5_s, p.-lh-1_5_s, a.-lh-1_5_s, span.-lh-1_5_s, label.-lh-1_5_s, button.-lh-1_5_s {
     line-height: 1.5;
   }
 }
 @media (768px >= width) {
-  h1.-lh-1_8_s, h2.-lh-1_8_s, h3.-lh-1_8_s, h4.-lh-1_8_s, h5.-lh-1_8_s, h6.-lh-1_8_s, p.-lh-1_8_s, a.-lh-1_8_s, span.-lh-1_8_s, label.-lh-1_8_s {
+  h1.-lh-1_8_s, h2.-lh-1_8_s, h3.-lh-1_8_s, h4.-lh-1_8_s, h5.-lh-1_8_s, h6.-lh-1_8_s, p.-lh-1_8_s, a.-lh-1_8_s, span.-lh-1_8_s, label.-lh-1_8_s, button.-lh-1_8_s {
     line-height: 1.8;
   }
 }
 @media (768px >= width) {
-  h1.-lh-2_s, h2.-lh-2_s, h3.-lh-2_s, h4.-lh-2_s, h5.-lh-2_s, h6.-lh-2_s, p.-lh-2_s, a.-lh-2_s, span.-lh-2_s, label.-lh-2_s {
+  h1.-lh-2_s, h2.-lh-2_s, h3.-lh-2_s, h4.-lh-2_s, h5.-lh-2_s, h6.-lh-2_s, p.-lh-2_s, a.-lh-2_s, span.-lh-2_s, label.-lh-2_s, button.-lh-2_s {
     line-height: 2;
   }
 }
 @media (768px >= width) {
-  h1.-lh-3_s, h2.-lh-3_s, h3.-lh-3_s, h4.-lh-3_s, h5.-lh-3_s, h6.-lh-3_s, p.-lh-3_s, a.-lh-3_s, span.-lh-3_s, label.-lh-3_s {
+  h1.-lh-3_s, h2.-lh-3_s, h3.-lh-3_s, h4.-lh-3_s, h5.-lh-3_s, h6.-lh-3_s, p.-lh-3_s, a.-lh-3_s, span.-lh-3_s, label.-lh-3_s, button.-lh-3_s {
     line-height: 3;
   }
 }
-h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shadow, a.-shadow, span.-shadow, label.-shadow {
+h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shadow, a.-shadow, span.-shadow, label.-shadow, button.-shadow {
   filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;
 }
-h1.-ws-n, h2.-ws-n, h3.-ws-n, h4.-ws-n, h5.-ws-n, h6.-ws-n, p.-ws-n, a.-ws-n, span.-ws-n, label.-ws-n {
+h1.-ws-n, h2.-ws-n, h3.-ws-n, h4.-ws-n, h5.-ws-n, h6.-ws-n, p.-ws-n, a.-ws-n, span.-ws-n, label.-ws-n, button.-ws-n {
   white-space: nowrap;
 }
-h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b, label.-b {
+h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b, label.-b, button.-b {
   font-weight: bold;
 }
-h1.-f-gothic, h2.-f-gothic, h3.-f-gothic, h4.-f-gothic, h5.-f-gothic, h6.-f-gothic, p.-f-gothic, a.-f-gothic, span.-f-gothic, label.-f-gothic {
+h1.-f-gothic, h2.-f-gothic, h3.-f-gothic, h4.-f-gothic, h5.-f-gothic, h6.-f-gothic, p.-f-gothic, a.-f-gothic, span.-f-gothic, label.-f-gothic, button.-f-gothic {
   font-family: source-han-sans-japanese, sans-serif;
 }
-h1.-f-cezan, h2.-f-cezan, h3.-f-cezan, h4.-f-cezan, h5.-f-cezan, h6.-f-cezan, p.-f-cezan, a.-f-cezan, span.-f-cezan, label.-f-cezan {
+h1.-f-cezan, h2.-f-cezan, h3.-f-cezan, h4.-f-cezan, h5.-f-cezan, h6.-f-cezan, p.-f-cezan, a.-f-cezan, span.-f-cezan, label.-f-cezan, button.-f-cezan {
   font-family: "fot-cezanne-pron", sans-serif;
 }
-h1.-f-mincho, h2.-f-mincho, h3.-f-mincho, h4.-f-mincho, h5.-f-mincho, h6.-f-mincho, p.-f-mincho, a.-f-mincho, span.-f-mincho, label.-f-mincho {
+h1.-f-mincho, h2.-f-mincho, h3.-f-mincho, h4.-f-mincho, h5.-f-mincho, h6.-f-mincho, p.-f-mincho, a.-f-mincho, span.-f-mincho, label.-f-mincho, button.-f-mincho {
   font-family: shippori-mincho, sans-serif;
 }
-h1.-f-gara, h2.-f-gara, h3.-f-gara, h4.-f-gara, h5.-f-gara, h6.-f-gara, p.-f-gara, a.-f-gara, span.-f-gara, label.-f-gara {
+h1.-f-gara, h2.-f-gara, h3.-f-gara, h4.-f-gara, h5.-f-gara, h6.-f-gara, p.-f-gara, a.-f-gara, span.-f-gara, label.-f-gara, button.-f-gara {
   font-family: garamond-premier-pro, serif;
   font-style: italic;
 }
-h1.-f-acumin, h2.-f-acumin, h3.-f-acumin, h4.-f-acumin, h5.-f-acumin, h6.-f-acumin, p.-f-acumin, a.-f-acumin, span.-f-acumin, label.-f-acumin {
+h1.-f-acumin, h2.-f-acumin, h3.-f-acumin, h4.-f-acumin, h5.-f-acumin, h6.-f-acumin, p.-f-acumin, a.-f-acumin, span.-f-acumin, label.-f-acumin, button.-f-acumin {
   font-family: acumin-pro, sans-serif;
   font-weight: bold;
   font-style: italic;
 }
-h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white {
+h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white, button.-white {
   color: #ffffff;
 }
-h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01 {
+h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01, button.-color01 {
   color: #96bbc7;
 }
-h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.-color02, a.-color02, span.-color02, label.-color02 {
+h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.-color02, a.-color02, span.-color02, label.-color02, button.-color02 {
   color: #5a8190;
 }
-h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01, label.-house_c01 {
+h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01, label.-house_c01, button.-house_c01 {
   color: #b6b343;
 }
-h1.-house_c02, h2.-house_c02, h3.-house_c02, h4.-house_c02, h5.-house_c02, h6.-house_c02, p.-house_c02, a.-house_c02, span.-house_c02, label.-house_c02 {
+h1.-house_c02, h2.-house_c02, h3.-house_c02, h4.-house_c02, h5.-house_c02, h6.-house_c02, p.-house_c02, a.-house_c02, span.-house_c02, label.-house_c02, button.-house_c02 {
   color: #6d5847;
 }
-h1.-house_c03, h2.-house_c03, h3.-house_c03, h4.-house_c03, h5.-house_c03, h6.-house_c03, p.-house_c03, a.-house_c03, span.-house_c03, label.-house_c03 {
+h1.-house_c03, h2.-house_c03, h3.-house_c03, h4.-house_c03, h5.-house_c03, h6.-house_c03, p.-house_c03, a.-house_c03, span.-house_c03, label.-house_c03, button.-house_c03 {
   color: #599465;
 }
-h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-house_c04, p.-house_c04, a.-house_c04, span.-house_c04, label.-house_c04 {
+h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-house_c04, p.-house_c04, a.-house_c04, span.-house_c04, label.-house_c04, button.-house_c04 {
   color: #00c5d5;
 }
 
@@ -243,110 +243,110 @@ html {
   font-size: 62.5%;
 }
 
-h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS {
+h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS, button.s-SS {
   font-size: 1rem;
 }
 @media (width >= 768px) {
-  h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS {
+  h1.s-SS, h2.s-SS, h3.s-SS, h4.s-SS, h5.s-SS, h6.s-SS, p.s-SS, a.s-SS, span.s-SS, label.s-SS, button.s-SS {
     font-size: clamp(1rem, 2vw, 1.2rem);
   }
 }
-h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-S {
+h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-S, button.s-S {
   font-size: 1.1rem;
 }
 @media (width >= 768px) {
-  h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-S {
+  h1.s-S, h2.s-S, h3.s-S, h4.s-S, h5.s-S, h6.s-S, p.s-S, a.s-S, span.s-S, label.s-S, button.s-S {
     font-size: clamp(1rem, 1.2vw, 1.5rem);
   }
 }
-h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-M {
+h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-M, button.s-M {
   font-size: 1.2rem;
 }
 @media (width >= 768px) {
-  h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-M {
+  h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-M, button.s-M {
     font-size: clamp(1.2rem, 1.5vw, 1.6rem);
   }
 }
-h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML {
+h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
   font-size: 1.6rem;
 }
 @media (width >= 768px) {
-  h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML {
+  h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
     font-size: clamp(1.6rem, 2vw, 2rem);
   }
 }
 @media (768px >= width) {
-  h1.s-ML.-s14, h2.s-ML.-s14, h3.s-ML.-s14, h4.s-ML.-s14, h5.s-ML.-s14, h6.s-ML.-s14, p.s-ML.-s14, a.s-ML.-s14, span.s-ML.-s14, label.s-ML.-s14 {
+  h1.s-ML.-s14, h2.s-ML.-s14, h3.s-ML.-s14, h4.s-ML.-s14, h5.s-ML.-s14, h6.s-ML.-s14, p.s-ML.-s14, a.s-ML.-s14, span.s-ML.-s14, label.s-ML.-s14, button.s-ML.-s14 {
     font-size: 1.4rem;
   }
 }
-h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L {
+h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L, button.s-L {
   font-size: 1.6rem;
 }
 @media (width >= 768px) {
-  h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L {
+  h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L, button.s-L {
     font-size: clamp(1.6rem, 2vw, 2.2rem);
   }
 }
 @media (768px >= width) {
-  h1.s-L.-s14, h2.s-L.-s14, h3.s-L.-s14, h4.s-L.-s14, h5.s-L.-s14, h6.s-L.-s14, p.s-L.-s14, a.s-L.-s14, span.s-L.-s14, label.s-L.-s14 {
+  h1.s-L.-s14, h2.s-L.-s14, h3.s-L.-s14, h4.s-L.-s14, h5.s-L.-s14, h6.s-L.-s14, p.s-L.-s14, a.s-L.-s14, span.s-L.-s14, label.s-L.-s14, button.s-L.-s14 {
     font-size: 1.4rem;
   }
 }
-h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL {
+h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL, button.s-LL {
   font-size: 2.1rem;
 }
 @media (width >= 768px) {
-  h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL {
+  h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL, label.s-LL, button.s-LL {
     font-size: clamp(1.8rem, 3vw, 3rem);
   }
 }
-h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L {
+h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
   font-size: 2.8rem;
 }
 @media (width >= 768px) {
-  h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L {
+  h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
     font-size: clamp(2.1rem, 3vw, 4.8rem);
   }
 }
-h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome {
+h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome, button.s-kome {
   font-size: 1rem;
   color: #dacebc;
   transform: scale(0.8);
 }
 @media (width >= 768px) {
-  h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome {
+  h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome, button.s-kome {
     font-size: clamp(1rem, 2vw, 1.2rem);
   }
 }
-h1.s-number, h2.s-number, h3.s-number, h4.s-number, h5.s-number, h6.s-number, p.s-number, a.s-number, span.s-number, label.s-number {
+h1.s-number, h2.s-number, h3.s-number, h4.s-number, h5.s-number, h6.s-number, p.s-number, a.s-number, span.s-number, label.s-number, button.s-number {
   font-size: 1.6rem;
 }
 @media (width >= 768px) {
-  h1.s-number, h2.s-number, h3.s-number, h4.s-number, h5.s-number, h6.s-number, p.s-number, a.s-number, span.s-number, label.s-number {
+  h1.s-number, h2.s-number, h3.s-number, h4.s-number, h5.s-number, h6.s-number, p.s-number, a.s-number, span.s-number, label.s-number, button.s-number {
     font-size: clamp(1.6rem, 2.8vw, 5.3rem);
   }
 }
-h1.s-profile, h2.s-profile, h3.s-profile, h4.s-profile, h5.s-profile, h6.s-profile, p.s-profile, a.s-profile, span.s-profile, label.s-profile {
+h1.s-profile, h2.s-profile, h3.s-profile, h4.s-profile, h5.s-profile, h6.s-profile, p.s-profile, a.s-profile, span.s-profile, label.s-profile, button.s-profile {
   font-size: 1.2rem;
 }
 @media (width >= 768px) {
-  h1.s-profile, h2.s-profile, h3.s-profile, h4.s-profile, h5.s-profile, h6.s-profile, p.s-profile, a.s-profile, span.s-profile, label.s-profile {
+  h1.s-profile, h2.s-profile, h3.s-profile, h4.s-profile, h5.s-profile, h6.s-profile, p.s-profile, a.s-profile, span.s-profile, label.s-profile, button.s-profile {
     font-size: clamp(1.2rem, 2.8vw, 1.4rem);
   }
 }
 @media (width >= 768px) {
-  h1.-s-nav.s-S, h2.-s-nav.s-S, h3.-s-nav.s-S, h4.-s-nav.s-S, h5.-s-nav.s-S, h6.-s-nav.s-S, p.-s-nav.s-S, a.-s-nav.s-S, span.-s-nav.s-S, label.-s-nav.s-S {
+  h1.-s-nav.s-S, h2.-s-nav.s-S, h3.-s-nav.s-S, h4.-s-nav.s-S, h5.-s-nav.s-S, h6.-s-nav.s-S, p.-s-nav.s-S, a.-s-nav.s-S, span.-s-nav.s-S, label.-s-nav.s-S, button.-s-nav.s-S {
     font-size: clamp(1rem, 1.2vw, 1.2rem) !important;
   }
 }
 @media (width >= 768px) {
-  h1.-s-nav.s-M, h2.-s-nav.s-M, h3.-s-nav.s-M, h4.-s-nav.s-M, h5.-s-nav.s-M, h6.-s-nav.s-M, p.-s-nav.s-M, a.-s-nav.s-M, span.-s-nav.s-M, label.-s-nav.s-M {
+  h1.-s-nav.s-M, h2.-s-nav.s-M, h3.-s-nav.s-M, h4.-s-nav.s-M, h5.-s-nav.s-M, h6.-s-nav.s-M, p.-s-nav.s-M, a.-s-nav.s-M, span.-s-nav.s-M, label.-s-nav.s-M, button.-s-nav.s-M {
     font-size: clamp(1.2rem, 1.5vw, 1.4rem) !important;
   }
 }
 @media (width >= 768px) {
-  h1.-s-nav.s-L, h2.-s-nav.s-L, h3.-s-nav.s-L, h4.-s-nav.s-L, h5.-s-nav.s-L, h6.-s-nav.s-L, p.-s-nav.s-L, a.-s-nav.s-L, span.-s-nav.s-L, label.-s-nav.s-L {
+  h1.-s-nav.s-L, h2.-s-nav.s-L, h3.-s-nav.s-L, h4.-s-nav.s-L, h5.-s-nav.s-L, h6.-s-nav.s-L, p.-s-nav.s-L, a.-s-nav.s-L, span.-s-nav.s-L, label.-s-nav.s-L, button.-s-nav.s-L {
     font-size: clamp(1.6rem, 1.8vw, 1.8rem) !important;
   }
 }
@@ -4765,12 +4765,22 @@ button:hover {
 }
 .c-btn-top {
   position: fixed;
-  bottom: 10vh;
-  right: 50px;
-  width: 2.5rem;
-  z-index: 99;
+  bottom: 55px;
+  right: 55px;
+  width: 4rem;
+  height: 4rem;
+  line-height: 3.5rem;
+  background: white;
   border: 1px solid #3b3b3b;
-  box-shadow: 1px 1px 11px 0px rgba(59, 59, 59, 0.3294117647);
+  box-shadow: 2px 3px 5px 0px rgba(59, 59, 59, 0.3294117647);
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 99;
+}
+.c-btn-top:hover {
+  color: #ffffff;
+  background: #96bbc7;
+  border-radius: 5px;
 }
 
 /*    Link

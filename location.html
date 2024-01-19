@@ -10,10 +10,8 @@
     <!-- デプロイ前に確認・サンプル -->
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <!--// デプロイ前に確認・サンプル -->
 
     <link rel="stylesheet" href="css/style.css">
-
     <!-- Fonts -->
     <script>
         (function(d) {
@@ -41,7 +39,20 @@
         }
     </script>
 </head>
-<body id="top" class="p-location js_humburgerClose">
+<body class="p-location js_humburgerClose">
+
+    <!-- 固定アイテム / TOP -->
+    <a id="scrollTopBtn" class="c-btn-top -center a-fadeUp -sp5" onclick="scrollToTop()">TOPへ</a>
+    <script>
+    function scrollToTop() {
+        const scrollOptions = {
+            top: 0,
+            behavior: 'smooth'
+        };
+
+        document.body.scrollIntoView(scrollOptions);
+    }
+    </script>
 
     <!-- ハンバーガーメニュー -->
     <nav class="c-hnav a-scroll-on">
@@ -82,7 +93,7 @@
 
     <!-- header -->
     <header id="header" class="c-header pdt1">
-        <div class="c-header-wrapper">
+        <div  class="c-header-wrapper">
             <div class="c-header__popArea">
                 <ul class="c-header__lists">
                     <li class="logo pdb2">
@@ -634,9 +645,6 @@
     </div> -->
     <!-- //固定アイテム -->
 
-    <!-- 固定アイテム / TOP -->
-    <a href="#top" class="c-btn-top">TOPへ<br>戻る</a>
-    <!-- /固定アイテム / TOP -->
 
 </body>
 </html>
