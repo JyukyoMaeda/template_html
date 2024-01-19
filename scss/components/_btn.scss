@@ -78,17 +78,21 @@ button{
 	}
 	&-top{
 		position: fixed;
-    	bottom: 55px;
-		right: 55px;
+    bottom: 19px;
+		right: 19px;
 		width: 4rem;
 		height: 4rem;
 		line-height: 3.5rem;
 		background: white;
-    	border: 1px solid $main-color--b;
+    border: 1px solid $main-color--b;
 		box-shadow: 2px 3px 5px 0px #3b3b3b54;
 		cursor: pointer;
 		transition: all .5s;
 		z-index: 99;
+		@include min(768){
+			bottom: 55px;
+			right: 55px;
+		}
 		&:hover{
 			color: $main-color--w;
 			background: $site-color01;

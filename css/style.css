@@ -5,6 +5,8 @@
 
 html {
   margin: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 body,
@@ -4765,8 +4767,8 @@ button:hover {
 }
 .c-btn-top {
   position: fixed;
-  bottom: 55px;
-  right: 55px;
+  bottom: 19px;
+  right: 19px;
   width: 4rem;
   height: 4rem;
   line-height: 3.5rem;
@@ -4776,6 +4778,12 @@ button:hover {
   cursor: pointer;
   transition: all 0.5s;
   z-index: 99;
+}
+@media (width >= 768px) {
+  .c-btn-top {
+    bottom: 55px;
+    right: 55px;
+  }
 }
 .c-btn-top:hover {
   color: #ffffff;

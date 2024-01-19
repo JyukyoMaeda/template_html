@@ -6,6 +6,8 @@
 }
 html{
 	margin: 0;
+	scroll-behavior: smooth; // スムーズに移動
+	scroll-padding-top: 2rem;// 止まる位置を調整
 }
 body,
 ul,li{
