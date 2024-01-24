@@ -1,0 +1,16 @@
+
+.c-video{
+	.c-videoWrap{
+		padding-top: 56.25%;
+		width: 100%;
+		position: relative;
+		.video,
+		.video-item{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+	}
+}
