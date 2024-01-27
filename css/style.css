@@ -3919,15 +3919,6 @@ button.swiper-pagination-bullet {
   left: 80%;
   transform: scale(0.9);
 }
-.c-contents.-v-item {
-  position: relative;
-}
-.c-contents.-v-item .c-contentsBox.-v-vext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .c-contents.-imgBg {
   position: relative;
 }
@@ -5244,7 +5235,6 @@ a {
   top: 0px;
   left: 0px;
 }
-
 .p-top {
   width: 100vw;
   height: 100vh;
