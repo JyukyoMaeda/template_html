@@ -3110,6 +3110,12 @@ button.swiper-pagination-bullet {
 .c-footer__navArea .c-footer__navLists li a {
   display: block;
 }
+.c-footer__navArea .c-footer__navLists li.-grayOutItem {
+  pointer-events: none;
+}
+.c-footer__navArea .c-footer__navLists li.-grayOutItem span {
+  opacity: 0.2;
+}
 .c-footer__btnArea {
   width: 50%;
   margin: auto;
@@ -3577,6 +3583,30 @@ button.swiper-pagination-bullet {
   height: 1px;
   background: #ffffff;
   transition: 0.5s all;
+}
+.navItem.-comingSoon {
+  pointer-events: none;
+}
+.navItem.-comingSoon a {
+  pointer-events: none;
+}
+.navItem.-comingSoon a::before {
+  content: "coming soom";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60% !important;
+  color: white;
+  background: #96bbc7;
+  display: block;
+  z-index: 1;
+  text-align: center;
+  padding: 3px 0 4px;
+  opacity: 0.9;
+}
+.navItem.-comingSoon a span {
+  opacity: 0.5;
 }
 
 .c-container {

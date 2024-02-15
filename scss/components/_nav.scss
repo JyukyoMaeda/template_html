@@ -342,4 +342,28 @@
 			}
 		}
 	}
+	// 後日実装コンテンツ
+	&.-comingSoon{
+		pointer-events: none;
+		a{
+			pointer-events: none;
+			&::before{
+				content: "coming soom";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60% !important;
+				color: white;
+				// background: #e40012;
+				background: $site-color01;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				padding: 3px 0 4px;
+				opacity: 0.9;
+			}
+			span{opacity: .5;}
+		}
+	}
 }
