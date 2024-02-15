@@ -178,6 +178,10 @@
 							color: $main-color--w;
 						}
 					}
+					// SOLD OUT時に使用する
+					&.-grayOutItem{
+						pointer-events: none;
+					}
 				}
 			}
 		}

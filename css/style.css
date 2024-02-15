@@ -240,6 +240,16 @@ h1.-house_c03, h2.-house_c03, h3.-house_c03, h4.-house_c03, h5.-house_c03, h6.-h
 h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-house_c04, p.-house_c04, a.-house_c04, span.-house_c04, label.-house_c04, button.-house_c04 {
   color: #00c5d5;
 }
+h1.-grayOut, h2.-grayOut, h3.-grayOut, h4.-grayOut, h5.-grayOut, h6.-grayOut, p.-grayOut, a.-grayOut, span.-grayOut, label.-grayOut, button.-grayOut {
+  pointer-events: none;
+  opacity: 0.2;
+}
+h1.-grayOut a, h2.-grayOut a, h3.-grayOut a, h4.-grayOut a, h5.-grayOut a, h6.-grayOut a, p.-grayOut a, a.-grayOut a, span.-grayOut a, label.-grayOut a, button.-grayOut a {
+  pointer-events: none;
+}
+h1.-grayOut a::before, h1.-grayOut a::after, h2.-grayOut a::before, h2.-grayOut a::after, h3.-grayOut a::before, h3.-grayOut a::after, h4.-grayOut a::before, h4.-grayOut a::after, h5.-grayOut a::before, h5.-grayOut a::after, h6.-grayOut a::before, h6.-grayOut a::after, p.-grayOut a::before, p.-grayOut a::after, a.-grayOut a::before, a.-grayOut a::after, span.-grayOut a::before, span.-grayOut a::after, label.-grayOut a::before, label.-grayOut a::after, button.-grayOut a::before, button.-grayOut a::after {
+  pointer-events: none;
+}
 
 html {
   font-size: 62.5%;
@@ -267,6 +277,11 @@ h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-
 @media (width >= 768px) {
   h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-M, button.s-M {
     font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+  }
+}
+@media (768px >= width) {
+  h1.s-M.-s10, h2.s-M.-s10, h3.s-M.-s10, h4.s-M.-s10, h5.s-M.-s10, h6.s-M.-s10, p.s-M.-s10, a.s-M.-s10, span.s-M.-s10, label.s-M.-s10, button.s-M.-s10 {
+    font-size: 1rem;
   }
 }
 h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
@@ -303,12 +318,22 @@ h1.s-LL, h2.s-LL, h3.s-LL, h4.s-LL, h5.s-LL, h6.s-LL, p.s-LL, a.s-LL, span.s-LL,
     font-size: clamp(1.8rem, 3vw, 3rem);
   }
 }
+@media (768px >= width) {
+  h1.s-LL.-s16, h2.s-LL.-s16, h3.s-LL.-s16, h4.s-LL.-s16, h5.s-LL.-s16, h6.s-LL.-s16, p.s-LL.-s16, a.s-LL.-s16, span.s-LL.-s16, label.s-LL.-s16, button.s-LL.-s16 {
+    font-size: 1.6rem;
+  }
+}
 h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
   font-size: 2.8rem;
 }
 @media (width >= 768px) {
   h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
     font-size: clamp(2.1rem, 3vw, 4.8rem);
+  }
+}
+@media (768px >= width) {
+  h1.s-3L.-s18, h2.s-3L.-s18, h3.s-3L.-s18, h4.s-3L.-s18, h5.s-3L.-s18, h6.s-3L.-s18, p.s-3L.-s18, a.s-3L.-s18, span.s-3L.-s18, label.s-3L.-s18, button.s-3L.-s18 {
+    font-size: 1.8rem;
   }
 }
 h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome, button.s-kome {
@@ -2902,6 +2927,9 @@ button.swiper-pagination-bullet {
   .c-header__navArea .c-header__navLists li.-active a, .c-header__navArea .c-header__navLists li.-active span {
     color: #ffffff;
   }
+  .c-header__navArea .c-header__navLists li.-grayOutItem {
+    pointer-events: none;
+  }
 }
 
 .c-footer {
@@ -3012,6 +3040,9 @@ button.swiper-pagination-bullet {
 }
 .c-footer__contactArea .c-footer__contactLists li a {
   display: block;
+}
+.c-footer__contactArea .c-footer__contactLists li.-grayOutItem {
+  pointer-events: none;
 }
 .c-footer__navArea .c-footer__navLists {
   display: flex;
@@ -3431,6 +3462,9 @@ button.swiper-pagination-bullet {
   width: 98%;
   background: #3b3b3b;
 }
+.c-hnav__contactArea.-grayOutItem {
+  pointer-events: none;
+}
 .c-hnav__logo {
   position: absolute;
   bottom: 0%;
@@ -3587,6 +3621,24 @@ button.swiper-pagination-bullet {
     top: 10%;
     left: 33%;
     width: 1.5%;
+  }
+}
+.c-contents.-h-logo .c-contentsBox.-soldOut {
+  top: 36%;
+  left: 45%;
+  transform: rotate(-5deg) translate(-50%, -50%);
+  width: 70%;
+  z-index: 99;
+  filter: drop-shadow(1px 1px 2px rgb(128, 128, 128));
+}
+.c-contents.-h-logo .c-contentsBox.-soldOut img {
+  background: #5a8190;
+}
+@media (width >= 768px) {
+  .c-contents.-h-logo .c-contentsBox.-soldOut {
+    top: 41%;
+    left: 63%;
+    width: 40%;
   }
 }
 .c-contents.-f-slider, .c-contents.-f-view {

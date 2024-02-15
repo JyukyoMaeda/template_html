@@ -62,8 +62,8 @@
                 <li class=""><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
                 <li class="mgb15 mgb15s"><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
                 <!-- 物件概要はここには設置しないこと -->
-                <div class="c-hnav__contactArea">
-                    <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="c-hnav__top navItem -lh-1">
+                <div class="c-hnav__contactArea -grayOutItem">
+                    <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="c-hnav__top navItem -lh-1 -grayOut">
                         <span class="navItem_main s-M">資料請求</span>
                         <br>
                         <span class="navItem_sub02 s-SS">REQUEST</span>
@@ -98,10 +98,14 @@
                             </div>
                             <div class="c-contentsBox -logo-item01"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
                             <div class="c-contentsBox -logo-item02"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div>
+                            <!-- SOLD OUT -->
+                            <div class="c-contentsBox -soldOut">
+                                <img src="images/item/soldout.png" alt="完売御礼 | おかげさまでお契約いただいきました！">
+                            </div>
                         </div>
                     </li>
                     <li class="c-header__contactArea pdb1">
-                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="top-left navItem -lh-1 c-link -c-color">
+                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="top-left navItem -lh-1 c-link -c-color -grayOut">
                             <span class="navItem_main02 s-M -s-nav">資料請求</span>
                             <br>
                             <span class="navItem_sub03 s-SS -s-nav">REQUEST</span>
@@ -267,11 +271,11 @@
                             <span class="contactItem_sub s-SS -s-nav">REQUEST</span>
                         </a>
                     </li>
-                    <li class="contactItem">
-                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712838612" class="-lh-1">
-                            <span class="contactItem_main s-L -s-nav">見学予約</span>
+                    <li class="contactItem -grayOutItem">
+                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712838612" class="-lh-1 -grayOut">
+                            <span class="contactItem_main -color02 s-L -s-nav">見学予約</span>
                             <br>
-                            <span class="contactItem_sub s-SS -s-nav">RESERV</span>
+                            <span class="contactItem_sub -color02 s-SS -s-nav">RESERV</span>
                         </a>
                     </li>
                     <li class="tb-pc contactItem">
@@ -339,7 +343,7 @@
             </nav>
         </div>
         <div class="c-footer__btnArea mgb4 mgb10s">
-            <label class="popup popup-open" for="popup">物件概要はこちら</label>
+            <label class="popup popup-open -grayOut" for="popup">物件概要はこちら</label>
             <!-- 01.物件概要 -->
             <input type="checkbox" id="popup" >
             <label class="popup-overlay" for="popup"></label>
