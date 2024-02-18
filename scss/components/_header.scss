@@ -134,7 +134,6 @@
 				flex-wrap: nowrap;
 				li{
 					position: relative;
-					width: calc(100%/8);
 					height: auto;
 					// padding: 2.1% 0;
 					background: $main-color--w;
@@ -182,6 +181,20 @@
 					&.-grayOutItem{
 						pointer-events: none;
 					}
+				}
+				/*---------------------------------
+					ページ数によってナビゲーション数を変更できる。
+					基本的にheader、navと同数にすること。
+					（物件概要は含まない。）
+				---------------------------------*/
+				&.-col6{
+					li{width: calc(100%/6);}
+				}
+				&.-col7{
+					li{width: calc(100%/7);}
+				}
+				&.-col8{
+					li{width: calc(100%/8);}
 				}
 			}
 		}

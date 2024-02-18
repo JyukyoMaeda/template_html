@@ -2880,10 +2880,14 @@ button.swiper-pagination-bullet {
   .c-header__navArea .c-header__navLists {
     display: flex;
     flex-wrap: nowrap;
+    /*---------------------------------
+    	ページ数によってナビゲーション数を変更できる。
+    	基本的にheader、navと同数にすること。
+    	（物件概要は含まない。）
+    ---------------------------------*/
   }
   .c-header__navArea .c-header__navLists li {
     position: relative;
-    width: 12.5%;
     height: auto;
     background: #ffffff;
     transition: 0.5s all;
@@ -2929,6 +2933,15 @@ button.swiper-pagination-bullet {
   }
   .c-header__navArea .c-header__navLists li.-grayOutItem {
     pointer-events: none;
+  }
+  .c-header__navArea .c-header__navLists.-col6 li {
+    width: 16.6666666667%;
+  }
+  .c-header__navArea .c-header__navLists.-col7 li {
+    width: 14.2857142857%;
+  }
+  .c-header__navArea .c-header__navLists.-col8 li {
+    width: 12.5%;
   }
 }
 
@@ -3056,14 +3069,8 @@ button.swiper-pagination-bullet {
 }
 .c-footer__navArea .c-footer__navLists li {
   position: relative;
-  width: 25%;
   height: auto;
   padding: 2.1% 0;
-}
-@media (width >= 768px) {
-  .c-footer__navArea .c-footer__navLists li {
-    width: 25%;
-  }
 }
 .c-footer__navArea .c-footer__navLists li:first-child::before {
   content: "";
@@ -3115,6 +3122,30 @@ button.swiper-pagination-bullet {
 }
 .c-footer__navArea .c-footer__navLists li.-grayOutItem span {
   opacity: 0.2;
+}
+.c-footer__navArea .c-footer__navLists.-col6 li {
+  width: 33.3333333333%;
+}
+@media (width >= 768px) {
+  .c-footer__navArea .c-footer__navLists.-col6 li {
+    width: 16.6666666667%;
+  }
+}
+.c-footer__navArea .c-footer__navLists.-col7 li {
+  width: 25%;
+}
+@media (width >= 768px) {
+  .c-footer__navArea .c-footer__navLists.-col7 li {
+    width: 14.2857142857%;
+  }
+}
+.c-footer__navArea .c-footer__navLists.-col8 li {
+  width: 25%;
+}
+@media (width >= 768px) {
+  .c-footer__navArea .c-footer__navLists.-col8 li {
+    width: 12.5%;
+  }
 }
 .c-footer__btnArea {
   width: 50%;
