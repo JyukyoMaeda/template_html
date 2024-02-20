@@ -3592,10 +3592,16 @@ button.swiper-pagination-bullet {
 .navItem_footer.-active {
   pointer-events: none;
 }
+.navItem_footer.-active span {
+  color: #5a8190;
+}
 .navItem_footer.-active span::after {
   width: 100%;
   height: 1px;
-  background: #3b3b3b;
+  background: #5a8190;
+}
+.navItem_footer:hover span {
+  color: #96bbc7;
 }
 .navItem_footer:hover span::after {
   width: 100%;
@@ -3603,6 +3609,7 @@ button.swiper-pagination-bullet {
 }
 .navItem_footer span {
   position: relative;
+  transition: all 1s;
 }
 .navItem_footer span::after {
   content: "";
@@ -5459,99 +5466,99 @@ a {
       colorアニメーション
   --------------------------------------- */
 }
-.a-bg-color, .a-text-color, .a-rotate-bg, .a-fade, .a-fadeUp, .a-fadeDown, .a-fadeLeft, .a-fadeRight, .a-flipDown, .a-flipLeft, .a-flipRight, .a-moveUp, .a-moveDown, .a-scOutImg, .a-bird_r, .a-bird_l01, .a-bird_l02, .a-purupuru {
+.a-bg-color, .a-text-color, .a-rotate-bg, .a-fade, .a-fadeUp, .a-fadeDown, .a-fadeLeft, .a-fadeRight, .a-flipDown, .a-flipLeft, .a-flipRight, .a-moveUp, .a-moveDown, .a-scOutImg, .a-bird_r, .a-bird_l01, .a-bird_l02, .a-purupuru, .a-imgChange .no1, .a-imgChange .no2, .a-imgChange .no3 {
   /* ---------------------------------------
       各アニメーション_オプション関係
   --------------------------------------- */
 }
-.a-bg-color.-sp05, .a-text-color.-sp05, .a-rotate-bg.-sp05, .a-fade.-sp05, .a-fadeUp.-sp05, .a-fadeDown.-sp05, .a-fadeLeft.-sp05, .a-fadeRight.-sp05, .a-flipDown.-sp05, .a-flipLeft.-sp05, .a-flipRight.-sp05, .a-moveUp.-sp05, .a-moveDown.-sp05, .a-scOutImg.-sp05, .a-bird_r.-sp05, .a-bird_l01.-sp05, .a-bird_l02.-sp05, .a-purupuru.-sp05 {
+.a-bg-color.-sp05, .a-text-color.-sp05, .a-rotate-bg.-sp05, .a-fade.-sp05, .a-fadeUp.-sp05, .a-fadeDown.-sp05, .a-fadeLeft.-sp05, .a-fadeRight.-sp05, .a-flipDown.-sp05, .a-flipLeft.-sp05, .a-flipRight.-sp05, .a-moveUp.-sp05, .a-moveDown.-sp05, .a-scOutImg.-sp05, .a-bird_r.-sp05, .a-bird_l01.-sp05, .a-bird_l02.-sp05, .a-purupuru.-sp05, .a-imgChange .no1.-sp05, .a-imgChange .no2.-sp05, .a-imgChange .no3.-sp05 {
   animation-duration: 0.5s;
 }
-.a-bg-color.-sp1, .a-text-color.-sp1, .a-rotate-bg.-sp1, .a-fade.-sp1, .a-fadeUp.-sp1, .a-fadeDown.-sp1, .a-fadeLeft.-sp1, .a-fadeRight.-sp1, .a-flipDown.-sp1, .a-flipLeft.-sp1, .a-flipRight.-sp1, .a-moveUp.-sp1, .a-moveDown.-sp1, .a-scOutImg.-sp1, .a-bird_r.-sp1, .a-bird_l01.-sp1, .a-bird_l02.-sp1, .a-purupuru.-sp1 {
+.a-bg-color.-sp1, .a-text-color.-sp1, .a-rotate-bg.-sp1, .a-fade.-sp1, .a-fadeUp.-sp1, .a-fadeDown.-sp1, .a-fadeLeft.-sp1, .a-fadeRight.-sp1, .a-flipDown.-sp1, .a-flipLeft.-sp1, .a-flipRight.-sp1, .a-moveUp.-sp1, .a-moveDown.-sp1, .a-scOutImg.-sp1, .a-bird_r.-sp1, .a-bird_l01.-sp1, .a-bird_l02.-sp1, .a-purupuru.-sp1, .a-imgChange .no1.-sp1, .a-imgChange .no2.-sp1, .a-imgChange .no3.-sp1 {
   animation-duration: 1s;
 }
-.a-bg-color.-sp15, .a-text-color.-sp15, .a-rotate-bg.-sp15, .a-fade.-sp15, .a-fadeUp.-sp15, .a-fadeDown.-sp15, .a-fadeLeft.-sp15, .a-fadeRight.-sp15, .a-flipDown.-sp15, .a-flipLeft.-sp15, .a-flipRight.-sp15, .a-moveUp.-sp15, .a-moveDown.-sp15, .a-scOutImg.-sp15, .a-bird_r.-sp15, .a-bird_l01.-sp15, .a-bird_l02.-sp15, .a-purupuru.-sp15 {
+.a-bg-color.-sp15, .a-text-color.-sp15, .a-rotate-bg.-sp15, .a-fade.-sp15, .a-fadeUp.-sp15, .a-fadeDown.-sp15, .a-fadeLeft.-sp15, .a-fadeRight.-sp15, .a-flipDown.-sp15, .a-flipLeft.-sp15, .a-flipRight.-sp15, .a-moveUp.-sp15, .a-moveDown.-sp15, .a-scOutImg.-sp15, .a-bird_r.-sp15, .a-bird_l01.-sp15, .a-bird_l02.-sp15, .a-purupuru.-sp15, .a-imgChange .no1.-sp15, .a-imgChange .no2.-sp15, .a-imgChange .no3.-sp15 {
   animation-duration: 1.5s;
 }
-.a-bg-color.-sp2, .a-text-color.-sp2, .a-rotate-bg.-sp2, .a-fade.-sp2, .a-fadeUp.-sp2, .a-fadeDown.-sp2, .a-fadeLeft.-sp2, .a-fadeRight.-sp2, .a-flipDown.-sp2, .a-flipLeft.-sp2, .a-flipRight.-sp2, .a-moveUp.-sp2, .a-moveDown.-sp2, .a-scOutImg.-sp2, .a-bird_r.-sp2, .a-bird_l01.-sp2, .a-bird_l02.-sp2, .a-purupuru.-sp2 {
+.a-bg-color.-sp2, .a-text-color.-sp2, .a-rotate-bg.-sp2, .a-fade.-sp2, .a-fadeUp.-sp2, .a-fadeDown.-sp2, .a-fadeLeft.-sp2, .a-fadeRight.-sp2, .a-flipDown.-sp2, .a-flipLeft.-sp2, .a-flipRight.-sp2, .a-moveUp.-sp2, .a-moveDown.-sp2, .a-scOutImg.-sp2, .a-bird_r.-sp2, .a-bird_l01.-sp2, .a-bird_l02.-sp2, .a-purupuru.-sp2, .a-imgChange .no1.-sp2, .a-imgChange .no2.-sp2, .a-imgChange .no3.-sp2 {
   animation-duration: 2s;
 }
-.a-bg-color.-sp25, .a-text-color.-sp25, .a-rotate-bg.-sp25, .a-fade.-sp25, .a-fadeUp.-sp25, .a-fadeDown.-sp25, .a-fadeLeft.-sp25, .a-fadeRight.-sp25, .a-flipDown.-sp25, .a-flipLeft.-sp25, .a-flipRight.-sp25, .a-moveUp.-sp25, .a-moveDown.-sp25, .a-scOutImg.-sp25, .a-bird_r.-sp25, .a-bird_l01.-sp25, .a-bird_l02.-sp25, .a-purupuru.-sp25 {
+.a-bg-color.-sp25, .a-text-color.-sp25, .a-rotate-bg.-sp25, .a-fade.-sp25, .a-fadeUp.-sp25, .a-fadeDown.-sp25, .a-fadeLeft.-sp25, .a-fadeRight.-sp25, .a-flipDown.-sp25, .a-flipLeft.-sp25, .a-flipRight.-sp25, .a-moveUp.-sp25, .a-moveDown.-sp25, .a-scOutImg.-sp25, .a-bird_r.-sp25, .a-bird_l01.-sp25, .a-bird_l02.-sp25, .a-purupuru.-sp25, .a-imgChange .no1.-sp25, .a-imgChange .no2.-sp25, .a-imgChange .no3.-sp25 {
   animation-duration: 2.5s;
 }
-.a-bg-color.-sp3, .a-text-color.-sp3, .a-rotate-bg.-sp3, .a-fade.-sp3, .a-fadeUp.-sp3, .a-fadeDown.-sp3, .a-fadeLeft.-sp3, .a-fadeRight.-sp3, .a-flipDown.-sp3, .a-flipLeft.-sp3, .a-flipRight.-sp3, .a-moveUp.-sp3, .a-moveDown.-sp3, .a-scOutImg.-sp3, .a-bird_r.-sp3, .a-bird_l01.-sp3, .a-bird_l02.-sp3, .a-purupuru.-sp3 {
+.a-bg-color.-sp3, .a-text-color.-sp3, .a-rotate-bg.-sp3, .a-fade.-sp3, .a-fadeUp.-sp3, .a-fadeDown.-sp3, .a-fadeLeft.-sp3, .a-fadeRight.-sp3, .a-flipDown.-sp3, .a-flipLeft.-sp3, .a-flipRight.-sp3, .a-moveUp.-sp3, .a-moveDown.-sp3, .a-scOutImg.-sp3, .a-bird_r.-sp3, .a-bird_l01.-sp3, .a-bird_l02.-sp3, .a-purupuru.-sp3, .a-imgChange .no1.-sp3, .a-imgChange .no2.-sp3, .a-imgChange .no3.-sp3 {
   animation-duration: 3s;
 }
-.a-bg-color.-sp35, .a-text-color.-sp35, .a-rotate-bg.-sp35, .a-fade.-sp35, .a-fadeUp.-sp35, .a-fadeDown.-sp35, .a-fadeLeft.-sp35, .a-fadeRight.-sp35, .a-flipDown.-sp35, .a-flipLeft.-sp35, .a-flipRight.-sp35, .a-moveUp.-sp35, .a-moveDown.-sp35, .a-scOutImg.-sp35, .a-bird_r.-sp35, .a-bird_l01.-sp35, .a-bird_l02.-sp35, .a-purupuru.-sp35 {
+.a-bg-color.-sp35, .a-text-color.-sp35, .a-rotate-bg.-sp35, .a-fade.-sp35, .a-fadeUp.-sp35, .a-fadeDown.-sp35, .a-fadeLeft.-sp35, .a-fadeRight.-sp35, .a-flipDown.-sp35, .a-flipLeft.-sp35, .a-flipRight.-sp35, .a-moveUp.-sp35, .a-moveDown.-sp35, .a-scOutImg.-sp35, .a-bird_r.-sp35, .a-bird_l01.-sp35, .a-bird_l02.-sp35, .a-purupuru.-sp35, .a-imgChange .no1.-sp35, .a-imgChange .no2.-sp35, .a-imgChange .no3.-sp35 {
   animation-duration: 3.5s;
 }
-.a-bg-color.-sp4, .a-text-color.-sp4, .a-rotate-bg.-sp4, .a-fade.-sp4, .a-fadeUp.-sp4, .a-fadeDown.-sp4, .a-fadeLeft.-sp4, .a-fadeRight.-sp4, .a-flipDown.-sp4, .a-flipLeft.-sp4, .a-flipRight.-sp4, .a-moveUp.-sp4, .a-moveDown.-sp4, .a-scOutImg.-sp4, .a-bird_r.-sp4, .a-bird_l01.-sp4, .a-bird_l02.-sp4, .a-purupuru.-sp4 {
+.a-bg-color.-sp4, .a-text-color.-sp4, .a-rotate-bg.-sp4, .a-fade.-sp4, .a-fadeUp.-sp4, .a-fadeDown.-sp4, .a-fadeLeft.-sp4, .a-fadeRight.-sp4, .a-flipDown.-sp4, .a-flipLeft.-sp4, .a-flipRight.-sp4, .a-moveUp.-sp4, .a-moveDown.-sp4, .a-scOutImg.-sp4, .a-bird_r.-sp4, .a-bird_l01.-sp4, .a-bird_l02.-sp4, .a-purupuru.-sp4, .a-imgChange .no1.-sp4, .a-imgChange .no2.-sp4, .a-imgChange .no3.-sp4 {
   animation-duration: 4s;
 }
-.a-bg-color.-sp45, .a-text-color.-sp45, .a-rotate-bg.-sp45, .a-fade.-sp45, .a-fadeUp.-sp45, .a-fadeDown.-sp45, .a-fadeLeft.-sp45, .a-fadeRight.-sp45, .a-flipDown.-sp45, .a-flipLeft.-sp45, .a-flipRight.-sp45, .a-moveUp.-sp45, .a-moveDown.-sp45, .a-scOutImg.-sp45, .a-bird_r.-sp45, .a-bird_l01.-sp45, .a-bird_l02.-sp45, .a-purupuru.-sp45 {
+.a-bg-color.-sp45, .a-text-color.-sp45, .a-rotate-bg.-sp45, .a-fade.-sp45, .a-fadeUp.-sp45, .a-fadeDown.-sp45, .a-fadeLeft.-sp45, .a-fadeRight.-sp45, .a-flipDown.-sp45, .a-flipLeft.-sp45, .a-flipRight.-sp45, .a-moveUp.-sp45, .a-moveDown.-sp45, .a-scOutImg.-sp45, .a-bird_r.-sp45, .a-bird_l01.-sp45, .a-bird_l02.-sp45, .a-purupuru.-sp45, .a-imgChange .no1.-sp45, .a-imgChange .no2.-sp45, .a-imgChange .no3.-sp45 {
   animation-duration: 4.5s;
 }
-.a-bg-color.-sp5, .a-text-color.-sp5, .a-rotate-bg.-sp5, .a-fade.-sp5, .a-fadeUp.-sp5, .a-fadeDown.-sp5, .a-fadeLeft.-sp5, .a-fadeRight.-sp5, .a-flipDown.-sp5, .a-flipLeft.-sp5, .a-flipRight.-sp5, .a-moveUp.-sp5, .a-moveDown.-sp5, .a-scOutImg.-sp5, .a-bird_r.-sp5, .a-bird_l01.-sp5, .a-bird_l02.-sp5, .a-purupuru.-sp5 {
+.a-bg-color.-sp5, .a-text-color.-sp5, .a-rotate-bg.-sp5, .a-fade.-sp5, .a-fadeUp.-sp5, .a-fadeDown.-sp5, .a-fadeLeft.-sp5, .a-fadeRight.-sp5, .a-flipDown.-sp5, .a-flipLeft.-sp5, .a-flipRight.-sp5, .a-moveUp.-sp5, .a-moveDown.-sp5, .a-scOutImg.-sp5, .a-bird_r.-sp5, .a-bird_l01.-sp5, .a-bird_l02.-sp5, .a-purupuru.-sp5, .a-imgChange .no1.-sp5, .a-imgChange .no2.-sp5, .a-imgChange .no3.-sp5 {
   animation-duration: 5s;
 }
-.a-bg-color.-sp55, .a-text-color.-sp55, .a-rotate-bg.-sp55, .a-fade.-sp55, .a-fadeUp.-sp55, .a-fadeDown.-sp55, .a-fadeLeft.-sp55, .a-fadeRight.-sp55, .a-flipDown.-sp55, .a-flipLeft.-sp55, .a-flipRight.-sp55, .a-moveUp.-sp55, .a-moveDown.-sp55, .a-scOutImg.-sp55, .a-bird_r.-sp55, .a-bird_l01.-sp55, .a-bird_l02.-sp55, .a-purupuru.-sp55 {
+.a-bg-color.-sp55, .a-text-color.-sp55, .a-rotate-bg.-sp55, .a-fade.-sp55, .a-fadeUp.-sp55, .a-fadeDown.-sp55, .a-fadeLeft.-sp55, .a-fadeRight.-sp55, .a-flipDown.-sp55, .a-flipLeft.-sp55, .a-flipRight.-sp55, .a-moveUp.-sp55, .a-moveDown.-sp55, .a-scOutImg.-sp55, .a-bird_r.-sp55, .a-bird_l01.-sp55, .a-bird_l02.-sp55, .a-purupuru.-sp55, .a-imgChange .no1.-sp55, .a-imgChange .no2.-sp55, .a-imgChange .no3.-sp55 {
   animation-duration: 5.5s;
 }
-.a-bg-color.-sp6, .a-text-color.-sp6, .a-rotate-bg.-sp6, .a-fade.-sp6, .a-fadeUp.-sp6, .a-fadeDown.-sp6, .a-fadeLeft.-sp6, .a-fadeRight.-sp6, .a-flipDown.-sp6, .a-flipLeft.-sp6, .a-flipRight.-sp6, .a-moveUp.-sp6, .a-moveDown.-sp6, .a-scOutImg.-sp6, .a-bird_r.-sp6, .a-bird_l01.-sp6, .a-bird_l02.-sp6, .a-purupuru.-sp6 {
+.a-bg-color.-sp6, .a-text-color.-sp6, .a-rotate-bg.-sp6, .a-fade.-sp6, .a-fadeUp.-sp6, .a-fadeDown.-sp6, .a-fadeLeft.-sp6, .a-fadeRight.-sp6, .a-flipDown.-sp6, .a-flipLeft.-sp6, .a-flipRight.-sp6, .a-moveUp.-sp6, .a-moveDown.-sp6, .a-scOutImg.-sp6, .a-bird_r.-sp6, .a-bird_l01.-sp6, .a-bird_l02.-sp6, .a-purupuru.-sp6, .a-imgChange .no1.-sp6, .a-imgChange .no2.-sp6, .a-imgChange .no3.-sp6 {
   animation-duration: 6s;
 }
-.a-bg-color.-sp65, .a-text-color.-sp65, .a-rotate-bg.-sp65, .a-fade.-sp65, .a-fadeUp.-sp65, .a-fadeDown.-sp65, .a-fadeLeft.-sp65, .a-fadeRight.-sp65, .a-flipDown.-sp65, .a-flipLeft.-sp65, .a-flipRight.-sp65, .a-moveUp.-sp65, .a-moveDown.-sp65, .a-scOutImg.-sp65, .a-bird_r.-sp65, .a-bird_l01.-sp65, .a-bird_l02.-sp65, .a-purupuru.-sp65 {
+.a-bg-color.-sp65, .a-text-color.-sp65, .a-rotate-bg.-sp65, .a-fade.-sp65, .a-fadeUp.-sp65, .a-fadeDown.-sp65, .a-fadeLeft.-sp65, .a-fadeRight.-sp65, .a-flipDown.-sp65, .a-flipLeft.-sp65, .a-flipRight.-sp65, .a-moveUp.-sp65, .a-moveDown.-sp65, .a-scOutImg.-sp65, .a-bird_r.-sp65, .a-bird_l01.-sp65, .a-bird_l02.-sp65, .a-purupuru.-sp65, .a-imgChange .no1.-sp65, .a-imgChange .no2.-sp65, .a-imgChange .no3.-sp65 {
   animation-duration: 6.5s;
 }
-.a-bg-color.-sp7, .a-text-color.-sp7, .a-rotate-bg.-sp7, .a-fade.-sp7, .a-fadeUp.-sp7, .a-fadeDown.-sp7, .a-fadeLeft.-sp7, .a-fadeRight.-sp7, .a-flipDown.-sp7, .a-flipLeft.-sp7, .a-flipRight.-sp7, .a-moveUp.-sp7, .a-moveDown.-sp7, .a-scOutImg.-sp7, .a-bird_r.-sp7, .a-bird_l01.-sp7, .a-bird_l02.-sp7, .a-purupuru.-sp7 {
+.a-bg-color.-sp7, .a-text-color.-sp7, .a-rotate-bg.-sp7, .a-fade.-sp7, .a-fadeUp.-sp7, .a-fadeDown.-sp7, .a-fadeLeft.-sp7, .a-fadeRight.-sp7, .a-flipDown.-sp7, .a-flipLeft.-sp7, .a-flipRight.-sp7, .a-moveUp.-sp7, .a-moveDown.-sp7, .a-scOutImg.-sp7, .a-bird_r.-sp7, .a-bird_l01.-sp7, .a-bird_l02.-sp7, .a-purupuru.-sp7, .a-imgChange .no1.-sp7, .a-imgChange .no2.-sp7, .a-imgChange .no3.-sp7 {
   animation-duration: 7s;
 }
-.a-bg-color.-sp75, .a-text-color.-sp75, .a-rotate-bg.-sp75, .a-fade.-sp75, .a-fadeUp.-sp75, .a-fadeDown.-sp75, .a-fadeLeft.-sp75, .a-fadeRight.-sp75, .a-flipDown.-sp75, .a-flipLeft.-sp75, .a-flipRight.-sp75, .a-moveUp.-sp75, .a-moveDown.-sp75, .a-scOutImg.-sp75, .a-bird_r.-sp75, .a-bird_l01.-sp75, .a-bird_l02.-sp75, .a-purupuru.-sp75 {
+.a-bg-color.-sp75, .a-text-color.-sp75, .a-rotate-bg.-sp75, .a-fade.-sp75, .a-fadeUp.-sp75, .a-fadeDown.-sp75, .a-fadeLeft.-sp75, .a-fadeRight.-sp75, .a-flipDown.-sp75, .a-flipLeft.-sp75, .a-flipRight.-sp75, .a-moveUp.-sp75, .a-moveDown.-sp75, .a-scOutImg.-sp75, .a-bird_r.-sp75, .a-bird_l01.-sp75, .a-bird_l02.-sp75, .a-purupuru.-sp75, .a-imgChange .no1.-sp75, .a-imgChange .no2.-sp75, .a-imgChange .no3.-sp75 {
   animation-duration: 7.5s;
 }
-.a-bg-color.-sp8, .a-text-color.-sp8, .a-rotate-bg.-sp8, .a-fade.-sp8, .a-fadeUp.-sp8, .a-fadeDown.-sp8, .a-fadeLeft.-sp8, .a-fadeRight.-sp8, .a-flipDown.-sp8, .a-flipLeft.-sp8, .a-flipRight.-sp8, .a-moveUp.-sp8, .a-moveDown.-sp8, .a-scOutImg.-sp8, .a-bird_r.-sp8, .a-bird_l01.-sp8, .a-bird_l02.-sp8, .a-purupuru.-sp8 {
+.a-bg-color.-sp8, .a-text-color.-sp8, .a-rotate-bg.-sp8, .a-fade.-sp8, .a-fadeUp.-sp8, .a-fadeDown.-sp8, .a-fadeLeft.-sp8, .a-fadeRight.-sp8, .a-flipDown.-sp8, .a-flipLeft.-sp8, .a-flipRight.-sp8, .a-moveUp.-sp8, .a-moveDown.-sp8, .a-scOutImg.-sp8, .a-bird_r.-sp8, .a-bird_l01.-sp8, .a-bird_l02.-sp8, .a-purupuru.-sp8, .a-imgChange .no1.-sp8, .a-imgChange .no2.-sp8, .a-imgChange .no3.-sp8 {
   animation-duration: 8s;
 }
-.a-bg-color.-sp85, .a-text-color.-sp85, .a-rotate-bg.-sp85, .a-fade.-sp85, .a-fadeUp.-sp85, .a-fadeDown.-sp85, .a-fadeLeft.-sp85, .a-fadeRight.-sp85, .a-flipDown.-sp85, .a-flipLeft.-sp85, .a-flipRight.-sp85, .a-moveUp.-sp85, .a-moveDown.-sp85, .a-scOutImg.-sp85, .a-bird_r.-sp85, .a-bird_l01.-sp85, .a-bird_l02.-sp85, .a-purupuru.-sp85 {
+.a-bg-color.-sp85, .a-text-color.-sp85, .a-rotate-bg.-sp85, .a-fade.-sp85, .a-fadeUp.-sp85, .a-fadeDown.-sp85, .a-fadeLeft.-sp85, .a-fadeRight.-sp85, .a-flipDown.-sp85, .a-flipLeft.-sp85, .a-flipRight.-sp85, .a-moveUp.-sp85, .a-moveDown.-sp85, .a-scOutImg.-sp85, .a-bird_r.-sp85, .a-bird_l01.-sp85, .a-bird_l02.-sp85, .a-purupuru.-sp85, .a-imgChange .no1.-sp85, .a-imgChange .no2.-sp85, .a-imgChange .no3.-sp85 {
   animation-duration: 8.5s;
 }
-.a-bg-color.-sp9, .a-text-color.-sp9, .a-rotate-bg.-sp9, .a-fade.-sp9, .a-fadeUp.-sp9, .a-fadeDown.-sp9, .a-fadeLeft.-sp9, .a-fadeRight.-sp9, .a-flipDown.-sp9, .a-flipLeft.-sp9, .a-flipRight.-sp9, .a-moveUp.-sp9, .a-moveDown.-sp9, .a-scOutImg.-sp9, .a-bird_r.-sp9, .a-bird_l01.-sp9, .a-bird_l02.-sp9, .a-purupuru.-sp9 {
+.a-bg-color.-sp9, .a-text-color.-sp9, .a-rotate-bg.-sp9, .a-fade.-sp9, .a-fadeUp.-sp9, .a-fadeDown.-sp9, .a-fadeLeft.-sp9, .a-fadeRight.-sp9, .a-flipDown.-sp9, .a-flipLeft.-sp9, .a-flipRight.-sp9, .a-moveUp.-sp9, .a-moveDown.-sp9, .a-scOutImg.-sp9, .a-bird_r.-sp9, .a-bird_l01.-sp9, .a-bird_l02.-sp9, .a-purupuru.-sp9, .a-imgChange .no1.-sp9, .a-imgChange .no2.-sp9, .a-imgChange .no3.-sp9 {
   animation-duration: 9s;
 }
-.a-bg-color.-sp95, .a-text-color.-sp95, .a-rotate-bg.-sp95, .a-fade.-sp95, .a-fadeUp.-sp95, .a-fadeDown.-sp95, .a-fadeLeft.-sp95, .a-fadeRight.-sp95, .a-flipDown.-sp95, .a-flipLeft.-sp95, .a-flipRight.-sp95, .a-moveUp.-sp95, .a-moveDown.-sp95, .a-scOutImg.-sp95, .a-bird_r.-sp95, .a-bird_l01.-sp95, .a-bird_l02.-sp95, .a-purupuru.-sp95 {
+.a-bg-color.-sp95, .a-text-color.-sp95, .a-rotate-bg.-sp95, .a-fade.-sp95, .a-fadeUp.-sp95, .a-fadeDown.-sp95, .a-fadeLeft.-sp95, .a-fadeRight.-sp95, .a-flipDown.-sp95, .a-flipLeft.-sp95, .a-flipRight.-sp95, .a-moveUp.-sp95, .a-moveDown.-sp95, .a-scOutImg.-sp95, .a-bird_r.-sp95, .a-bird_l01.-sp95, .a-bird_l02.-sp95, .a-purupuru.-sp95, .a-imgChange .no1.-sp95, .a-imgChange .no2.-sp95, .a-imgChange .no3.-sp95 {
   animation-duration: 9.5s;
 }
-.a-bg-color.-sp10, .a-text-color.-sp10, .a-rotate-bg.-sp10, .a-fade.-sp10, .a-fadeUp.-sp10, .a-fadeDown.-sp10, .a-fadeLeft.-sp10, .a-fadeRight.-sp10, .a-flipDown.-sp10, .a-flipLeft.-sp10, .a-flipRight.-sp10, .a-moveUp.-sp10, .a-moveDown.-sp10, .a-scOutImg.-sp10, .a-bird_r.-sp10, .a-bird_l01.-sp10, .a-bird_l02.-sp10, .a-purupuru.-sp10 {
+.a-bg-color.-sp10, .a-text-color.-sp10, .a-rotate-bg.-sp10, .a-fade.-sp10, .a-fadeUp.-sp10, .a-fadeDown.-sp10, .a-fadeLeft.-sp10, .a-fadeRight.-sp10, .a-flipDown.-sp10, .a-flipLeft.-sp10, .a-flipRight.-sp10, .a-moveUp.-sp10, .a-moveDown.-sp10, .a-scOutImg.-sp10, .a-bird_r.-sp10, .a-bird_l01.-sp10, .a-bird_l02.-sp10, .a-purupuru.-sp10, .a-imgChange .no1.-sp10, .a-imgChange .no2.-sp10, .a-imgChange .no3.-sp10 {
   animation-duration: 10s;
 }
-.a-bg-color.-sp10 img, .a-text-color.-sp10 img, .a-rotate-bg.-sp10 img, .a-fade.-sp10 img, .a-fadeUp.-sp10 img, .a-fadeDown.-sp10 img, .a-fadeLeft.-sp10 img, .a-fadeRight.-sp10 img, .a-flipDown.-sp10 img, .a-flipLeft.-sp10 img, .a-flipRight.-sp10 img, .a-moveUp.-sp10 img, .a-moveDown.-sp10 img, .a-scOutImg.-sp10 img, .a-bird_r.-sp10 img, .a-bird_l01.-sp10 img, .a-bird_l02.-sp10 img, .a-purupuru.-sp10 img {
+.a-bg-color.-sp10 img, .a-text-color.-sp10 img, .a-rotate-bg.-sp10 img, .a-fade.-sp10 img, .a-fadeUp.-sp10 img, .a-fadeDown.-sp10 img, .a-fadeLeft.-sp10 img, .a-fadeRight.-sp10 img, .a-flipDown.-sp10 img, .a-flipLeft.-sp10 img, .a-flipRight.-sp10 img, .a-moveUp.-sp10 img, .a-moveDown.-sp10 img, .a-scOutImg.-sp10 img, .a-bird_r.-sp10 img, .a-bird_l01.-sp10 img, .a-bird_l02.-sp10 img, .a-purupuru.-sp10 img, .a-imgChange .no1.-sp10 img, .a-imgChange .no2.-sp10 img, .a-imgChange .no3.-sp10 img {
   animation-duration: 10s;
 }
-.a-bg-color.-sc20, .a-text-color.-sc20, .a-rotate-bg.-sc20, .a-fade.-sc20, .a-fadeUp.-sc20, .a-fadeDown.-sc20, .a-fadeLeft.-sc20, .a-fadeRight.-sc20, .a-flipDown.-sc20, .a-flipLeft.-sc20, .a-flipRight.-sc20, .a-moveUp.-sc20, .a-moveDown.-sc20, .a-scOutImg.-sc20, .a-bird_r.-sc20, .a-bird_l01.-sc20, .a-bird_l02.-sc20, .a-purupuru.-sc20 {
+.a-bg-color.-sc20, .a-text-color.-sc20, .a-rotate-bg.-sc20, .a-fade.-sc20, .a-fadeUp.-sc20, .a-fadeDown.-sc20, .a-fadeLeft.-sc20, .a-fadeRight.-sc20, .a-flipDown.-sc20, .a-flipLeft.-sc20, .a-flipRight.-sc20, .a-moveUp.-sc20, .a-moveDown.-sc20, .a-scOutImg.-sc20, .a-bird_r.-sc20, .a-bird_l01.-sc20, .a-bird_l02.-sc20, .a-purupuru.-sc20, .a-imgChange .no1.-sc20, .a-imgChange .no2.-sc20, .a-imgChange .no3.-sc20 {
   animation-timeline: view();
   animation-range: entry -20% contain 20%;
 }
-.a-bg-color.-sc20 img, .a-text-color.-sc20 img, .a-rotate-bg.-sc20 img, .a-fade.-sc20 img, .a-fadeUp.-sc20 img, .a-fadeDown.-sc20 img, .a-fadeLeft.-sc20 img, .a-fadeRight.-sc20 img, .a-flipDown.-sc20 img, .a-flipLeft.-sc20 img, .a-flipRight.-sc20 img, .a-moveUp.-sc20 img, .a-moveDown.-sc20 img, .a-scOutImg.-sc20 img, .a-bird_r.-sc20 img, .a-bird_l01.-sc20 img, .a-bird_l02.-sc20 img, .a-purupuru.-sc20 img {
+.a-bg-color.-sc20 img, .a-text-color.-sc20 img, .a-rotate-bg.-sc20 img, .a-fade.-sc20 img, .a-fadeUp.-sc20 img, .a-fadeDown.-sc20 img, .a-fadeLeft.-sc20 img, .a-fadeRight.-sc20 img, .a-flipDown.-sc20 img, .a-flipLeft.-sc20 img, .a-flipRight.-sc20 img, .a-moveUp.-sc20 img, .a-moveDown.-sc20 img, .a-scOutImg.-sc20 img, .a-bird_r.-sc20 img, .a-bird_l01.-sc20 img, .a-bird_l02.-sc20 img, .a-purupuru.-sc20 img, .a-imgChange .no1.-sc20 img, .a-imgChange .no2.-sc20 img, .a-imgChange .no3.-sc20 img {
   animation-timeline: view();
   animation-range: entry -20% contain 20%;
 }
-.a-bg-color.-sc30, .a-text-color.-sc30, .a-rotate-bg.-sc30, .a-fade.-sc30, .a-fadeUp.-sc30, .a-fadeDown.-sc30, .a-fadeLeft.-sc30, .a-fadeRight.-sc30, .a-flipDown.-sc30, .a-flipLeft.-sc30, .a-flipRight.-sc30, .a-moveUp.-sc30, .a-moveDown.-sc30, .a-scOutImg.-sc30, .a-bird_r.-sc30, .a-bird_l01.-sc30, .a-bird_l02.-sc30, .a-purupuru.-sc30 {
+.a-bg-color.-sc30, .a-text-color.-sc30, .a-rotate-bg.-sc30, .a-fade.-sc30, .a-fadeUp.-sc30, .a-fadeDown.-sc30, .a-fadeLeft.-sc30, .a-fadeRight.-sc30, .a-flipDown.-sc30, .a-flipLeft.-sc30, .a-flipRight.-sc30, .a-moveUp.-sc30, .a-moveDown.-sc30, .a-scOutImg.-sc30, .a-bird_r.-sc30, .a-bird_l01.-sc30, .a-bird_l02.-sc30, .a-purupuru.-sc30, .a-imgChange .no1.-sc30, .a-imgChange .no2.-sc30, .a-imgChange .no3.-sc30 {
   animation-timeline: view();
   animation-range: entry -10% contain 30%;
 }
-.a-bg-color.-sc30 img, .a-text-color.-sc30 img, .a-rotate-bg.-sc30 img, .a-fade.-sc30 img, .a-fadeUp.-sc30 img, .a-fadeDown.-sc30 img, .a-fadeLeft.-sc30 img, .a-fadeRight.-sc30 img, .a-flipDown.-sc30 img, .a-flipLeft.-sc30 img, .a-flipRight.-sc30 img, .a-moveUp.-sc30 img, .a-moveDown.-sc30 img, .a-scOutImg.-sc30 img, .a-bird_r.-sc30 img, .a-bird_l01.-sc30 img, .a-bird_l02.-sc30 img, .a-purupuru.-sc30 img {
+.a-bg-color.-sc30 img, .a-text-color.-sc30 img, .a-rotate-bg.-sc30 img, .a-fade.-sc30 img, .a-fadeUp.-sc30 img, .a-fadeDown.-sc30 img, .a-fadeLeft.-sc30 img, .a-fadeRight.-sc30 img, .a-flipDown.-sc30 img, .a-flipLeft.-sc30 img, .a-flipRight.-sc30 img, .a-moveUp.-sc30 img, .a-moveDown.-sc30 img, .a-scOutImg.-sc30 img, .a-bird_r.-sc30 img, .a-bird_l01.-sc30 img, .a-bird_l02.-sc30 img, .a-purupuru.-sc30 img, .a-imgChange .no1.-sc30 img, .a-imgChange .no2.-sc30 img, .a-imgChange .no3.-sc30 img {
   animation-timeline: view();
   animation-range: entry -10% contain 30%;
 }
-.a-bg-color.-sc40, .a-text-color.-sc40, .a-rotate-bg.-sc40, .a-fade.-sc40, .a-fadeUp.-sc40, .a-fadeDown.-sc40, .a-fadeLeft.-sc40, .a-fadeRight.-sc40, .a-flipDown.-sc40, .a-flipLeft.-sc40, .a-flipRight.-sc40, .a-moveUp.-sc40, .a-moveDown.-sc40, .a-scOutImg.-sc40, .a-bird_r.-sc40, .a-bird_l01.-sc40, .a-bird_l02.-sc40, .a-purupuru.-sc40 {
+.a-bg-color.-sc40, .a-text-color.-sc40, .a-rotate-bg.-sc40, .a-fade.-sc40, .a-fadeUp.-sc40, .a-fadeDown.-sc40, .a-fadeLeft.-sc40, .a-fadeRight.-sc40, .a-flipDown.-sc40, .a-flipLeft.-sc40, .a-flipRight.-sc40, .a-moveUp.-sc40, .a-moveDown.-sc40, .a-scOutImg.-sc40, .a-bird_r.-sc40, .a-bird_l01.-sc40, .a-bird_l02.-sc40, .a-purupuru.-sc40, .a-imgChange .no1.-sc40, .a-imgChange .no2.-sc40, .a-imgChange .no3.-sc40 {
   animation-timeline: view();
   animation-range: entry 0% contain 40%;
 }
-.a-bg-color.-sc40 img, .a-text-color.-sc40 img, .a-rotate-bg.-sc40 img, .a-fade.-sc40 img, .a-fadeUp.-sc40 img, .a-fadeDown.-sc40 img, .a-fadeLeft.-sc40 img, .a-fadeRight.-sc40 img, .a-flipDown.-sc40 img, .a-flipLeft.-sc40 img, .a-flipRight.-sc40 img, .a-moveUp.-sc40 img, .a-moveDown.-sc40 img, .a-scOutImg.-sc40 img, .a-bird_r.-sc40 img, .a-bird_l01.-sc40 img, .a-bird_l02.-sc40 img, .a-purupuru.-sc40 img {
+.a-bg-color.-sc40 img, .a-text-color.-sc40 img, .a-rotate-bg.-sc40 img, .a-fade.-sc40 img, .a-fadeUp.-sc40 img, .a-fadeDown.-sc40 img, .a-fadeLeft.-sc40 img, .a-fadeRight.-sc40 img, .a-flipDown.-sc40 img, .a-flipLeft.-sc40 img, .a-flipRight.-sc40 img, .a-moveUp.-sc40 img, .a-moveDown.-sc40 img, .a-scOutImg.-sc40 img, .a-bird_r.-sc40 img, .a-bird_l01.-sc40 img, .a-bird_l02.-sc40 img, .a-purupuru.-sc40 img, .a-imgChange .no1.-sc40 img, .a-imgChange .no2.-sc40 img, .a-imgChange .no3.-sc40 img {
   animation-timeline: view();
   animation-range: entry 0% contain 40%;
 }
-.a-bg-color.-sh, .a-text-color.-sh, .a-rotate-bg.-sh, .a-fade.-sh, .a-fadeUp.-sh, .a-fadeDown.-sh, .a-fadeLeft.-sh, .a-fadeRight.-sh, .a-flipDown.-sh, .a-flipLeft.-sh, .a-flipRight.-sh, .a-moveUp.-sh, .a-moveDown.-sh, .a-scOutImg.-sh, .a-bird_r.-sh, .a-bird_l01.-sh, .a-bird_l02.-sh, .a-purupuru.-sh {
+.a-bg-color.-sh, .a-text-color.-sh, .a-rotate-bg.-sh, .a-fade.-sh, .a-fadeUp.-sh, .a-fadeDown.-sh, .a-fadeLeft.-sh, .a-fadeRight.-sh, .a-flipDown.-sh, .a-flipLeft.-sh, .a-flipRight.-sh, .a-moveUp.-sh, .a-moveDown.-sh, .a-scOutImg.-sh, .a-bird_r.-sh, .a-bird_l01.-sh, .a-bird_l02.-sh, .a-purupuru.-sh, .a-imgChange .no1.-sh, .a-imgChange .no2.-sh, .a-imgChange .no3.-sh {
   filter: drop-shadow(2px 2px 2px gray);
 }
 
@@ -6003,6 +6010,35 @@ a {
   }
   100% {
     transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+.a {
+  /* ---------------------------------------
+      fade-Imgアニメーション
+  --------------------------------------- */
+}
+.a-imgChange .bg {
+  position: relative;
+}
+.a-imgChange .no1,
+.a-imgChange .no2,
+.a-imgChange .no3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation-name: ImagesChangeAnime;
+  animation-fill-mode: forwards;
+}
+@keyframes ImagesChangeAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
