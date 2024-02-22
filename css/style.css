@@ -4798,7 +4798,7 @@ button.swiper-pagination-bullet {
   border-left: 1px solid #a0a0a0;
   border-right: 1px solid #a0a0a0;
   border-bottom: 1px solid #ffffff;
-  box-shadow: 2px -2px 2px 0px rgba(149, 149, 149, 0.4901960784);
+  box-shadow: 2px -2px 2px 0px rgba(149, 149, 149, 0.13);
   border-radius: 3px 3px 0 0;
   transition: all 0.3s ease;
 }
@@ -5458,7 +5458,7 @@ a {
   border-left: 1px solid #a0a0a0;
   border-right: 1px solid #a0a0a0;
   border-bottom: 1px solid #ffffff;
-  box-shadow: 2px -2px 2px 0px rgba(149, 149, 149, 0.4901960784);
+  box-shadow: 2px -2px 2px 0px rgba(149, 149, 149, 0.13);
   border-radius: 3px 3px 0 0;
   transition: all 0.3s ease;
 }
