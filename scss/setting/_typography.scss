@@ -83,7 +83,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // SOLD OUT時に使用する
     &.-grayOut{
         pointer-events: none;
-        opacity: .2;
+        opacity: .1;
         a{
             pointer-events: none;
             &::before,

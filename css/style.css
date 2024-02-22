@@ -242,7 +242,7 @@ h1.-house_c04, h2.-house_c04, h3.-house_c04, h4.-house_c04, h5.-house_c04, h6.-h
 }
 h1.-grayOut, h2.-grayOut, h3.-grayOut, h4.-grayOut, h5.-grayOut, h6.-grayOut, p.-grayOut, a.-grayOut, span.-grayOut, label.-grayOut, button.-grayOut {
   pointer-events: none;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 h1.-grayOut a, h2.-grayOut a, h3.-grayOut a, h4.-grayOut a, h5.-grayOut a, h6.-grayOut a, p.-grayOut a, a.-grayOut a, span.-grayOut a, label.-grayOut a, button.-grayOut a {
   pointer-events: none;
@@ -4607,7 +4607,7 @@ button.swiper-pagination-bullet {
   .c-flex.-col2_3 li:nth-child(1), .c-flex.-col2_3 li:nth-child(4), .c-flex.-col2_3 li:nth-child(7), .c-flex.-col2_3 li:nth-child(10) {
     margin-right: 15px;
   }
-  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5), .c-flex.-col2_3 li:nth-child(8), .c-flex.-col2_3 li:nth-child(12) {
+  .c-flex.-col2_3 li:nth-child(2), .c-flex.-col2_3 li:nth-child(5), .c-flex.-col2_3 li:nth-child(8), .c-flex.-col2_3 li:nth-child(11) {
     margin: 0 7.5px;
   }
   .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6), .c-flex.-col2_3 li:nth-child(9), .c-flex.-col2_3 li:nth-child(12) {
