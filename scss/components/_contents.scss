@@ -205,7 +205,9 @@
 							top: 120%;
 							left: 50%;
 							transform: translate(-50%,-50%);
+							width: 100%;
 							font-size: 14px;
+							text-align: center;
 						}
 					}
 					// タイトル > 右下
@@ -215,9 +217,11 @@
 						&::after{
 							position: absolute;
 							top: 120%;
-							left: 70%;
+							left: 50%;
 							transform: translate(-50%,-50%);
+							width: 100%;
 							font-size: 14px;
+							text-align: center;
 						}
 					}
 					//　タイトル >  コンセプトページ

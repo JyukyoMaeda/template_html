@@ -3341,7 +3341,7 @@ button.swiper-pagination-bullet {
   .c-hnav__content {
     width: 29%;
     max-width: 230px;
-    padding: 2% 3%;
+    padding: 2% 2.5% 2% 2.5%;
     background: #ffffff;
   }
 }
@@ -3367,7 +3367,6 @@ button.swiper-pagination-bullet {
 }
 .c-hnav__content li a {
   position: relative;
-  display: inline-block;
 }
 .c-hnav__content li a::before {
   content: "";
@@ -3881,7 +3880,9 @@ button.swiper-pagination-bullet {
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     font-size: 14px;
+    text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r {
     top: 82%;
@@ -3890,9 +3891,11 @@ button.swiper-pagination-bullet {
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r::after {
     position: absolute;
     top: 120%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     font-size: 14px;
+    text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-concept::after {
     content: "コンセプト";
