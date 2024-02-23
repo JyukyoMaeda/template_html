@@ -83,6 +83,22 @@
                 }
             }
         }
+        &.-pc6_4{
+            li{
+                @include min(768){
+                    &:nth-child(1){width: calc(60% - 15px);}
+                    &:nth-child(2){width: calc(40% - 15px);}
+                }
+            }
+        }
+        &.-pc-auto{// 左横幅自由、右60％
+            li{
+                @include min(768){
+                    &:nth-child(1){width: auto;}
+                    &:nth-child(2){width: 60%;}
+                }
+            }
+        }
     }
     // コンテンツカラム（sp:pc 2:2）
     &.-col2_2{

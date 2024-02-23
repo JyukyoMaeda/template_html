@@ -4,6 +4,8 @@
 		*基本縦方向の幅は、下方側で調整すること。
 		*アンカーリンクの表示調整用には「paddig-top」を使用すること。
 ------------------------------------------------------------------------ */
+.mg0{@include min(768){margin: 0 !important;}}
+.mg0s{@include max(768){margin: 0 !important;}}
 
 // 768px以下
 .mgb-20s {@include max(768){margin-bottom: -20% !important;}}

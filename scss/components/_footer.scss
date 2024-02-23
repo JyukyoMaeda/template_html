@@ -64,11 +64,9 @@
 				position: relative;
 				width: calc(100%/2);
 				height: auto;
-				padding: 5% 0;
 				transition: .5s all;
 				@include min(768){
 					width: calc(100%/4);
-					padding: 4% 0;
 				}
 				&:hover{
 					background: $site-color02;
@@ -98,6 +96,10 @@
 				}
 				a{
 					display: block;
+					padding: 12% 0;
+					@include min(768){
+						padding: 20% 0;
+					}
 				}
 				// SOLD OUT時に使用する
 				&.-grayOutItem{
@@ -222,6 +224,11 @@
 					background: $site-color02 !important;
 					// border-radius: 10px;
 					box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+				}
+				&.-r{
+					&:hover{
+						border-radius: 30px;
+					}
 				}
 			}
 		}

@@ -21,12 +21,13 @@
         width: 100%;
         max-width: 1100px;
         height: 1px;
-        background: $site-color02;
+        background: $site-color04;
         @include min(768){
             bottom: -30px;
         }
     }
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}
+    &.-plan{&::before{content: "PLAN"; white-space: nowrap;}}
     &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}
     &.-gaikou{&::before{content: "EXTERIOR";}}
     &.-kitchen{&::before{content: "KITCHEN";}}
@@ -37,6 +38,10 @@
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}
+    &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}
+
+
+
 
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}
 }
@@ -52,21 +57,36 @@
             background: url(../images/logo/page-title-icon.png);
             background-size: contain;
             background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             position: absolute;
             top: 50%;
             left: 0%;
             transform: translateY(-50%);
             @include min(768){
+                top: 53%;
                 left: 0;
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
             }
             @include min(1400){
                 top: 56%;
-                width: 30px;
-                height: 30px;
+            }
+        }
+        // 2行の場合(sp/tb-pc)
+        &.-row02{
+            &::after{
+                top: 30%;
+                @include min(768){
+                    top: 27%;
+                }
+            }
+        }
+        &.-row02_s{
+            &::after{
+                @include max(768){
+                    top: 30%;
+                }
             }
         }
     }
@@ -124,6 +144,15 @@
         @include min(1400){
             padding-left: 12%;
         }
+        &.-ver02{// 駅名「」無しVer
+            padding-left: 17%;
+            @include min(768){
+                padding-left: 15%;
+            }
+            @include min(1400){
+                padding-left: 12%;
+            }
+        }
         // 一駅の場合
         &.-s_1 {
             &::after{
@@ -169,16 +198,16 @@
     }
 
     &.-borderBtm{
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         @include min(768){
-            margin-bottom: 5%;
+            margin-bottom: 3%;
         }
         &::before{
             bottom: -15%;
             left: 50%;
             transform: translateX(-50%) scaleY(0.75);
             width: 100%;
-            color: $site-color01;
+            color: $main-color--b;
         }
         // アイコン文頭にある場合のみ、ボーダーの位置を変更する。
         &.-dot{&::before{border-bottom: 3px dotted;}}
