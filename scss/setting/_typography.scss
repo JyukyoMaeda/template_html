@@ -1,14 +1,35 @@
+// font-family(ローカル)
+@font-face {// 英文フォント01
+    font-family: "e-font01";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+@font-face {// 英文フォント02
+    font-family: "e-font02";
+    src: url("../fonts/impact.ttf") format("truetype");
+}
+@font-face {// 英文フォント03
+    font-family: "e-font03";
+    src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {// 明朝フォント
+    font-family: "mincho-font01";
+    src: url("../fonts/ShipporiMincho-Regular.ttf") format("truetype");
+}
+@font-face {// ゴシックフォント
+    font-family: "gothic-font01";
+    src: url("../fonts/ZenKakuGothicNew-Regular.ttf") format("truetype");
+}
 
-// font-family
-$f-mincho: shippori-mincho, sans-serif;// 明朝
-$f-gothic: source-han-sans-japanese, sans-serif;// ゴシック
-$f-cezanne: "fot-cezanne-pron", sans-serif;
-$f-01: garamond-premier-pro, serif;// Garamond Premier Pro
-$f-02: acumin-pro, sans-serif;
+$f-mincho: mincho-font01;// 明朝体01
+$f-gothic: gothic-font01;// ゴシック体01
+$f-english01: e-font01;  // 英文フォント01
+$f-english02: e-font02;  // 英文フォント02
+$f-english03: e-font03;  // 英文フォント03
 
 // font-weight
 $f-n: normal;
 $f-b: bold;
+
 
 // 基本テキスト
 h1,h2,h3,h4,h5,h6,p,a,span,label,button{
@@ -57,19 +78,12 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // 太さ
     &.-b{font-weight: $f-b;}
 
-    // フォントファミリー
-    &.-f-gothic{font-family: $f-gothic;}
-    &.-f-cezan{font-family: $f-cezanne;}
-    &.-f-mincho{font-family: $f-mincho;}
-    &.-f-gara{
-        font-family: $f-01;
-        font-style: italic;
-    }
-    &.-f-acumin{
-        font-family: $f-02;
-        font-weight: bold;
-        font-style: italic;
-    }
+    // フォントファミリー(ローカルフォント)
+    &.-f-mincho01{font-family: mincho-font01;}// しっぽり
+    &.-f-gothic01{font-family: gothic-font01;}// セザンヌ
+    &.-f-En01{font-family: e-font01;}         // BebasNeue
+    &.-f-En02{font-family: e-font02;}         // impact
+    &.-f-En03{font-family: e-font03;}         // garamond
 
     // 色
     &.-white{color: $main-color--w}

@@ -117,9 +117,29 @@ p {
     display: block !important;
   }
 }
+@font-face {
+  font-family: "e-font01";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "e-font02";
+  src: url("../fonts/impact.ttf") format("truetype");
+}
+@font-face {
+  font-family: "e-font03";
+  src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mincho-font01";
+  src: url("../fonts/ShipporiMincho-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "gothic-font01";
+  src: url("../fonts/ZenKakuGothicNew-Regular.ttf") format("truetype");
+}
 h1, h2, h3, h4, h5, h6, p, a, span, label, button {
   color: #3b3b3b;
-  font-family: source-han-sans-japanese, sans-serif;
+  font-family: gothic-font01;
   font-weight: normal;
   font-style: normal;
   text-wrap: balance;
@@ -201,23 +221,20 @@ h1.-ws-n, h2.-ws-n, h3.-ws-n, h4.-ws-n, h5.-ws-n, h6.-ws-n, p.-ws-n, a.-ws-n, sp
 h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b, label.-b, button.-b {
   font-weight: bold;
 }
-h1.-f-gothic, h2.-f-gothic, h3.-f-gothic, h4.-f-gothic, h5.-f-gothic, h6.-f-gothic, p.-f-gothic, a.-f-gothic, span.-f-gothic, label.-f-gothic, button.-f-gothic {
-  font-family: source-han-sans-japanese, sans-serif;
+h1.-f-mincho01, h2.-f-mincho01, h3.-f-mincho01, h4.-f-mincho01, h5.-f-mincho01, h6.-f-mincho01, p.-f-mincho01, a.-f-mincho01, span.-f-mincho01, label.-f-mincho01, button.-f-mincho01 {
+  font-family: mincho-font01;
 }
-h1.-f-cezan, h2.-f-cezan, h3.-f-cezan, h4.-f-cezan, h5.-f-cezan, h6.-f-cezan, p.-f-cezan, a.-f-cezan, span.-f-cezan, label.-f-cezan, button.-f-cezan {
-  font-family: "fot-cezanne-pron", sans-serif;
+h1.-f-gothic01, h2.-f-gothic01, h3.-f-gothic01, h4.-f-gothic01, h5.-f-gothic01, h6.-f-gothic01, p.-f-gothic01, a.-f-gothic01, span.-f-gothic01, label.-f-gothic01, button.-f-gothic01 {
+  font-family: gothic-font01;
 }
-h1.-f-mincho, h2.-f-mincho, h3.-f-mincho, h4.-f-mincho, h5.-f-mincho, h6.-f-mincho, p.-f-mincho, a.-f-mincho, span.-f-mincho, label.-f-mincho, button.-f-mincho {
-  font-family: shippori-mincho, sans-serif;
+h1.-f-En01, h2.-f-En01, h3.-f-En01, h4.-f-En01, h5.-f-En01, h6.-f-En01, p.-f-En01, a.-f-En01, span.-f-En01, label.-f-En01, button.-f-En01 {
+  font-family: e-font01;
 }
-h1.-f-gara, h2.-f-gara, h3.-f-gara, h4.-f-gara, h5.-f-gara, h6.-f-gara, p.-f-gara, a.-f-gara, span.-f-gara, label.-f-gara, button.-f-gara {
-  font-family: garamond-premier-pro, serif;
-  font-style: italic;
+h1.-f-En02, h2.-f-En02, h3.-f-En02, h4.-f-En02, h5.-f-En02, h6.-f-En02, p.-f-En02, a.-f-En02, span.-f-En02, label.-f-En02, button.-f-En02 {
+  font-family: e-font02;
 }
-h1.-f-acumin, h2.-f-acumin, h3.-f-acumin, h4.-f-acumin, h5.-f-acumin, h6.-f-acumin, p.-f-acumin, a.-f-acumin, span.-f-acumin, label.-f-acumin, button.-f-acumin {
-  font-family: acumin-pro, sans-serif;
-  font-weight: bold;
-  font-style: italic;
+h1.-f-En03, h2.-f-En03, h3.-f-En03, h4.-f-En03, h5.-f-En03, h6.-f-En03, p.-f-En03, a.-f-En03, span.-f-En03, label.-f-En03, button.-f-En03 {
+  font-family: e-font03;
 }
 h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white, button.-white {
   color: #ffffff;
@@ -289,6 +306,11 @@ h1.s-M, h2.s-M, h3.s-M, h4.s-M, h5.s-M, h6.s-M, p.s-M, a.s-M, span.s-M, label.s-
     font-size: 1rem;
   }
 }
+@media (768px >= width) {
+  h1.s-M.-s16, h2.s-M.-s16, h3.s-M.-s16, h4.s-M.-s16, h5.s-M.-s16, h6.s-M.-s16, p.s-M.-s16, a.s-M.-s16, span.s-M.-s16, label.s-M.-s16, button.s-M.-s16 {
+    font-size: 1.6rem;
+  }
+}
 h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
   font-size: 1.6rem;
 }
@@ -334,6 +356,11 @@ h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L,
 @media (width >= 768px) {
   h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L, label.s-3L, button.s-3L {
     font-size: clamp(2.1rem, 3vw, 4.8rem);
+  }
+}
+@media (768px >= width) {
+  h1.s-3L.-s16, h2.s-3L.-s16, h3.s-3L.-s16, h4.s-3L.-s16, h5.s-3L.-s16, h6.s-3L.-s16, p.s-3L.-s16, a.s-3L.-s16, span.s-3L.-s16, label.s-3L.-s16, button.s-3L.-s16 {
+    font-size: 1.6rem;
   }
 }
 @media (768px >= width) {
@@ -396,7 +423,7 @@ p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::af
   position: absolute;
   bottom: 11%;
   font-size: 1rem;
-  font-family: shippori-mincho, sans-serif;
+  font-family: mincho-font01;
   font-style: normal;
 }
 @media (width >= 768px) {
