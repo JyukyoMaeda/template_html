@@ -49,6 +49,7 @@
 				width: 100vw;
 				height: 1px;
 				background: $main-color--b;
+				z-index: 1;
 			}
 			&::after{
 				content: "";
@@ -59,6 +60,16 @@
 				width: 100vw;
 				height: 1px;
 				background: $main-color--b;
+			}
+			&.-colors_04{
+				li{
+					&:hover{
+						&:nth-child(1){background: $site-color01;}
+						&:nth-child(2){background: $site-color02;}
+						&:nth-child(3){background: $site-color03;}
+						&:nth-child(4){background: $site-color04;}
+					}
+				}
 			}
 			li{
 				position: relative;

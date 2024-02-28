@@ -86,9 +86,11 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-f-En03{font-family: e-font03;}         // garamond
 
     // 色
-    &.-white{color: $main-color--w}
-    &.-color01{color: $site-color01;}
-    &.-color02{color: $site-color02;}
+    &.-white{color: $main-color--w !important;}
+    &.-color01{color: $site-color01 !important;}
+    &.-color02{color: $site-color02 !important;}
+    &.-color03{color: $site-color03 !important;}
+    &.-color04{color: $site-color04 !important;}
     &.-house_c01{color: $house-color01;}
     &.-house_c02{color: $house-color02;}
     &.-house_c03{color: $house-color03;}

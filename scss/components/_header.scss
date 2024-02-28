@@ -174,7 +174,7 @@
 						background: $site-color02;
 						pointer-events: none;
 						a,span{
-							color: $main-color--w;
+							color: $main-color--w !important;
 						}
 					}
 					// SOLD OUT時に使用する

@@ -26,24 +26,32 @@
             bottom: -30px;
         }
     }
-    &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}
-    &.-plan{&::before{content: "PLAN"; white-space: nowrap;}}
-    &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}
-    &.-gaikou{&::before{content: "EXTERIOR";}}
-    &.-kitchen{&::before{content: "KITCHEN";}}
-    &.-bathroom{&::before{content: "BATHROOM";}}
-    &.-window{&::before{content: "WINDOW";}}
-    &.-entrance{&::before{content: "ENTRANCE";}}
-    &.-koutsu{&::before{content: "ACCESS";}}
-    &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}
-    &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}
-    &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}
-    &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}
 
 
+    // コンテンツタイトル > 英語表記 > カラー設定
+    &.-en-color01{&::before{color: $site-color01;}}
+    &.-en-color02{&::before{color: $site-color02;}}
+    &.-en-color03{&::before{color: $site-color03;}}
+    &.-en-color04{&::before{color: $site-color04;}}
 
+    // コンテンツタイトル > 英語表記
+    &.-gaikou{&::before{content: "EXTERIOR";}}                                      // 外構・外観
+    &.-naikan{&::before{content: "NTROSPECTION";}}                                  // 内観
 
-    &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}
+    &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}  // レイアウト
+    &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}       // ハウスレイアウト
+    &.-plan{&::before{content: "PLAN"; white-space: nowrap;}}                       // プラン
+    &.-kitchen{&::before{content: "KITCHEN";}}                                      // キッチン
+    &.-bathroom{&::before{content: "BATHROOM";}}                                    // お風呂
+    &.-window{&::before{content: "WINDOW";}}                                        // 窓
+    &.-entrance{&::before{content: "ENTRANCE";}}                                    // 玄関
+    &.-koutsu{&::before{content: "ACCESS";}}                                        // アクセス
+    &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}// 交通
+    &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}          // スポット
+    &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}// 施工例
+    &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}               // オーナー
+
+    &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}            // サンプル
 }
 
 // コンテンツ_メインタイトル
@@ -51,6 +59,8 @@
     position: relative;
     // font-family: $f-cezanne;
     .s-LL{padding: 0 1px;}
+
+    // メインタイトル > アイコン
     &.-icon{
         &::after{
             content: "";
@@ -73,8 +83,15 @@
                 top: 56%;
             }
         }
-        // 2行の場合(sp/tb-pc)
-        &.-row02{
+
+        // アイコンが複数ある場合
+        &.-ver01{&::after{background: url(../images/logo/page-title-icon.png);}}
+        &.-ver02{&::after{background: url(../images/logo/page-title-icon02.png);}}
+        &.-ver03{&::after{background: url(../images/logo/page-title-icon03.png);}}
+        &.-ver04{&::after{background: url(../images/logo/page-title-icon04.png);}}
+
+        // 2行の場合
+        &.-row02{  //(sp/tb-pc)
             &::after{
                 top: 30%;
                 @include min(768){
@@ -82,10 +99,10 @@
                 }
             }
         }
-        &.-row02_s{
+        &.-row02_s{//(sp)
             &::after{
                 @include max(768){
-                    top: 30%;
+                    top: 28%;
                 }
             }
         }
@@ -115,6 +132,64 @@
         }
     }
     span{padding:0 5px 0 5px;}
+    &.-icon{
+        &::after{
+            content: "";
+            background: url(../images/logo/accent-icon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 3px;
+            height: 15px;
+            position: absolute;
+            top: 55%;
+            left: 0%;
+            transform: translateY(-50%);
+            @include min(768){
+                top: 53%;
+                left: 0;
+                width: 5px;
+                height: 20px;
+                background-size: contain;
+            }
+            @include min(1400){
+                top: 56%;
+            }
+        }
+        // アイコンが複数ある場合
+        &.-ver01{&::after{
+            background: url(../images/logo/accent-icon01.png);
+            background-size: contain;
+        }}
+        &.-ver02{&::after{
+            background: url(../images/logo/accent-icon02.png);
+            background-size: contain;
+        }}
+        &.-ver03{&::after{
+            background: url(../images/logo/accent-icon03.png);
+            background-size: contain;
+        }}
+        &.-ver04{&::after{
+            background: url(../images/logo/accent-icon04.png);
+            background-size: contain;
+        }}
+
+        // 2行の場合
+        &.-row02{  //(sp/tb-pc)
+            &::after{
+                top: 30%;
+                @include min(768){
+                    top: 27%;
+                }
+            }
+        }
+        &.-row02_s{//(sp)
+            &::after{
+                @include max(768){
+                    top: 28%;
+                }
+            }
+        }
+    }
     &.-iconBox{
         padding-left: 5%;
         @include min(768){

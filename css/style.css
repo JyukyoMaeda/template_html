@@ -237,13 +237,19 @@ h1.-f-En03, h2.-f-En03, h3.-f-En03, h4.-f-En03, h5.-f-En03, h6.-f-En03, p.-f-En0
   font-family: e-font03;
 }
 h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white, button.-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01, button.-color01 {
-  color: #96bbc7;
+  color: #96bbc7 !important;
 }
 h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.-color02, a.-color02, span.-color02, label.-color02, button.-color02 {
-  color: #5a8190;
+  color: #5a8190 !important;
+}
+h1.-color03, h2.-color03, h3.-color03, h4.-color03, h5.-color03, h6.-color03, p.-color03, a.-color03, span.-color03, label.-color03, button.-color03 {
+  color: #f2d341 !important;
+}
+h1.-color04, h2.-color04, h3.-color04, h4.-color04, h5.-color04, h6.-color04, p.-color04, a.-color04, span.-color04, label.-color04, button.-color04 {
+  color: #a0a0a0 !important;
 }
 h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01, label.-house_c01, button.-house_c01 {
   color: #b6b343;
@@ -2977,7 +2983,7 @@ button.swiper-pagination-bullet {
     pointer-events: none;
   }
   .c-header__navArea .c-header__navLists li.-active a, .c-header__navArea .c-header__navLists li.-active span {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   .c-header__navArea .c-header__navLists li.-grayOutItem {
     pointer-events: none;
@@ -3049,6 +3055,7 @@ button.swiper-pagination-bullet {
   width: 100vw;
   height: 1px;
   background: #3b3b3b;
+  z-index: 1;
 }
 .c-footer__contactArea .c-footer__contactLists::after {
   content: "";
@@ -3059,6 +3066,18 @@ button.swiper-pagination-bullet {
   width: 100vw;
   height: 1px;
   background: #3b3b3b;
+}
+.c-footer__contactArea .c-footer__contactLists.-colors_04 li:hover:nth-child(1) {
+  background: #96bbc7;
+}
+.c-footer__contactArea .c-footer__contactLists.-colors_04 li:hover:nth-child(2) {
+  background: #5a8190;
+}
+.c-footer__contactArea .c-footer__contactLists.-colors_04 li:hover:nth-child(3) {
+  background: #f2d341;
+}
+.c-footer__contactArea .c-footer__contactLists.-colors_04 li:hover:nth-child(4) {
+  background: #a0a0a0;
 }
 .c-footer__contactArea .c-footer__contactLists li {
   position: relative;
@@ -4169,20 +4188,35 @@ button.swiper-pagination-bullet {
     bottom: -30px;
   }
 }
+.c-contents_title.-en-color01::before {
+  color: #96bbc7;
+}
+.c-contents_title.-en-color02::before {
+  color: #5a8190;
+}
+.c-contents_title.-en-color03::before {
+  color: #f2d341;
+}
+.c-contents_title.-en-color04::before {
+  color: #a0a0a0;
+}
+.c-contents_title.-gaikou::before {
+  content: "EXTERIOR";
+}
+.c-contents_title.-naikan::before {
+  content: "NTROSPECTION";
+}
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
-  white-space: nowrap;
-}
-.c-contents_title.-plan::before {
-  content: "PLAN";
   white-space: nowrap;
 }
 .c-contents_title.-house-layout::before {
   content: "HOUSE LAYOUT";
   white-space: nowrap;
 }
-.c-contents_title.-gaikou::before {
-  content: "EXTERIOR";
+.c-contents_title.-plan::before {
+  content: "PLAN";
+  white-space: nowrap;
 }
 .c-contents_title.-kitchen::before {
   content: "KITCHEN";
@@ -4251,6 +4285,18 @@ button.swiper-pagination-bullet {
     top: 56%;
   }
 }
+.c-contents_MainTitle.-icon.-ver01::after {
+  background: url(../images/logo/page-title-icon.png);
+}
+.c-contents_MainTitle.-icon.-ver02::after {
+  background: url(../images/logo/page-title-icon02.png);
+}
+.c-contents_MainTitle.-icon.-ver03::after {
+  background: url(../images/logo/page-title-icon03.png);
+}
+.c-contents_MainTitle.-icon.-ver04::after {
+  background: url(../images/logo/page-title-icon04.png);
+}
 .c-contents_MainTitle.-icon.-row02::after {
   top: 30%;
 }
@@ -4261,7 +4307,7 @@ button.swiper-pagination-bullet {
 }
 @media (768px >= width) {
   .c-contents_MainTitle.-icon.-row02_s::after {
-    top: 30%;
+    top: 28%;
   }
 }
 
@@ -4291,6 +4337,61 @@ button.swiper-pagination-bullet {
 }
 .c-contents_subTitle span {
   padding: 0 5px 0 5px;
+}
+.c-contents_subTitle.-icon::after {
+  content: "";
+  background: url(../images/logo/accent-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-icon::after {
+    top: 53%;
+    left: 0;
+    width: 5px;
+    height: 20px;
+    background-size: contain;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-icon::after {
+    top: 56%;
+  }
+}
+.c-contents_subTitle.-icon.-ver01::after {
+  background: url(../images/logo/accent-icon01.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-ver02::after {
+  background: url(../images/logo/accent-icon02.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-ver03::after {
+  background: url(../images/logo/accent-icon03.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-ver04::after {
+  background: url(../images/logo/accent-icon04.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-row02::after {
+  top: 30%;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-icon.-row02::after {
+    top: 27%;
+  }
+}
+@media (768px >= width) {
+  .c-contents_subTitle.-icon.-row02_s::after {
+    top: 28%;
+  }
 }
 .c-contents_subTitle.-iconBox {
   padding-left: 5%;
