@@ -45,6 +45,12 @@
 			height: 1px;
 			background: $main-color--b;
 		}
+		// ボーダーなし
+		&.-no-b{
+			&::after{
+				background: $main-color--w;
+			}
+		}
 	}
 	&__popArea{//上部
 		width: 100%;
@@ -175,6 +181,13 @@
 						pointer-events: none;
 						a,span{
 							color: $main-color--w !important;
+						}
+					}
+					// ボーダーなし
+					&.-no-b{
+						&::before,
+						&::after{
+							background: $main-color--w;
 						}
 					}
 					// SOLD OUT時に使用する
