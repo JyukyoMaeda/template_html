@@ -28,11 +28,12 @@
 	}
 	&__button{
 		display: inline-block;
-		width: 33px;
-		height: 22px;
+		width: 34px;
+		height: 27px;
 		vertical-align: middle;
+		cursor:pointer;
 		@include min(768){
-			width: 40px;
+			width: 100%;
 		}
 		span,
 		span:before,
@@ -109,7 +110,7 @@
 			max-width: 330px;
 		}
 		li{
-			margin-bottom: 5px;
+			margin-bottom: 7px;
 			transition: 1s all;
 			@include min(768){margin-bottom: 10px;}
 			@include min(1400){margin-bottom: 10px;}
@@ -250,95 +251,56 @@
 	}
 }
 
-// ヘッダー > ナビ
+// ナビゲーション関係
 .navItem{
 	position: relative;
-	&_main{
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-		transition: .5s all;
-		@include min(768){top: 33%;}
-	}
-	&_main02{
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-		transition: .5s all;
-		@include min(768){top: 40%;}
-	}
-	&_sub{
-		position: absolute;
-		top: 65%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-		transition: .5s all;
-		// @include min(768){top: 65%;}
-	}
-	&_sub02{
-		position: absolute;
-		top: 67%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-		transition: .5s all;
-		@include min(768){top: 68%;}
-		@include min(1400){top: 70%;}
-	}
-	&_sub03{
-		position: absolute;
-		top: 67%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		white-space: nowrap;
-		transition: .5s all;
-		@include min(768){top: 64%;}
-		@include min(1400){top: 60%;}
-	}
-	&_footer{
-		// アクティブ時
-		&.-active{
-			pointer-events: none;
-			span{
-				color: $site-color02;
-				&::after{
-					width: 100%;
-					height: 1px;
-					background: $site-color02;
-				}
-			}
+
+	// ナビゲーションボタン
+	&-title{
+		&.-main{// 基本日本語
+			position: absolute;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			transition: .5s all;
+			@include min(768){top: 33%;}
 		}
-		&:hover{
-			span{
-				color: $site-color01;
-				&::after{
-					width: 100%;
-					background: $site-color01;
-				}
-			}
-		}
-		span{
-			position: relative;
-			transition: all 1s;
-			&::after{
-				content: "";
-				position: absolute;
-				bottom: -2px;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 10%;
-				height: 1px;
-				background: $main-color--w;
-				transition: .5s all;
-			}
+		&.-sub{// 基本英語
+			position: absolute;
+			top: 65%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			transition: .5s all;
+			// @include min(768){top: 65%;}
 		}
 	}
-	// 後日実装コンテンツ
+
+	// お問い合わせボタン
+	&-cTitle{
+		&.-main{// 基本日本語
+			position: absolute;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			transition: .5s all;
+			@include min(768){top: 37%;}
+		}
+		&.-sub{// 基本日本語
+			position: absolute;
+			top: 67%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap;
+			transition: .5s all;
+			@include min(768){top: 64%;}
+			@include min(1400){top: 65%;}
+		}
+	}
+
+	// オプション > 後日実装コンテンツ
 	&.-comingSoon{
 		pointer-events: none;
 		a{
@@ -353,6 +315,54 @@
 				color: white;
 				// background: #e40012;
 				background: $site-color01;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				padding: 3px 0 4px;
+				opacity: 0.9;
+			}
+			span{opacity: .5;}
+		}
+	}
+	// オプション > 売り切れコンテンツ
+	&.-soldOut{
+		pointer-events: none;
+		a{
+			pointer-events: none;
+			&::before{
+				content: "sold out";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60% !important;
+				color: white;
+				// background: #e40012;
+				background: $main-color--Dgray;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				padding: 3px 0 4px;
+				opacity: 0.9;
+			}
+			span{opacity: .5;}
+		}
+	}
+	// オプション > 完売御礼
+	&.-kanbai{
+		pointer-events: none;
+		a{
+			pointer-events: none;
+			&::before{
+				content: "完売御礼";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60% !important;
+				color: white;
+				// background: #e40012;
+				background: rgb(216, 21, 21);
 				display: block;
 				z-index: 1;
 				text-align: center;

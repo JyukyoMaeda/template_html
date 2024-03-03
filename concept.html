@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: https://ogp.me/ns#">                                                          <!-- OGP使用を宣言 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>コンセプト | 物件名</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" type="image/png" href="images/apple-touch-icon.png">
+    <title>コンセプト | 物件名</title>                                                           <!-- タイトルの頭に【...】はつけない -->
+    <link rel="icon" href="images/favicon.ico">                                                 <!-- 32px x 32px -->
+    <link rel="apple-touch-icon" type="image/png" href="images/sns/apple-touch-icon.jpg">       <!-- 120px x 120px -->
+
     <!-- デプロイ前に確認・サンプル -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="市町村,地名,新築戸建or建築条件付き土地,グランシア,住協">
     <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <!-- SNS関係 -->
+    <meta property="og:locale"       content="ja_JP"/>
+    <meta property="og:url"          content="https://www.jyu-g.co.jp/special/template_html/concept.html"/>
+    <meta property="og:type"         content="article"/>                                         <!-- Top：website、下層ページ：article -->
+    <meta property="og:site_name"    content="住協グループの住まい情報"/>                          <!-- ページが属する大元のサイト名 -->
+    <meta property="og:title"        content="コンセプト | 物件名"/>                              <!-- SNS表示用のタイトル | 通常のタイトルと同じ内容 -->
+    <meta property="og:description"  content=""/>                                                <!-- SNS表示用の説明文 | 通常の説明文と同じ内容 -->
+    <meta property="og:image"        content="images/sns/sample-concept.jpg"/>                   <!-- SNS表示用のサムネイル 1200px × 630px -->
+    <!-- //SNS関係 -->
     <!--// デプロイ前に確認・サンプル -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -45,23 +56,23 @@
 			<ul class="">
 				<li class=""><a class="s-SS -ws-n -left"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
 				<li class="-active"><a class="s-SS -ws-n -left"  href="concept.html"><span class="s-M pdr5 pdr4s">CONCEPT</span>コンセプト</a></li>
-				<li class=""><a class="s-SS -ws-n -left -grayOut"  href="layout.html"><span class="s-M pdr5 pdr4s">LAYOUT</span>区画・間取</a></li>
+				<li class=""><a class="s-SS -ws-n -left"  href="layout.html"><span class="s-M pdr5 pdr4s">LAYOUT</span>区画・間取</a></li>
 				<li class=""><a class="s-SS -ws-n -left"  href="plan.html"><span class="s-M pdr5 pdr4s">PLAN</span>参考プラン</a></li>
 				<li class=""><a class="s-SS -ws-n -left"  href="equipment.html"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
                 <li class=""><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
-                <li class=""><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
-                <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li>
+                <li class="mgb15 mgb15s"><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
+                <!-- <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup01"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li> -->
                 <!-- 物件概要はここには設置しないこと -->
-                <div class="c-hnav__contactArea -grayOutItem">
-                    <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="c-hnav__top navItem -lh-1 -grayOut">
-                        <span class="navItem_main s-M">資料請求</span>
+                <div class="c-hnav__contactArea">
+                    <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="c-hnav__top navItem -lh-1">
+                        <span class="navItem-cTitle -main s-M">資料請求</span>
                         <br>
-                        <span class="navItem_sub02 s-SS">REQUEST</span>
+                        <span class="navItem-cTitle -sub s-SS">REQUEST</span>
                     </a>
-                    <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712838612" class="c-hnav__bottom navItem -lh-1">
-                        <span class="navItem_main s-M">見学予約</span>
+                    <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="c-hnav__bottom navItem -lh-1">
+                        <span class="navItem-cTitle -main s-M">見学予約</span>
                         <br>
-                        <span class="navItem_sub02 s-SS">RESERV</span>
+                        <span class="navItem-cTitle -sub s-SS">RESERV</span>
                     </a>
                 </div>
             </ul>
@@ -73,10 +84,10 @@
 		</div>
 	</nav>
 
-    <!-- header -->
-    <header id="header" class="c-header pdt1">
+    <!-- header / TOPと各ページの構造が異なる -->
+    <header id="header" class="tb-pc c-header pdt1">
         <div class="c-header-wrapper">
-            <div class="c-header__popArea">
+            <div class="tb-pc c-header__popArea">
                 <ul class="c-header__lists">
                     <li class="logo pdb2">
                         <div class="c-contents -h-logo">
@@ -86,18 +97,24 @@
                                 <!-- SPサイズ：325x110 -->
                                 <img class="sp" src="https://via.placeholder.com/325x110/?text=SP 325x110">
                             </div>
-                            <div class="c-contentsBox -logo-item01 a-bird_l02 -sp5"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
-                            <div class="c-contentsBox -logo-item02 a-bird_l01 -sp4"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div>
+                            <div class="c-contentsBox -logo-item01"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
+                            <div class="c-contentsBox -logo-item02"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div>
+                            <!-- SOLD OUT -->
+                            <div class="c-contentsBox -soldOut">
+                                <img src="images/item/soldout.png" alt="完売御礼 | おかげさまでお契約いただいきました！">
+                            </div>
                         </div>
                     </li>
                     <li class="c-header__contactArea pdb1">
-                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="top-left navItem -lh-1 c-link -c-color">
-                            <span class="navItem_main02 s-M -s-nav">資料請求</span>
-                            <span class="navItem_sub03 s-SS">REQUEST</span>
+                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="top-left navItem -lh-1 c-link -c-color">
+                            <span class="navItem-cTitle -main s-M -s-nav">資料請求</span>
+                            <br>
+                            <span class="navItem-cTitle -sub s-SS -s-nav">REQUEST</span>
                         </a>
-                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712838612" class="top-right navItem -lh-1 c-link -c-color">
-                            <span class="navItem_main02 s-M -s-nav">見学予約</span>
-                            <span class="navItem_sub03 s-SS">RESERV</span>
+                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="top-right navItem -lh-1 c-link -c-color">
+                            <span class="navItem-cTitle -main s-M -s-nav">見学予約</span>
+                            <br>
+                            <span class="navItem-cTitle -sub s-SS -s-nav">RESERV</span>
                         </a>
                         <p class="tag s-S -s-nav -center">物件名物件名／新築分譲住宅⚪︎号棟</p>
                     </li>
@@ -107,61 +124,72 @@
         <div class="tb-pc c-header-wrapper">
             <nav class="c-header__navArea">
                 <ul class="c-header__navLists -col8">
-                    <li class="navItem ">
-                        <a href="index.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">トップ</span>
+                    <li class="navItem">
+                        <a href="index.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">トップ</span>
                             <br>
-                            <span class="navItem_sub s-SS">TOP</span>
+                            <span class="navItem-title -sub s-SS -s-nav">TOP</span>
                         </a>
                     </li>
                     <li class="navItem -active">
-                        <a href="concept.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">コンセプト</span>
+                        <a href="concept.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">コンセプト</span>
                             <br>
-                            <span class="navItem_sub s-SS">CONCEPT</span>
-                        </a>
-                    </li>
-                    <li class="navItem ">
-                        <a href="layout.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">区画・間取</span>
-                            <br>
-                            <span class="navItem_sub s-SS">LAYOUT</span>
+                            <span class="navItem-title -sub s-SS -s-nav">CONCEPT</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="plan.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">プラン</span>
+                        <a href="layout.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">区画・間取</span>
                             <br>
-                            <span class="navItem_sub s-SS">PLAN</span>
+                            <span class="navItem-title -sub s-SS -s-nav">LAYOUT</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="equipment.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">設備・仕様</span>
+                        <a href="plan.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">プラン</span>
                             <br>
-                            <span class="navItem_sub s-SS">EQUIPMENT</span>
+                            <span class="navItem-title -sub s-SS -s-nav">PLAN</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="location.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">周辺環境</span>
+                        <a href="equipment.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">設備・仕様</span>
                             <br>
-                            <span class="navItem_sub s-SS">LOCATION</span>
+                            <span class="navItem-title -sub s-SS -s-nav">EQUIPMENT</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">住協の家づくり</span>
+                        <a href="location.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">周辺環境</span>
                             <br>
-                            <span class="navItem_sub s-SS">QUALITY</span>
+                            <span class="navItem-title -sub s-SS -s-nav">LOCATION</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <label class="popup popup-open" for="popup">
-                            <span class="navItem_main s-M -s-nav">物件概要</span>
+                        <a href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">住協の家づくり</span>
                             <br>
-                            <span class="navItem_sub s-SS -s-nav">OVERVIEW</span>
+                            <span class="navItem-title -sub s-SS -s-nav">QUALITY</span>
+                        </a>
+                    </li>
+                    <li class="navItem d-menu">
+                        <!-- ドロップメニュー -->
+                        <input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
+                        <label class="d-menu__title -lh-1" for="d-menu__checkbox">
+                            <span class="navItem-title -main s-M -s-nav">物件概要</span>
+                            <br>
+                            <span class="navItem-title -sub s-SS -s-nav">OVERVIEW</span>
                         </label>
+                        <ul class="d-menu__lists">
+                            <li class="d-menu__item">
+                                <label class="d-menu__subTitle s-SS popup popup-open" for="popup01">新築戸建</label>
+                            </li>
+                            <li class="d-menu__item">
+                                <label class="d-menu__subTitle s-SS popup popup-open" for="popup02">建築条件付き土地</label>
+                            </li>
+                        </ul>
+                        <!-- //ドロップメニュー -->
                     </li>
                 </ul>
             </nav>
@@ -211,21 +239,21 @@
             <div class="c-footer__contactArea">
                 <ul class="c-footer__contactLists">
                     <li class="contactItem">
-                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="-lh-1">
+                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="-lh-1">
                             <span class="contactItem_main s-L -s-nav">資料請求</span>
                             <br>
                             <span class="contactItem_sub s-SS">REQUEST</span>
                         </a>
                     </li>
                     <li class="contactItem">
-                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=712838612" class="-lh-1">
+                        <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="-lh-1">
                             <span class="contactItem_main s-L -s-nav">見学予約</span>
                             <br>
                             <span class="contactItem_sub s-SS">RESERV</span>
                         </a>
                     </li>
                     <li class="tb-pc contactItem">
-                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712838612" class="-lh-1">
+                        <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="-lh-1">
                             <span class="contactItem_main s-L -s-nav">お問い合わせ</span>
                             <br>
                             <span class="contactItem_sub s-SS">INQUIRY</span>
@@ -287,23 +315,49 @@
                 </ul>
             </nav>
         </div>
-        <div class="c-footer__btnArea mgb4 mgb10s">
-            <label class="s-M popup popup-open" for="popup">物件概要はこちら</label>
-            <!-- 01.物件概要 -->
-            <input type="checkbox" id="popup" >
-            <label class="popup-overlay" for="popup"></label>
-            <div class="popup-window">
-                <!-- 閉じるボタン -->
-                <label class="popup-close" for="popup">
-                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
-                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
-                    </svg>
-                </label>
-                <!-- iframe -->
-                <iframe id="inlineFrame" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/712838612"></iframe>
-            </div>
-            
+        <div class="c-footer__btnArea -col2 mgb4 mgb10s">
+            <!-- 物件概要ボタン -->
+            <ul class="c-flex -gaiyou">
+                <li>
+                    <label class="s-S popup -color01 popup-open" for="popup01">
+                        <span class="s-ML -s14 -center -ls-2">新築戸建</span><br>物件概要はこちら
+                    </label>
+                    <!-- 01.物件概要 > 新地戸建 -->
+                    <input type="checkbox" id="popup01" >
+                    <label class="popup-overlay" for="popup01"></label>
+                    <div class="popup-window">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup01">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- iframe -->
+                        <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/物件ナンバー（新築戸建）"></iframe>
+                    </div>
+                </li>
+                <li>
+                    <label class="s-S popup -color02 popup-open" for="popup02">
+                        <span class="s-ML -s14 -center -ls-n">建築条件付き土地</span><br>物件概要はこちら
+                    </label>
+                    <!-- 02.物件概要 > 建築条件付き土地 -->
+                    <input type="checkbox" id="popup02" >
+                    <label class="popup-overlay" for="popup02"></label>
+                    <div class="popup-window">
+                        <!-- 閉じるボタン -->
+                        <label class="popup-close" for="popup02">
+                            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                            </svg>
+                        </label>
+                        <!-- iframe -->
+                        <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/物件ナンバー（建築条件付き土地）"></iframe>
+                    </div>
+                </li>
+            </ul>
+            <!-- //物件概要ボタン -->
         </div>
         <div class="c-footer__shopArea">
             <ul class="c-footer__shopFlex">

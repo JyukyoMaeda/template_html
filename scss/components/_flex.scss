@@ -303,4 +303,24 @@
             
         }
     }
+    // ------------- 物件概要 ----------------
+    &.-gaiyou{
+        li{
+            width: calc(50% - 5px);
+            margin: 0;
+            &:nth-child(1){margin-right: 5px !important;}
+            &:nth-child(2){margin-left: 5px !important;}
+            @include min(768){
+                width: calc(50% - 15px);
+                &:nth-child(1){margin-right: 15px !important;}
+                &:nth-child(2){margin-left: 15px !important;}
+            }
+            &.text{
+                @include min(768){width: calc(35% - 15px);}
+            }
+            &.img{
+                @include min(768){width: calc(65% - 15px);}
+            }
+        }
+    }
 }

@@ -144,10 +144,6 @@
 					// padding: 2.1% 0;
 					background: $main-color--w;
 					transition: .5s all;
-					&:hover{
-						background: $site-color01;
-						a,span{color: $main-color--w !important;}
-					}
 					&:first-child{
 						&::before{
 							content: "";
@@ -176,6 +172,8 @@
 						height: 100%;
 						padding: 15% 0;
 					}
+
+					// アクティブ時
 					&.-active{
 						background: $site-color02;
 						pointer-events: none;
@@ -183,17 +181,23 @@
 							color: $main-color--w !important;
 						}
 					}
-					// ボーダーなし
+					// ホバー関係
+					&:hover{
+						background: $site-color01;
+						.navItem__link,
+						.navItem__link span,
+						.d-menu__title span{color: $main-color--w !important;}
+					}
+
+					// オプション > ボーダーなし
 					&.-no-b{
 						&::before,
 						&::after{
 							background: $main-color--w;
 						}
 					}
-					// SOLD OUT時に使用する
-					&.-grayOutItem{
-						pointer-events: none;
-					}
+					// オプション > SOLD OUT
+					&.-grayOutItem{pointer-events: none;}
 				}
 				/*---------------------------------
 					ページ数によってナビゲーション数を変更できる。

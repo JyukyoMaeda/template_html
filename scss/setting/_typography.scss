@@ -69,6 +69,14 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-lh-2_s  {@include max(768){ line-height: 2;}}
     &.-lh-3_s  {@include max(768){ line-height: 3;}}
 
+    // 文字間隔
+    &.-ls-n{letter-spacing: normal;}
+    &.-ls-1{letter-spacing: .1rem;}
+    &.-ls-2{letter-spacing: .2rem;}
+    &.-ls-3{letter-spacing: .3rem;}
+    &.-ls-4{letter-spacing: .4rem;}
+    &.-ls-5{letter-spacing: .5rem;}
+
     // 影
     &.-shadow{filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;}
 
@@ -119,6 +127,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         &.s-SS{
             font-size: 1rem;
             @include min(768){font-size: clamp(1rem, 2vw, 1.2rem);}
+            &.-s12{@include max(768){font-size: 1.2rem;}}
         }
         &.s-S{
             font-size: 1.1rem;
