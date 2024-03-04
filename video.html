@@ -48,41 +48,48 @@
     <a href="#header" class="c-btn-top -center a-fadeUp -sp25">TOPへ</a>
 
     <!-- ハンバーガーメニュー -->
-    <div class="c-hnav__content">
-        <ul class="">
-            <li class=""><a class="s-SS -ws-n -left"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
-            <li class=""><a class="s-SS -ws-n -left"  href="concept.html"><span class="s-M pdr5 pdr4s">CONCEPT</span>コンセプト</a></li>
-            <li class=""><a class="s-SS -ws-n -left -grayOut"  href="layout.html"><span class="s-M pdr5 pdr4s">LAYOUT</span>区画・間取</a></li>
-            <li class=""><a class="s-SS -ws-n -left"  href="plan.html"><span class="s-M pdr5 pdr4s">PLAN</span>参考プラン</a></li>
-            <li class=""><a class="s-SS -ws-n -left"  href="equipment.html"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
-            <li class=""><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
-            <li class=""><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
-            <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li>
-            <!-- 物件概要はここには設置しないこと -->
-            <div class="c-hnav__contactArea -grayOutItem">
-                <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="c-hnav__top navItem -lh-1 -grayOut">
-                    <span class="navItem_main s-M">資料請求</span>
-                    <br>
-                    <span class="navItem_sub02 s-SS">REQUEST</span>
-                </a>
-                <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="c-hnav__bottom navItem -lh-1">
-                    <span class="navItem_main s-M">見学予約</span>
-                    <br>
-                    <span class="navItem_sub02 s-SS">RESERV</span>
-                </a>
-            </div>
-        </ul>
+    <nav class="c-hnav a-scroll-on">
+		<input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
+		<label class="c-hnav__button" for="c-hnav__checkbox">
+            <span></span>
+        </label>
+		<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
+		<div class="c-hnav__content">
+			<ul class="">
+				<li class="-active"><a class="s-SS -ws-n -left"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
+				<li class=""><a class="s-SS -ws-n -left"  href="concept.html"><span class="s-M pdr5 pdr4s">CONCEPT</span>コンセプト</a></li>
+				<li class=""><a class="s-SS -ws-n -left -grayOut"  href="layout.html"><span class="s-M pdr5 pdr4s">LAYOUT</span>区画・間取</a></li>
+				<li class=""><a class="s-SS -ws-n -left"  href="plan.html"><span class="s-M pdr5 pdr4s">PLAN</span>参考プラン</a></li>
+				<li class=""><a class="s-SS -ws-n -left"  href="equipment.html"><span class="s-M pdr5 pdr4s">EQUIPMENT</span>設備・仕様</a></li>
+                <li class=""><a class="s-SS -ws-n -left"  href="location.html"><span class="s-M pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
+                <li class="mgb15 mgb15s"><a class="s-SS -ws-n -left"  href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
+                <!-- <li class="mgb15 mgb15s"><label class="popup popup-open s-SS -ws-n -left" for="popup01"><span class="s-M pdr5 pdr4s">OVERVIEW</span>物件概要</label></li> -->
+                <!-- 物件概要はここには設置しないこと -->
+                <div class="c-hnav__contactArea -grayOutItem">
+                    <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="c-hnav__top navItem -lh-1 -grayOut">
+                        <span class="navItem-cTitle -main s-M">資料請求</span>
+                        <br>
+                        <span class="navItem-cTitle -sub s-SS">REQUEST</span>
+                    </a>
+                    <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="c-hnav__bottom navItem -lh-1">
+                        <span class="navItem-cTitle -main s-M">見学予約</span>
+                        <br>
+                        <span class="navItem-cTitle -sub s-SS">RESERV</span>
+                    </a>
+                </div>
+            </ul>
 
 
-        <!--　ハンバーガー > ロゴ関係 -->
-        <!-- <div class="c-hnav__logo"><img src="images/logo/SVG/grancia.svg" alt="住協ブランド GRANCIA"></div>
-        <div class="c-hnav__icon"><img src="images/favicon.ico" alt="住協のシンボル"></div> -->
-    </div>
+            <!--　ハンバーガー > ロゴ関係 -->
+            <!-- <div class="c-hnav__logo"><img src="images/logo/SVG/grancia.svg" alt="住協ブランド GRANCIA"></div>
+            <div class="c-hnav__icon"><img src="images/favicon.ico" alt="住協のシンボル"></div> -->
+		</div>
+	</nav>
 
-    <!-- header -->
-    <header id="header" class="c-header pdt1">
-        <div class="c-header-wrapper">
-            <div class="c-header__popArea">
+    <!-- header / TOPと各ページの構造が異なる -->
+    <header id="header" class="tb-pc c-header pdt1">
+        <div class="c-header-wrapper"><!-- バナー表示エリア -->
+            <div class="tb-pc c-header__popArea">
                 <ul class="c-header__lists">
                     <li class="logo pdb2">
                         <div class="c-contents -h-logo">
@@ -92,82 +99,99 @@
                                 <!-- SPサイズ：325x110 -->
                                 <img class="sp" src="https://via.placeholder.com/325x110/?text=SP 325x110">
                             </div>
-                            <div class="c-contentsBox -logo-item01 a-bird_l02 -sp5"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
-                            <div class="c-contentsBox -logo-item02 a-bird_l01 -sp4"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div>
+                            <div class="c-contentsBox -logo-item01"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
+                            <div class="c-contentsBox -logo-item02"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div>
+                            <!-- SOLD OUT -->
+                            <div class="c-contentsBox -soldOut">
+                                <img src="images/item/soldout.png" alt="完売御礼 | おかげさまでお契約いただいきました！">
+                            </div>
                         </div>
                     </li>
                     <li class="c-header__contactArea pdb1">
                         <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="top-left navItem -lh-1 c-link -c-color">
-                            <span class="navItem_main02 s-M -s-nav">資料請求</span>
-                            <span class="navItem_sub03 s-SS">REQUEST</span>
+                            <span class="navItem-cTitle -main s-M -s-nav">資料請求</span>
+                            <br>
+                            <span class="navItem-cTitle -sub s-SS -s-nav">REQUEST</span>
                         </a>
                         <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="top-right navItem -lh-1 c-link -c-color">
-                            <span class="navItem_main02 s-M -s-nav">見学予約</span>
-                            <span class="navItem_sub03 s-SS">RESERV</span>
+                            <span class="navItem-cTitle -main s-M -s-nav">見学予約</span>
+                            <br>
+                            <span class="navItem-cTitle -sub s-SS -s-nav">RESERV</span>
                         </a>
                         <p class="tag s-S -s-nav -center">物件名物件名／新築分譲住宅⚪︎号棟</p>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="tb-pc c-header-wrapper">
+        <div class="tb-pc c-header-wrapper"><!-- ナビ表示エリア -->
             <nav class="c-header__navArea">
-                <ul class="c-header__navLists">
-                    <li class="navItem ">
-                        <a href="index.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">トップ</span>
-                            <br>
-                            <span class="navItem_sub s-SS">TOP</span>
-                        </a>
-                    </li>
-                    <li class="navItem">
-                        <a href="concept.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">コンセプト</span>
-                            <br>
-                            <span class="navItem_sub s-SS">CONCEPT</span>
-                        </a>
-                    </li>
-                    <li class="navItem">
-                        <a href="layout.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">区画・間取</span>
-                            <br>
-                            <span class="navItem_sub s-SS">LAYOUT</span>
-                        </a>
-                    </li>
+                <ul class="c-header__navLists -col8">
                     <li class="navItem -active">
-                        <a href="plan.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">プラン</span>
+                        <a href="index.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">トップ</span>
                             <br>
-                            <span class="navItem_sub s-SS">PLAN</span>
+                            <span class="navItem-title -sub s-SS -s-nav">TOP</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="equipment.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">設備・仕様</span>
+                        <a href="concept.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">コンセプト</span>
                             <br>
-                            <span class="navItem_sub s-SS">EQUIPMENT</span>
+                            <span class="navItem-title -sub s-SS -s-nav">CONCEPT</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="location.html" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">周辺環境</span>
+                        <a href="layout.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">区画・間取</span>
                             <br>
-                            <span class="navItem_sub s-SS">LOCATION</span>
+                            <span class="navItem-title -sub s-SS -s-nav">LAYOUT</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank" class="-lh-1">
-                            <span class="navItem_main s-M -s-nav">住協の家づくり</span>
+                        <a href="plan.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">プラン</span>
                             <br>
-                            <span class="navItem_sub s-SS">QUALITY</span>
+                            <span class="navItem-title -sub s-SS -s-nav">PLAN</span>
                         </a>
                     </li>
                     <li class="navItem">
-                        <label class="popup popup-open" for="popup">
-                            <span class="navItem_main s-M -s-nav">物件概要</span>
+                        <a href="equipment.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">設備・仕様</span>
                             <br>
-                            <span class="navItem_sub s-SS -s-nav">OVERVIEW</span>
+                            <span class="navItem-title -sub s-SS -s-nav">EQUIPMENT</span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="location.html" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">周辺環境</span>
+                            <br>
+                            <span class="navItem-title -sub s-SS -s-nav">LOCATION</span>
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank" class="navItem__link -lh-1">
+                            <span class="navItem-title -main s-M -s-nav">住協の家づくり</span>
+                            <br>
+                            <span class="navItem-title -sub s-SS -s-nav">QUALITY</span>
+                        </a>
+                    </li>
+                    <li class="navItem d-menu">
+                        <!-- ドロップメニュー -->
+                        <input id="d-menu__checkbox" class="d-menu__cheakbox" type="checkbox"/>
+                        <label class="d-menu__title -lh-1" for="d-menu__checkbox">
+                            <span class="navItem-title -main s-M -s-nav">物件概要</span>
+                            <br>
+                            <span class="navItem-title -sub s-SS -s-nav">OVERVIEW</span>
                         </label>
+                        <ul class="d-menu__lists">
+                            <li class="d-menu__item">
+                                <label class="d-menu__subTitle s-SS popup popup-open" for="popup01">新築戸建</label>
+                            </li>
+                            <li class="d-menu__item">
+                                <label class="d-menu__subTitle s-SS popup popup-open" for="popup02">建築条件付き土地</label>
+                            </li>
+                        </ul>
+                        <!-- //ドロップメニュー -->
                     </li>
                 </ul>
             </nav>
@@ -328,8 +352,9 @@
     <!-- //コンテンツ -->
 
 
+
     <!-- footer -->
-    <footer id="footer" class="c-footer">
+    <footer id="footer" class="c-footer mgt-2">
         <div class="c-footer-wrapper mgb1 mgb10s">
             <div class="c-footer__contactArea">
                 <ul class="c-footer__contactLists">
@@ -337,28 +362,28 @@
                         <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="-lh-1">
                             <span class="contactItem_main s-L -s-nav">資料請求</span>
                             <br>
-                            <span class="contactItem_sub s-SS">REQUEST</span>
+                            <span class="contactItem_sub s-SS -s-nav">REQUEST</span>
                         </a>
                     </li>
                     <li class="contactItem">
                         <a href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー" class="-lh-1">
-                            <span class="contactItem_main s-L -s-nav">見学予約</span>
+                            <span class="contactItem_main -color02 s-L -s-nav">見学予約</span>
                             <br>
-                            <span class="contactItem_sub s-SS">RESERV</span>
+                            <span class="contactItem_sub -color02 s-SS -s-nav">RESERV</span>
                         </a>
                     </li>
                     <li class="tb-pc contactItem">
                         <a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー" class="-lh-1">
                             <span class="contactItem_main s-L -s-nav">お問い合わせ</span>
                             <br>
-                            <span class="contactItem_sub s-SS">INQUIRY</span>
+                            <span class="contactItem_sub s-SS -s-nav">INQUIRY</span>
                         </a>
                     </li>
                     <li class="tb-pc contactItem">
                         <a href="https://www.jyu-g.co.jp/" class="-lh-1">
                             <span class="contactItem_main s-L -s-nav">住まい情報トップ</span>
                             <br>
-                            <span class="contactItem_sub s-SS">HOME</span>
+                            <span class="contactItem_sub s-SS -s-nav">HOME</span>
                         </a>
                     </li>
                 </ul>
@@ -366,7 +391,8 @@
         </div>
         <div class="c-footer-wrapper -v02 mgb2 mgb10s">
             <nav class="c-footer__navArea">
-                <ul class="c-footer__navLists">
+                <ul class="c-footer__navLists -col7">
+                    <!-- アクティブ箇所に「.-active」を付与して下さい。 -->
                     <li class="navItem_footer mgb2">
                         <a href="index.html" class="-lh-1 -center">
                             <span class="s-S -s-nav">トップ</span>
@@ -382,7 +408,7 @@
                             <span class="s-S -s-nav">区画・間取</span>
                         </a>
                     </li>
-                    <li class="navItem_footer -active mgb2">
+                    <li class="navItem_footer mgb2">
                         <a href="plan.html" class="-lh-1 -center">
                             <span class="s-S -s-nav">プラン</span>
                         </a>
