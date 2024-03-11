@@ -83,8 +83,8 @@
 						display: none;
 					}
 					@include min(768){
-						display: grid; 
-						grid-template-rows: 1.5fr 1fr;
+						display: grid;
+						grid-template-rows: 2.5fr 1fr;
 						grid-template-columns: 1fr 1fr;
 						align-items: center;
 						width: calc(28%);
@@ -103,30 +103,132 @@
 						grid-row: 1/2;
 					}
 					.tag{
+						position: relative;
 						grid-column: 1/3;
 						grid-row: 2/3;
+						width: 100%;
+						height: 100%;
+						background: $main-color--w;
+						span{
+							position: absolute;
+							top: 70%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
 					}
-					position: relative;
-					&::before{
-						content: "";
-						position: absolute;
-						top: 30%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						height: 40%;
-						width: 1px;
-						background: $main-color--b;
+					// ボーダーボタンVer
+					&.-borderVer{
+						position: relative;
+						&::before{
+							content: "";
+							position: absolute;
+							top: 38%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							height: 50%;
+							width: 1px;
+							background: $main-color--b;
+						}
+						&::after{
+							content: "";
+							position: absolute;
+							top: 72%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							height: 1px;
+							width: 98%;
+							background: $main-color--b;
+						}
+						.top-left{
+							span{color: $main-color--b !important;}
+							&:hover{span{
+								color: $site-color01 !important;
+							}}
+						}
+						.top-right{
+							span{color: $main-color--b !important;}
+							&:hover{span{
+								color: $site-color02 !important;
+							}}
+						}
 					}
-					&::after{
-						content: "";
-						position: absolute;
-						top: 55%;
-						// top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-						height: 1px;
-						width: 98%;
-						background: $main-color--b;
+					// カラーボタンVer
+					&.-colorBoxVer{
+						@include min(768){grid-template-rows: 3.3fr 1fr;}
+						.top-left{
+							background: $site-color01;
+							span{color: $main-color--w !important;}
+							&:hover{
+								opacity: .8;
+							}
+						}
+						.top-right{
+							background: $site-color02;
+							span{color: $main-color--w !important;}
+							&:hover{
+								opacity: .9;
+							}
+						}
+					}
+					// 背景ボタンVer
+					&.-bgImgVer{
+						background: url(../images/item/contact_bg.jpg);
+						background-size: contain;
+						background-repeat: no-repeat;
+						// pointer-events: none;    // カーソルアクションを無効に
+						@include min(768){grid-template-rows: 3.3fr 1fr;}
+						.top-left{
+							position: relative;
+							background: inherit;
+							transition: all .5s;
+							span{
+								color: $main-color--b !important;
+								z-index: 2;
+							}
+							&::after {
+								content: "";
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								width: 95%;
+								height: 90%;
+								background: $main-color--w;
+								z-index: 1;
+								transition: all .5s;
+							}
+							&:hover{
+								background: $main-color--gray;
+								&::after{
+									width: 98%;
+									height: 95%;
+								}
+							}
+						}
+						.top-right{
+							position: relative;
+							transition: all .5s;
+							span{color: $main-color--w !important;}
+							&::after {
+								content: "";
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								width: 90%;
+								height: 90%;
+								background: rgba(255, 255, 255, 0);
+								z-index: 1;
+								transition: all .5s;
+							}
+							&:hover{
+								&::after{
+									width: 98%;
+									height: 95%;
+									background: rgba(255, 255, 255, 0.137);
+								}
+							}
+						}
 					}
 				}
 			}
