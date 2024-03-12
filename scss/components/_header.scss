@@ -273,31 +273,7 @@
 						width: 100%;
 						height: 100%;
 						padding: 15% 0;
-						&.-active{
-							background: $site-color02;
-							pointer-events: none;
-							a,span{
-								color: $main-color--w !important;
-							}
-						}
 					}
-
-					// アクティブ時
-					// &.-active{
-					// 	background: $site-color02;
-					// 	pointer-events: none;
-					// 	a,span{
-					// 		color: $main-color--w !important;
-					// 	}
-					// }
-					// ホバー関係
-					&:hover{
-						background: $site-color01;
-						.navItem__link,
-						.navItem__link span,
-						.d-menu__title span{color: $main-color--w !important;}
-					}
-
 					// オプション > ボーダーなし
 					&.-no-b{
 						&::before,
@@ -321,6 +297,88 @@
 				}
 				&.-col8{
 					li{width: calc(100%/8);}
+				}
+			}
+		}
+		// アクティブ・ホバーアニメーション変更
+		&.-navColor{// 色
+			.c-header__navLists{
+				@include min(768){
+					li{
+						transition: .5s all;
+						.navItem__link,
+						.d-menu__title{
+							&.-active{
+								background: $site-color02;
+								pointer-events: none;
+								a,span{
+									color: $main-color--w !important;
+								}
+							}
+						}
+						// ホバー関係
+						&:hover{
+							background: $site-color01;
+							.navItem__link,
+							.navItem__link span,
+							.d-menu__title span{color: $main-color--w !important;}
+						}
+						// クリック関係
+						#d-menu__checkbox {
+							display: none;
+							&:checked ~ .d-menu__title {
+								background: $site-color02;
+								a,span{
+									color: $main-color--w !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.-navBorder{// 線
+			.c-header__navLists{
+				@include min(768){
+					li{
+						transition: .5s all;
+						.navItem__link,
+						.d-menu__title{
+							position: relative;
+							&::after{
+								content: "";
+								width: 90%;
+								height: 2.5px;
+								position: absolute;
+								left: 50%;
+								bottom: 1%;
+								transform: translateX(-50%);
+								background: $main-color--w;
+								transition: .5s all;
+							}
+							&.-active{
+								&::after{
+									background: $site-color02;
+								}
+							}
+						}
+						// ホバー関係
+						&:hover{
+							.navItem__link,
+							.d-menu__title{
+								&::after{
+									background: $site-color01;
+								}
+							}
+						}
+						// クリック関係
+						#d-menu__checkbox {
+							display: none;
+							&:checked ~ .d-menu__title:after {
+								background: $site-color02;
+							}
+						}
+					}
 				}
 			}
 		}
