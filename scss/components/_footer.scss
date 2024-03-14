@@ -245,10 +245,10 @@
 		}
 	}
 	&__btnArea{// 概要ボタンエリア
-		width: 50%;
+		width: 45%;
 		margin: auto;
 		@include min(768){
-			width: 16%;
+			width: 20%;
 			max-width: 300px;
 		}
 		&.-col2{// 新築戸建 ＋ 建築条件付土地

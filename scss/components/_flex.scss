@@ -306,11 +306,8 @@
     // ------------- 物件概要 ----------------
     &.-gaiyou{
         li{
-            width: calc(50% - 5px);
+            width: 100%;
             margin: 0 auto;
-            @include min(768){
-                width: calc(50% - 15px);
-            }
             &.text{
                 @include min(768){width: calc(35% - 15px);}
             }
