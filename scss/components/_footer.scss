@@ -244,14 +244,14 @@
 			}
 		}
 	}
-	&__btnArea{
+	&__btnArea{// 概要ボタンエリア
 		width: 50%;
 		margin: auto;
 		@include min(768){
 			width: 16%;
 			max-width: 300px;
 		}
-		&.-col2{
+		&.-col2{// 新築戸建 ＋ 建築条件付土地
 			width: 80%;
 			margin: auto;
 			@include min(768){
@@ -315,7 +315,7 @@
 			}
 		}
 	}
-	&__shopArea{
+	&__shopArea{// 支店情報エリア
 		width: 60%;
 		margin: auto;
 		@include min(768){
