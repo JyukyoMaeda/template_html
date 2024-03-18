@@ -37,15 +37,22 @@
     // コンテンツタイトル > 英語表記
     &.-gaikou{&::before{content: "EXTERIOR";}}                                      // 外構・外観
     &.-naikan{&::before{content: "NTROSPECTION";}}                                  // 内観
+    &.-naikanDesign{&::before{content: "INNER DESIGN";}}                            // 内観デザイン
 
     &.-layout{&::before{content: "LAYOUT PLAN / PLOT PLAN"; white-space: nowrap;}}  // レイアウト
     &.-house-layout{&::before{content: "HOUSE LAYOUT"; white-space: nowrap;}}       // ハウスレイアウト
     &.-plan{&::before{content: "PLAN"; white-space: nowrap;}}                       // プラン
+
+    &.-basinArea{&::before{content: "THE BASIN AREA"; white-space: nowrap;}}        // 水回り
     &.-kitchen{&::before{content: "KITCHEN";}}                                      // キッチン
     &.-bathroom{&::before{content: "BATHROOM";}}                                    // お風呂
     &.-window{&::before{content: "WINDOW";}}                                        // 窓
     &.-entrance{&::before{content: "ENTRANCE";}}                                    // 玄関
-    &.-koutsu{&::before{content: "ACCESS";}}                                        // アクセス
+    &.-ex{&::before{content: "EXTERIOR & COMFORTABLE"; white-space: nowrap;}}       // 設備仕様
+    &.-skyBalcony{&::before{content: "SKY BALCONY"; white-space: nowrap;}}          // スカイバルコニー
+
+    &.-deilyUse{&::before{content: "DAILY USE";}}                                   // 周辺環境
+    &.-access{&::before{content: "ACCESS";}}                                        // アクセス
     &.-location{&::before{content: "SURROUNDING ENVIRONMENT"; white-space: nowrap;}}// 交通
     &.-spot{&::before{content: "RECOMMENDED SPOTS"; white-space: nowrap;}}          // スポット
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}// 施工例
