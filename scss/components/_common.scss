@@ -125,3 +125,32 @@
         padding: 3% 0 4%;
     }
 }
+
+// 画像関係
+.c-img{
+    // ボーダー枠
+    &.-b-frame{
+        border: 2px solid $main-color--b;
+        overflow: hidden;
+        &.-left{
+            border-top: 2px solid $main-color--b;
+            border-right: 2px solid $main-color--b;
+            border-bottom: 2px solid $main-color--b;
+            border-radius: 0 20px 20px 0;
+        }
+        &.-right{
+            border-top: 2px solid $main-color--b;
+            border-left: 2px solid $main-color--b;
+            border-bottom: 2px solid $main-color--b;
+            border-radius: 20px 0 0 20px;
+        }
+    }
+    // シャドウ
+    &.-shadow{
+        box-shadow: 1px 3px 5px 1px rgb(0 0 0 / 34%);
+    }
+}
+.box-r{
+    border-radius: 20px;
+    overflow: hidden;
+}
