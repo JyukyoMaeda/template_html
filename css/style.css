@@ -13,9 +13,6 @@ body,
 ul, li {
   margin: 0;
   padding: 0;
-}
-
-ul {
   list-style: none;
 }
 
@@ -142,8 +139,6 @@ h1, h2, h3, h4, h5, h6, p, a, span, label, button {
   font-family: gothic-font01;
   font-weight: normal;
   font-style: normal;
-  text-wrap: balance;
-  word-break: auto-phrase;
   line-height: 1.3;
 }
 h1.b-text, h2.b-text, h3.b-text, h4.b-text, h5.b-text, h6.b-text, p.b-text, a.b-text, span.b-text, label.b-text, button.b-text {
@@ -359,6 +354,11 @@ h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-
 @media (width >= 768px) {
   h1.s-L, h2.s-L, h3.s-L, h4.s-L, h5.s-L, h6.s-L, p.s-L, a.s-L, span.s-L, label.s-L, button.s-L {
     font-size: clamp(1.6rem, 2vw, 2.2rem);
+  }
+}
+@media (768px >= width) {
+  h1.s-L.-s12, h2.s-L.-s12, h3.s-L.-s12, h4.s-L.-s12, h5.s-L.-s12, h6.s-L.-s12, p.s-L.-s12, a.s-L.-s12, span.s-L.-s12, label.s-L.-s12, button.s-L.-s12 {
+    font-size: 1.2rem;
   }
 }
 @media (768px >= width) {
@@ -2829,6 +2829,31 @@ button.swiper-pagination-bullet {
   }
 }
 
+.c-img.-b-frame {
+  border: 2px solid #3b3b3b;
+  overflow: hidden;
+}
+.c-img.-b-frame.-left {
+  border-top: 2px solid #3b3b3b;
+  border-right: 2px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
+  border-radius: 0 20px 20px 0;
+}
+.c-img.-b-frame.-right {
+  border-top: 2px solid #3b3b3b;
+  border-left: 2px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
+  border-radius: 20px 0 0 20px;
+}
+.c-img.-shadow {
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.34);
+}
+
+.box-r {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .c-header {
   width: 100vw;
   height: auto;
@@ -2852,7 +2877,7 @@ button.swiper-pagination-bullet {
   align-items: center;
   width: 95%;
   height: auto;
-  padding: 18px 0px 16px;
+  padding: 8px 0px 10px;
   margin: auto;
 }
 @media (width >= 768px) {
@@ -2893,7 +2918,7 @@ button.swiper-pagination-bullet {
 .c-header__popArea .c-header__lists li.logo {
   width: 50%;
   height: auto;
-  margin: auto auto auto 0;
+  margin: 0 auto;
 }
 @media (width >= 768px) {
   .c-header__popArea .c-header__lists li.logo {
@@ -2964,16 +2989,16 @@ button.swiper-pagination-bullet {
   background: #3b3b3b;
 }
 .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-left span {
-  color: #3b3b3b !important;
+  color: #3b3b3b;
 }
 .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-left:hover span {
-  color: #96bbc7 !important;
-}
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right span {
   color: #3b3b3b !important;
 }
+.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right span {
+  color: #3b3b3b;
+}
 .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right:hover span {
-  color: #5a8190 !important;
+  color: #3b3b3b !important;
 }
 @media (width >= 768px) {
   .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer {
@@ -3281,7 +3306,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-footer__contactArea .c-footer__contactLists li:hover {
-  background: #5a8190;
+  background: #96bbc7;
 }
 .c-footer__contactArea .c-footer__contactLists li:hover a, .c-footer__contactArea .c-footer__contactLists li:hover span {
   color: #ffffff !important;
@@ -3340,12 +3365,12 @@ button.swiper-pagination-bullet {
   pointer-events: none;
 }
 .c-footer__navArea .c-footer__navLists li a.-active span {
-  color: #5a8190;
+  color: #96bbc7;
 }
 .c-footer__navArea .c-footer__navLists li a.-active span::after {
   width: 100%;
   height: 1px;
-  background: #5a8190;
+  background: #96bbc7;
 }
 .c-footer__navArea .c-footer__navLists li:first-child::before {
   content: "";
@@ -3360,18 +3385,6 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-footer__navArea .c-footer__navLists li:first-child::before {
     height: 25%;
-  }
-}
-@media (768px >= width) {
-  .c-footer__navArea .c-footer__navLists li:nth-child(5)::before {
-    content: "";
-    position: absolute;
-    top: 59%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 40%;
-    width: 1px;
-    background: #3b3b3b;
   }
 }
 .c-footer__navArea .c-footer__navLists li::after {
@@ -3417,8 +3430,40 @@ button.swiper-pagination-bullet {
 .c-footer__navArea .c-footer__navLists li.-grayOutItem span {
   opacity: 0.2;
 }
+.c-footer__navArea .c-footer__navLists.-col5 li {
+  width: 33.3333333333%;
+}
+@media (768px >= width) {
+  .c-footer__navArea .c-footer__navLists.-col5 li:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 59%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 1px;
+    background: #3b3b3b;
+  }
+}
+@media (width >= 768px) {
+  .c-footer__navArea .c-footer__navLists.-col5 li {
+    width: 20%;
+  }
+}
 .c-footer__navArea .c-footer__navLists.-col6 li {
   width: 33.3333333333%;
+}
+@media (768px >= width) {
+  .c-footer__navArea .c-footer__navLists.-col6 li:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 59%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 1px;
+    background: #3b3b3b;
+  }
 }
 @media (width >= 768px) {
   .c-footer__navArea .c-footer__navLists.-col6 li {
@@ -3428,6 +3473,18 @@ button.swiper-pagination-bullet {
 .c-footer__navArea .c-footer__navLists.-col7 li {
   width: 25%;
 }
+@media (768px >= width) {
+  .c-footer__navArea .c-footer__navLists.-col7 li:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 59%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 1px;
+    background: #3b3b3b;
+  }
+}
 @media (width >= 768px) {
   .c-footer__navArea .c-footer__navLists.-col7 li {
     width: 14.2857142857%;
@@ -3436,18 +3493,30 @@ button.swiper-pagination-bullet {
 .c-footer__navArea .c-footer__navLists.-col8 li {
   width: 25%;
 }
+@media (768px >= width) {
+  .c-footer__navArea .c-footer__navLists.-col8 li:nth-child(5)::before {
+    content: "";
+    position: absolute;
+    top: 59%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 40%;
+    width: 1px;
+    background: #3b3b3b;
+  }
+}
 @media (width >= 768px) {
   .c-footer__navArea .c-footer__navLists.-col8 li {
     width: 12.5%;
   }
 }
 .c-footer__btnArea {
-  width: 50%;
+  width: 45%;
   margin: auto;
 }
 @media (width >= 768px) {
   .c-footer__btnArea {
-    width: 16%;
+    width: 20%;
     max-width: 300px;
   }
 }
@@ -4445,6 +4514,9 @@ button.swiper-pagination-bullet {
 .c-contents_title.-naikan::before {
   content: "NTROSPECTION";
 }
+.c-contents_title.-naikanDesign::before {
+  content: "INNER DESIGN";
+}
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
   white-space: nowrap;
@@ -4455,6 +4527,10 @@ button.swiper-pagination-bullet {
 }
 .c-contents_title.-plan::before {
   content: "PLAN";
+  white-space: nowrap;
+}
+.c-contents_title.-basinArea::before {
+  content: "THE BASIN AREA";
   white-space: nowrap;
 }
 .c-contents_title.-kitchen::before {
@@ -4469,7 +4545,18 @@ button.swiper-pagination-bullet {
 .c-contents_title.-entrance::before {
   content: "ENTRANCE";
 }
-.c-contents_title.-koutsu::before {
+.c-contents_title.-ex::before {
+  content: "EXTERIOR & COMFORTABLE";
+  white-space: nowrap;
+}
+.c-contents_title.-skyBalcony::before {
+  content: "SKY BALCONY";
+  white-space: nowrap;
+}
+.c-contents_title.-deilyUse::before {
+  content: "DAILY USE";
+}
+.c-contents_title.-access::before {
   content: "ACCESS";
 }
 .c-contents_title.-location::before {
@@ -4888,10 +4975,12 @@ button.swiper-pagination-bullet {
     width: calc(50% - 15px);
   }
   .c-flex.-col1_2.-r li:nth-child(1) {
+    margin-right: auto;
     margin-left: 15px;
   }
   .c-flex.-col1_2.-r li:nth-child(2) {
     margin-right: 15px;
+    margin-left: auto;
   }
 }
 @media (width >= 768px) {
@@ -4925,20 +5014,20 @@ button.swiper-pagination-bullet {
   margin: 0;
 }
 .c-flex.-col2_2 li:nth-child(1) {
-  margin-right: 5px !important;
+  margin-right: 5px;
 }
 .c-flex.-col2_2 li:nth-child(2) {
-  margin-left: 5px !important;
+  margin-left: 5px;
 }
 @media (width >= 768px) {
   .c-flex.-col2_2 li {
     width: calc(50% - 15px);
   }
   .c-flex.-col2_2 li:nth-child(1) {
-    margin-right: 15px !important;
+    margin-right: 15px;
   }
   .c-flex.-col2_2 li:nth-child(2) {
-    margin-left: 15px !important;
+    margin-left: 15px;
   }
 }
 @media (width >= 768px) {
@@ -4953,23 +5042,23 @@ button.swiper-pagination-bullet {
 }
 .c-flex.-col2_2.-r li {
   width: calc(50% - 5px);
-  margin: 0 !important;
+  margin: 0;
 }
 .c-flex.-col2_2.-r li:nth-child(1) {
-  margin-left: 5px !important;
+  margin-left: 5px;
 }
 .c-flex.-col2_2.-r li:nth-child(2) {
-  margin-right: 5px !important;
+  margin-right: 5px;
 }
 @media (width >= 768px) {
   .c-flex.-col2_2.-r li {
     width: calc(50% - 15px);
   }
   .c-flex.-col2_2.-r li:nth-child(1) {
-    margin-left: 15px !important;
+    margin-left: 15px;
   }
   .c-flex.-col2_2.-r li:nth-child(2) {
-    margin-right: 15px !important;
+    margin-right: 15px;
   }
 }
 @media (width >= 768px) {
@@ -4979,6 +5068,72 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-col2_2.-r li.img {
+    width: calc(65% - 15px);
+  }
+}
+.c-flex.-col2_2__in li {
+  width: calc(50% - 5px) !important;
+  margin: 0;
+}
+.c-flex.-col2_2__in li:nth-child(1) {
+  margin-right: 5px !important;
+  margin-left: auto !important;
+}
+.c-flex.-col2_2__in li:nth-child(2) {
+  margin-right: auto !important;
+  margin-left: 5px !important;
+}
+@media (width >= 768px) {
+  .c-flex.-col2_2__in li {
+    width: calc(50% - 15px);
+  }
+  .c-flex.-col2_2__in li:nth-child(1) {
+    margin-right: 15px !important;
+    margin-left: auto !important;
+  }
+  .c-flex.-col2_2__in li:nth-child(2) {
+    margin-right: auto !important;
+    margin-left: 15px !important;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_2__in li.text {
+    width: calc(35% - 15px) !important;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_2__in li.img {
+    width: calc(65% - 15px) !important;
+  }
+}
+.c-flex.-col2_2__in.-r li {
+  width: calc(50% - 5px);
+  margin: 0 !important;
+}
+.c-flex.-col2_2__in.-r li:nth-child(1) {
+  margin-left: 5px !important;
+}
+.c-flex.-col2_2__in.-r li:nth-child(2) {
+  margin-right: 5px !important;
+}
+@media (width >= 768px) {
+  .c-flex.-col2_2__in.-r li {
+    width: calc(50% - 15px);
+  }
+  .c-flex.-col2_2__in.-r li:nth-child(1) {
+    margin-left: 15px !important;
+  }
+  .c-flex.-col2_2__in.-r li:nth-child(2) {
+    margin-right: 15px !important;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_2__in.-r li.text {
+    width: calc(35% - 15px);
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_2__in.-r li.img {
     width: calc(65% - 15px);
   }
 }
@@ -5063,6 +5218,41 @@ button.swiper-pagination-bullet {
   }
   .c-flex.-col2_3 li:nth-child(3), .c-flex.-col2_3 li:nth-child(6), .c-flex.-col2_3 li:nth-child(9), .c-flex.-col2_3 li:nth-child(12) {
     margin-left: 15px;
+  }
+}
+@media (768px >= width) {
+  .c-flex.-col2_4 li {
+    width: calc(50% - 5px);
+  }
+  .c-flex.-col2_4 li:nth-child(odd) {
+    margin-right: 5px;
+  }
+  .c-flex.-col2_4 li:nth-child(even) {
+    margin-left: 5px;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_4 li {
+    width: calc(25% - 10px);
+  }
+  .c-flex.-col2_4 li:nth-child(1) {
+    margin-right: 10px;
+  }
+  .c-flex.-col2_4 li:nth-child(2), .c-flex.-col2_4 li:nth-child(3) {
+    margin: 0 5px;
+  }
+  .c-flex.-col2_4 li:nth-child(4) {
+    margin-left: 10px;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_4 li.text {
+    width: calc(35% - 15px);
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col2_4 li.img {
+    width: calc(65% - 15px);
   }
 }
 .c-flex.-col5 li {
@@ -5202,13 +5392,8 @@ button.swiper-pagination-bullet {
   }
 }
 .c-flex.-gaiyou li {
-  width: calc(50% - 5px);
+  width: 100%;
   margin: 0 auto;
-}
-@media (width >= 768px) {
-  .c-flex.-gaiyou li {
-    width: calc(50% - 15px);
-  }
 }
 @media (width >= 768px) {
   .c-flex.-gaiyou li.text {
@@ -6164,99 +6349,156 @@ a {
       colorアニメーション
   --------------------------------------- */
 }
-.a-bg-color, .a-text-color, .a-rotate-bg, .a-fade, .a-fadeUp, .a-fadeDown, .a-fadeLeft, .a-fadeRight, .a-flipDown, .a-flipLeft, .a-flipRight, .a-moveUp, .a-moveDown, .a-scOutImg, .a-bird_r, .a-bird_l01, .a-bird_l02, .a-purupuru, .a-imgChange .no1, .a-imgChange .no2, .a-imgChange .no3 {
+.a-bg-color, .a-text-color, .a-rotate-bg, .a-fade, .a-fadeUp, .a-fadeDown, .a-fadeLeft, .a-fadeRight, .a-flipDown, .a-flipLeft, .a-flipRight, .a-moveUp, .a-moveDown, .a-scOutImg, .a-bird_r, .a-bird_l01, .a-bird_l02, .a-purupuru, .a-fviewOutImg, .a-fviewInImg, .a-imgChange .no1, .a-imgChange .no2, .a-imgChange .no3 {
   /* ---------------------------------------
       各アニメーション_オプション関係
   --------------------------------------- */
 }
-.a-bg-color.-sp05, .a-text-color.-sp05, .a-rotate-bg.-sp05, .a-fade.-sp05, .a-fadeUp.-sp05, .a-fadeDown.-sp05, .a-fadeLeft.-sp05, .a-fadeRight.-sp05, .a-flipDown.-sp05, .a-flipLeft.-sp05, .a-flipRight.-sp05, .a-moveUp.-sp05, .a-moveDown.-sp05, .a-scOutImg.-sp05, .a-bird_r.-sp05, .a-bird_l01.-sp05, .a-bird_l02.-sp05, .a-purupuru.-sp05, .a-imgChange .no1.-sp05, .a-imgChange .no2.-sp05, .a-imgChange .no3.-sp05 {
+.a-bg-color.-sp05, .a-text-color.-sp05, .a-rotate-bg.-sp05, .a-fade.-sp05, .a-fadeUp.-sp05, .a-fadeDown.-sp05, .a-fadeLeft.-sp05, .a-fadeRight.-sp05, .a-flipDown.-sp05, .a-flipLeft.-sp05, .a-flipRight.-sp05, .a-moveUp.-sp05, .a-moveDown.-sp05, .a-scOutImg.-sp05, .a-bird_r.-sp05, .a-bird_l01.-sp05, .a-bird_l02.-sp05, .a-purupuru.-sp05, .a-fviewOutImg.-sp05, .a-fviewInImg.-sp05, .a-imgChange .no1.-sp05, .a-imgChange .no2.-sp05, .a-imgChange .no3.-sp05 {
   animation-duration: 0.5s;
 }
-.a-bg-color.-sp1, .a-text-color.-sp1, .a-rotate-bg.-sp1, .a-fade.-sp1, .a-fadeUp.-sp1, .a-fadeDown.-sp1, .a-fadeLeft.-sp1, .a-fadeRight.-sp1, .a-flipDown.-sp1, .a-flipLeft.-sp1, .a-flipRight.-sp1, .a-moveUp.-sp1, .a-moveDown.-sp1, .a-scOutImg.-sp1, .a-bird_r.-sp1, .a-bird_l01.-sp1, .a-bird_l02.-sp1, .a-purupuru.-sp1, .a-imgChange .no1.-sp1, .a-imgChange .no2.-sp1, .a-imgChange .no3.-sp1 {
+.a-bg-color.-sp05 img, .a-text-color.-sp05 img, .a-rotate-bg.-sp05 img, .a-fade.-sp05 img, .a-fadeUp.-sp05 img, .a-fadeDown.-sp05 img, .a-fadeLeft.-sp05 img, .a-fadeRight.-sp05 img, .a-flipDown.-sp05 img, .a-flipLeft.-sp05 img, .a-flipRight.-sp05 img, .a-moveUp.-sp05 img, .a-moveDown.-sp05 img, .a-scOutImg.-sp05 img, .a-bird_r.-sp05 img, .a-bird_l01.-sp05 img, .a-bird_l02.-sp05 img, .a-purupuru.-sp05 img, .a-fviewOutImg.-sp05 img, .a-fviewInImg.-sp05 img, .a-imgChange .no1.-sp05 img, .a-imgChange .no2.-sp05 img, .a-imgChange .no3.-sp05 img {
+  animation-duration: 0.5s;
+}
+.a-bg-color.-sp1, .a-text-color.-sp1, .a-rotate-bg.-sp1, .a-fade.-sp1, .a-fadeUp.-sp1, .a-fadeDown.-sp1, .a-fadeLeft.-sp1, .a-fadeRight.-sp1, .a-flipDown.-sp1, .a-flipLeft.-sp1, .a-flipRight.-sp1, .a-moveUp.-sp1, .a-moveDown.-sp1, .a-scOutImg.-sp1, .a-bird_r.-sp1, .a-bird_l01.-sp1, .a-bird_l02.-sp1, .a-purupuru.-sp1, .a-fviewOutImg.-sp1, .a-fviewInImg.-sp1, .a-imgChange .no1.-sp1, .a-imgChange .no2.-sp1, .a-imgChange .no3.-sp1 {
   animation-duration: 1s;
 }
-.a-bg-color.-sp15, .a-text-color.-sp15, .a-rotate-bg.-sp15, .a-fade.-sp15, .a-fadeUp.-sp15, .a-fadeDown.-sp15, .a-fadeLeft.-sp15, .a-fadeRight.-sp15, .a-flipDown.-sp15, .a-flipLeft.-sp15, .a-flipRight.-sp15, .a-moveUp.-sp15, .a-moveDown.-sp15, .a-scOutImg.-sp15, .a-bird_r.-sp15, .a-bird_l01.-sp15, .a-bird_l02.-sp15, .a-purupuru.-sp15, .a-imgChange .no1.-sp15, .a-imgChange .no2.-sp15, .a-imgChange .no3.-sp15 {
+.a-bg-color.-sp1 img, .a-text-color.-sp1 img, .a-rotate-bg.-sp1 img, .a-fade.-sp1 img, .a-fadeUp.-sp1 img, .a-fadeDown.-sp1 img, .a-fadeLeft.-sp1 img, .a-fadeRight.-sp1 img, .a-flipDown.-sp1 img, .a-flipLeft.-sp1 img, .a-flipRight.-sp1 img, .a-moveUp.-sp1 img, .a-moveDown.-sp1 img, .a-scOutImg.-sp1 img, .a-bird_r.-sp1 img, .a-bird_l01.-sp1 img, .a-bird_l02.-sp1 img, .a-purupuru.-sp1 img, .a-fviewOutImg.-sp1 img, .a-fviewInImg.-sp1 img, .a-imgChange .no1.-sp1 img, .a-imgChange .no2.-sp1 img, .a-imgChange .no3.-sp1 img {
+  animation-duration: 1s;
+}
+.a-bg-color.-sp15, .a-text-color.-sp15, .a-rotate-bg.-sp15, .a-fade.-sp15, .a-fadeUp.-sp15, .a-fadeDown.-sp15, .a-fadeLeft.-sp15, .a-fadeRight.-sp15, .a-flipDown.-sp15, .a-flipLeft.-sp15, .a-flipRight.-sp15, .a-moveUp.-sp15, .a-moveDown.-sp15, .a-scOutImg.-sp15, .a-bird_r.-sp15, .a-bird_l01.-sp15, .a-bird_l02.-sp15, .a-purupuru.-sp15, .a-fviewOutImg.-sp15, .a-fviewInImg.-sp15, .a-imgChange .no1.-sp15, .a-imgChange .no2.-sp15, .a-imgChange .no3.-sp15 {
   animation-duration: 1.5s;
 }
-.a-bg-color.-sp2, .a-text-color.-sp2, .a-rotate-bg.-sp2, .a-fade.-sp2, .a-fadeUp.-sp2, .a-fadeDown.-sp2, .a-fadeLeft.-sp2, .a-fadeRight.-sp2, .a-flipDown.-sp2, .a-flipLeft.-sp2, .a-flipRight.-sp2, .a-moveUp.-sp2, .a-moveDown.-sp2, .a-scOutImg.-sp2, .a-bird_r.-sp2, .a-bird_l01.-sp2, .a-bird_l02.-sp2, .a-purupuru.-sp2, .a-imgChange .no1.-sp2, .a-imgChange .no2.-sp2, .a-imgChange .no3.-sp2 {
+.a-bg-color.-sp15 img, .a-text-color.-sp15 img, .a-rotate-bg.-sp15 img, .a-fade.-sp15 img, .a-fadeUp.-sp15 img, .a-fadeDown.-sp15 img, .a-fadeLeft.-sp15 img, .a-fadeRight.-sp15 img, .a-flipDown.-sp15 img, .a-flipLeft.-sp15 img, .a-flipRight.-sp15 img, .a-moveUp.-sp15 img, .a-moveDown.-sp15 img, .a-scOutImg.-sp15 img, .a-bird_r.-sp15 img, .a-bird_l01.-sp15 img, .a-bird_l02.-sp15 img, .a-purupuru.-sp15 img, .a-fviewOutImg.-sp15 img, .a-fviewInImg.-sp15 img, .a-imgChange .no1.-sp15 img, .a-imgChange .no2.-sp15 img, .a-imgChange .no3.-sp15 img {
+  animation-duration: 1.5s;
+}
+.a-bg-color.-sp2, .a-text-color.-sp2, .a-rotate-bg.-sp2, .a-fade.-sp2, .a-fadeUp.-sp2, .a-fadeDown.-sp2, .a-fadeLeft.-sp2, .a-fadeRight.-sp2, .a-flipDown.-sp2, .a-flipLeft.-sp2, .a-flipRight.-sp2, .a-moveUp.-sp2, .a-moveDown.-sp2, .a-scOutImg.-sp2, .a-bird_r.-sp2, .a-bird_l01.-sp2, .a-bird_l02.-sp2, .a-purupuru.-sp2, .a-fviewOutImg.-sp2, .a-fviewInImg.-sp2, .a-imgChange .no1.-sp2, .a-imgChange .no2.-sp2, .a-imgChange .no3.-sp2 {
   animation-duration: 2s;
 }
-.a-bg-color.-sp25, .a-text-color.-sp25, .a-rotate-bg.-sp25, .a-fade.-sp25, .a-fadeUp.-sp25, .a-fadeDown.-sp25, .a-fadeLeft.-sp25, .a-fadeRight.-sp25, .a-flipDown.-sp25, .a-flipLeft.-sp25, .a-flipRight.-sp25, .a-moveUp.-sp25, .a-moveDown.-sp25, .a-scOutImg.-sp25, .a-bird_r.-sp25, .a-bird_l01.-sp25, .a-bird_l02.-sp25, .a-purupuru.-sp25, .a-imgChange .no1.-sp25, .a-imgChange .no2.-sp25, .a-imgChange .no3.-sp25 {
+.a-bg-color.-sp2 img, .a-text-color.-sp2 img, .a-rotate-bg.-sp2 img, .a-fade.-sp2 img, .a-fadeUp.-sp2 img, .a-fadeDown.-sp2 img, .a-fadeLeft.-sp2 img, .a-fadeRight.-sp2 img, .a-flipDown.-sp2 img, .a-flipLeft.-sp2 img, .a-flipRight.-sp2 img, .a-moveUp.-sp2 img, .a-moveDown.-sp2 img, .a-scOutImg.-sp2 img, .a-bird_r.-sp2 img, .a-bird_l01.-sp2 img, .a-bird_l02.-sp2 img, .a-purupuru.-sp2 img, .a-fviewOutImg.-sp2 img, .a-fviewInImg.-sp2 img, .a-imgChange .no1.-sp2 img, .a-imgChange .no2.-sp2 img, .a-imgChange .no3.-sp2 img {
+  animation-duration: 2s;
+}
+.a-bg-color.-sp25, .a-text-color.-sp25, .a-rotate-bg.-sp25, .a-fade.-sp25, .a-fadeUp.-sp25, .a-fadeDown.-sp25, .a-fadeLeft.-sp25, .a-fadeRight.-sp25, .a-flipDown.-sp25, .a-flipLeft.-sp25, .a-flipRight.-sp25, .a-moveUp.-sp25, .a-moveDown.-sp25, .a-scOutImg.-sp25, .a-bird_r.-sp25, .a-bird_l01.-sp25, .a-bird_l02.-sp25, .a-purupuru.-sp25, .a-fviewOutImg.-sp25, .a-fviewInImg.-sp25, .a-imgChange .no1.-sp25, .a-imgChange .no2.-sp25, .a-imgChange .no3.-sp25 {
   animation-duration: 2.5s;
 }
-.a-bg-color.-sp3, .a-text-color.-sp3, .a-rotate-bg.-sp3, .a-fade.-sp3, .a-fadeUp.-sp3, .a-fadeDown.-sp3, .a-fadeLeft.-sp3, .a-fadeRight.-sp3, .a-flipDown.-sp3, .a-flipLeft.-sp3, .a-flipRight.-sp3, .a-moveUp.-sp3, .a-moveDown.-sp3, .a-scOutImg.-sp3, .a-bird_r.-sp3, .a-bird_l01.-sp3, .a-bird_l02.-sp3, .a-purupuru.-sp3, .a-imgChange .no1.-sp3, .a-imgChange .no2.-sp3, .a-imgChange .no3.-sp3 {
+.a-bg-color.-sp25 img, .a-text-color.-sp25 img, .a-rotate-bg.-sp25 img, .a-fade.-sp25 img, .a-fadeUp.-sp25 img, .a-fadeDown.-sp25 img, .a-fadeLeft.-sp25 img, .a-fadeRight.-sp25 img, .a-flipDown.-sp25 img, .a-flipLeft.-sp25 img, .a-flipRight.-sp25 img, .a-moveUp.-sp25 img, .a-moveDown.-sp25 img, .a-scOutImg.-sp25 img, .a-bird_r.-sp25 img, .a-bird_l01.-sp25 img, .a-bird_l02.-sp25 img, .a-purupuru.-sp25 img, .a-fviewOutImg.-sp25 img, .a-fviewInImg.-sp25 img, .a-imgChange .no1.-sp25 img, .a-imgChange .no2.-sp25 img, .a-imgChange .no3.-sp25 img {
+  animation-duration: 2.5s;
+}
+.a-bg-color.-sp3, .a-text-color.-sp3, .a-rotate-bg.-sp3, .a-fade.-sp3, .a-fadeUp.-sp3, .a-fadeDown.-sp3, .a-fadeLeft.-sp3, .a-fadeRight.-sp3, .a-flipDown.-sp3, .a-flipLeft.-sp3, .a-flipRight.-sp3, .a-moveUp.-sp3, .a-moveDown.-sp3, .a-scOutImg.-sp3, .a-bird_r.-sp3, .a-bird_l01.-sp3, .a-bird_l02.-sp3, .a-purupuru.-sp3, .a-fviewOutImg.-sp3, .a-fviewInImg.-sp3, .a-imgChange .no1.-sp3, .a-imgChange .no2.-sp3, .a-imgChange .no3.-sp3 {
   animation-duration: 3s;
 }
-.a-bg-color.-sp35, .a-text-color.-sp35, .a-rotate-bg.-sp35, .a-fade.-sp35, .a-fadeUp.-sp35, .a-fadeDown.-sp35, .a-fadeLeft.-sp35, .a-fadeRight.-sp35, .a-flipDown.-sp35, .a-flipLeft.-sp35, .a-flipRight.-sp35, .a-moveUp.-sp35, .a-moveDown.-sp35, .a-scOutImg.-sp35, .a-bird_r.-sp35, .a-bird_l01.-sp35, .a-bird_l02.-sp35, .a-purupuru.-sp35, .a-imgChange .no1.-sp35, .a-imgChange .no2.-sp35, .a-imgChange .no3.-sp35 {
+.a-bg-color.-sp3 img, .a-text-color.-sp3 img, .a-rotate-bg.-sp3 img, .a-fade.-sp3 img, .a-fadeUp.-sp3 img, .a-fadeDown.-sp3 img, .a-fadeLeft.-sp3 img, .a-fadeRight.-sp3 img, .a-flipDown.-sp3 img, .a-flipLeft.-sp3 img, .a-flipRight.-sp3 img, .a-moveUp.-sp3 img, .a-moveDown.-sp3 img, .a-scOutImg.-sp3 img, .a-bird_r.-sp3 img, .a-bird_l01.-sp3 img, .a-bird_l02.-sp3 img, .a-purupuru.-sp3 img, .a-fviewOutImg.-sp3 img, .a-fviewInImg.-sp3 img, .a-imgChange .no1.-sp3 img, .a-imgChange .no2.-sp3 img, .a-imgChange .no3.-sp3 img {
+  animation-duration: 3s;
+}
+.a-bg-color.-sp35, .a-text-color.-sp35, .a-rotate-bg.-sp35, .a-fade.-sp35, .a-fadeUp.-sp35, .a-fadeDown.-sp35, .a-fadeLeft.-sp35, .a-fadeRight.-sp35, .a-flipDown.-sp35, .a-flipLeft.-sp35, .a-flipRight.-sp35, .a-moveUp.-sp35, .a-moveDown.-sp35, .a-scOutImg.-sp35, .a-bird_r.-sp35, .a-bird_l01.-sp35, .a-bird_l02.-sp35, .a-purupuru.-sp35, .a-fviewOutImg.-sp35, .a-fviewInImg.-sp35, .a-imgChange .no1.-sp35, .a-imgChange .no2.-sp35, .a-imgChange .no3.-sp35 {
   animation-duration: 3.5s;
 }
-.a-bg-color.-sp4, .a-text-color.-sp4, .a-rotate-bg.-sp4, .a-fade.-sp4, .a-fadeUp.-sp4, .a-fadeDown.-sp4, .a-fadeLeft.-sp4, .a-fadeRight.-sp4, .a-flipDown.-sp4, .a-flipLeft.-sp4, .a-flipRight.-sp4, .a-moveUp.-sp4, .a-moveDown.-sp4, .a-scOutImg.-sp4, .a-bird_r.-sp4, .a-bird_l01.-sp4, .a-bird_l02.-sp4, .a-purupuru.-sp4, .a-imgChange .no1.-sp4, .a-imgChange .no2.-sp4, .a-imgChange .no3.-sp4 {
+.a-bg-color.-sp35 img, .a-text-color.-sp35 img, .a-rotate-bg.-sp35 img, .a-fade.-sp35 img, .a-fadeUp.-sp35 img, .a-fadeDown.-sp35 img, .a-fadeLeft.-sp35 img, .a-fadeRight.-sp35 img, .a-flipDown.-sp35 img, .a-flipLeft.-sp35 img, .a-flipRight.-sp35 img, .a-moveUp.-sp35 img, .a-moveDown.-sp35 img, .a-scOutImg.-sp35 img, .a-bird_r.-sp35 img, .a-bird_l01.-sp35 img, .a-bird_l02.-sp35 img, .a-purupuru.-sp35 img, .a-fviewOutImg.-sp35 img, .a-fviewInImg.-sp35 img, .a-imgChange .no1.-sp35 img, .a-imgChange .no2.-sp35 img, .a-imgChange .no3.-sp35 img {
+  animation-duration: 3.5s;
+}
+.a-bg-color.-sp4, .a-text-color.-sp4, .a-rotate-bg.-sp4, .a-fade.-sp4, .a-fadeUp.-sp4, .a-fadeDown.-sp4, .a-fadeLeft.-sp4, .a-fadeRight.-sp4, .a-flipDown.-sp4, .a-flipLeft.-sp4, .a-flipRight.-sp4, .a-moveUp.-sp4, .a-moveDown.-sp4, .a-scOutImg.-sp4, .a-bird_r.-sp4, .a-bird_l01.-sp4, .a-bird_l02.-sp4, .a-purupuru.-sp4, .a-fviewOutImg.-sp4, .a-fviewInImg.-sp4, .a-imgChange .no1.-sp4, .a-imgChange .no2.-sp4, .a-imgChange .no3.-sp4 {
   animation-duration: 4s;
 }
-.a-bg-color.-sp45, .a-text-color.-sp45, .a-rotate-bg.-sp45, .a-fade.-sp45, .a-fadeUp.-sp45, .a-fadeDown.-sp45, .a-fadeLeft.-sp45, .a-fadeRight.-sp45, .a-flipDown.-sp45, .a-flipLeft.-sp45, .a-flipRight.-sp45, .a-moveUp.-sp45, .a-moveDown.-sp45, .a-scOutImg.-sp45, .a-bird_r.-sp45, .a-bird_l01.-sp45, .a-bird_l02.-sp45, .a-purupuru.-sp45, .a-imgChange .no1.-sp45, .a-imgChange .no2.-sp45, .a-imgChange .no3.-sp45 {
+.a-bg-color.-sp4 img, .a-text-color.-sp4 img, .a-rotate-bg.-sp4 img, .a-fade.-sp4 img, .a-fadeUp.-sp4 img, .a-fadeDown.-sp4 img, .a-fadeLeft.-sp4 img, .a-fadeRight.-sp4 img, .a-flipDown.-sp4 img, .a-flipLeft.-sp4 img, .a-flipRight.-sp4 img, .a-moveUp.-sp4 img, .a-moveDown.-sp4 img, .a-scOutImg.-sp4 img, .a-bird_r.-sp4 img, .a-bird_l01.-sp4 img, .a-bird_l02.-sp4 img, .a-purupuru.-sp4 img, .a-fviewOutImg.-sp4 img, .a-fviewInImg.-sp4 img, .a-imgChange .no1.-sp4 img, .a-imgChange .no2.-sp4 img, .a-imgChange .no3.-sp4 img {
+  animation-duration: 4s;
+}
+.a-bg-color.-sp45, .a-text-color.-sp45, .a-rotate-bg.-sp45, .a-fade.-sp45, .a-fadeUp.-sp45, .a-fadeDown.-sp45, .a-fadeLeft.-sp45, .a-fadeRight.-sp45, .a-flipDown.-sp45, .a-flipLeft.-sp45, .a-flipRight.-sp45, .a-moveUp.-sp45, .a-moveDown.-sp45, .a-scOutImg.-sp45, .a-bird_r.-sp45, .a-bird_l01.-sp45, .a-bird_l02.-sp45, .a-purupuru.-sp45, .a-fviewOutImg.-sp45, .a-fviewInImg.-sp45, .a-imgChange .no1.-sp45, .a-imgChange .no2.-sp45, .a-imgChange .no3.-sp45 {
   animation-duration: 4.5s;
 }
-.a-bg-color.-sp5, .a-text-color.-sp5, .a-rotate-bg.-sp5, .a-fade.-sp5, .a-fadeUp.-sp5, .a-fadeDown.-sp5, .a-fadeLeft.-sp5, .a-fadeRight.-sp5, .a-flipDown.-sp5, .a-flipLeft.-sp5, .a-flipRight.-sp5, .a-moveUp.-sp5, .a-moveDown.-sp5, .a-scOutImg.-sp5, .a-bird_r.-sp5, .a-bird_l01.-sp5, .a-bird_l02.-sp5, .a-purupuru.-sp5, .a-imgChange .no1.-sp5, .a-imgChange .no2.-sp5, .a-imgChange .no3.-sp5 {
+.a-bg-color.-sp45 img, .a-text-color.-sp45 img, .a-rotate-bg.-sp45 img, .a-fade.-sp45 img, .a-fadeUp.-sp45 img, .a-fadeDown.-sp45 img, .a-fadeLeft.-sp45 img, .a-fadeRight.-sp45 img, .a-flipDown.-sp45 img, .a-flipLeft.-sp45 img, .a-flipRight.-sp45 img, .a-moveUp.-sp45 img, .a-moveDown.-sp45 img, .a-scOutImg.-sp45 img, .a-bird_r.-sp45 img, .a-bird_l01.-sp45 img, .a-bird_l02.-sp45 img, .a-purupuru.-sp45 img, .a-fviewOutImg.-sp45 img, .a-fviewInImg.-sp45 img, .a-imgChange .no1.-sp45 img, .a-imgChange .no2.-sp45 img, .a-imgChange .no3.-sp45 img {
+  animation-duration: 4.5s;
+}
+.a-bg-color.-sp5, .a-text-color.-sp5, .a-rotate-bg.-sp5, .a-fade.-sp5, .a-fadeUp.-sp5, .a-fadeDown.-sp5, .a-fadeLeft.-sp5, .a-fadeRight.-sp5, .a-flipDown.-sp5, .a-flipLeft.-sp5, .a-flipRight.-sp5, .a-moveUp.-sp5, .a-moveDown.-sp5, .a-scOutImg.-sp5, .a-bird_r.-sp5, .a-bird_l01.-sp5, .a-bird_l02.-sp5, .a-purupuru.-sp5, .a-fviewOutImg.-sp5, .a-fviewInImg.-sp5, .a-imgChange .no1.-sp5, .a-imgChange .no2.-sp5, .a-imgChange .no3.-sp5 {
   animation-duration: 5s;
 }
-.a-bg-color.-sp55, .a-text-color.-sp55, .a-rotate-bg.-sp55, .a-fade.-sp55, .a-fadeUp.-sp55, .a-fadeDown.-sp55, .a-fadeLeft.-sp55, .a-fadeRight.-sp55, .a-flipDown.-sp55, .a-flipLeft.-sp55, .a-flipRight.-sp55, .a-moveUp.-sp55, .a-moveDown.-sp55, .a-scOutImg.-sp55, .a-bird_r.-sp55, .a-bird_l01.-sp55, .a-bird_l02.-sp55, .a-purupuru.-sp55, .a-imgChange .no1.-sp55, .a-imgChange .no2.-sp55, .a-imgChange .no3.-sp55 {
+.a-bg-color.-sp5 img, .a-text-color.-sp5 img, .a-rotate-bg.-sp5 img, .a-fade.-sp5 img, .a-fadeUp.-sp5 img, .a-fadeDown.-sp5 img, .a-fadeLeft.-sp5 img, .a-fadeRight.-sp5 img, .a-flipDown.-sp5 img, .a-flipLeft.-sp5 img, .a-flipRight.-sp5 img, .a-moveUp.-sp5 img, .a-moveDown.-sp5 img, .a-scOutImg.-sp5 img, .a-bird_r.-sp5 img, .a-bird_l01.-sp5 img, .a-bird_l02.-sp5 img, .a-purupuru.-sp5 img, .a-fviewOutImg.-sp5 img, .a-fviewInImg.-sp5 img, .a-imgChange .no1.-sp5 img, .a-imgChange .no2.-sp5 img, .a-imgChange .no3.-sp5 img {
+  animation-duration: 5s;
+}
+.a-bg-color.-sp55, .a-text-color.-sp55, .a-rotate-bg.-sp55, .a-fade.-sp55, .a-fadeUp.-sp55, .a-fadeDown.-sp55, .a-fadeLeft.-sp55, .a-fadeRight.-sp55, .a-flipDown.-sp55, .a-flipLeft.-sp55, .a-flipRight.-sp55, .a-moveUp.-sp55, .a-moveDown.-sp55, .a-scOutImg.-sp55, .a-bird_r.-sp55, .a-bird_l01.-sp55, .a-bird_l02.-sp55, .a-purupuru.-sp55, .a-fviewOutImg.-sp55, .a-fviewInImg.-sp55, .a-imgChange .no1.-sp55, .a-imgChange .no2.-sp55, .a-imgChange .no3.-sp55 {
   animation-duration: 5.5s;
 }
-.a-bg-color.-sp6, .a-text-color.-sp6, .a-rotate-bg.-sp6, .a-fade.-sp6, .a-fadeUp.-sp6, .a-fadeDown.-sp6, .a-fadeLeft.-sp6, .a-fadeRight.-sp6, .a-flipDown.-sp6, .a-flipLeft.-sp6, .a-flipRight.-sp6, .a-moveUp.-sp6, .a-moveDown.-sp6, .a-scOutImg.-sp6, .a-bird_r.-sp6, .a-bird_l01.-sp6, .a-bird_l02.-sp6, .a-purupuru.-sp6, .a-imgChange .no1.-sp6, .a-imgChange .no2.-sp6, .a-imgChange .no3.-sp6 {
+.a-bg-color.-sp55 img, .a-text-color.-sp55 img, .a-rotate-bg.-sp55 img, .a-fade.-sp55 img, .a-fadeUp.-sp55 img, .a-fadeDown.-sp55 img, .a-fadeLeft.-sp55 img, .a-fadeRight.-sp55 img, .a-flipDown.-sp55 img, .a-flipLeft.-sp55 img, .a-flipRight.-sp55 img, .a-moveUp.-sp55 img, .a-moveDown.-sp55 img, .a-scOutImg.-sp55 img, .a-bird_r.-sp55 img, .a-bird_l01.-sp55 img, .a-bird_l02.-sp55 img, .a-purupuru.-sp55 img, .a-fviewOutImg.-sp55 img, .a-fviewInImg.-sp55 img, .a-imgChange .no1.-sp55 img, .a-imgChange .no2.-sp55 img, .a-imgChange .no3.-sp55 img {
+  animation-duration: 5.5s;
+}
+.a-bg-color.-sp6, .a-text-color.-sp6, .a-rotate-bg.-sp6, .a-fade.-sp6, .a-fadeUp.-sp6, .a-fadeDown.-sp6, .a-fadeLeft.-sp6, .a-fadeRight.-sp6, .a-flipDown.-sp6, .a-flipLeft.-sp6, .a-flipRight.-sp6, .a-moveUp.-sp6, .a-moveDown.-sp6, .a-scOutImg.-sp6, .a-bird_r.-sp6, .a-bird_l01.-sp6, .a-bird_l02.-sp6, .a-purupuru.-sp6, .a-fviewOutImg.-sp6, .a-fviewInImg.-sp6, .a-imgChange .no1.-sp6, .a-imgChange .no2.-sp6, .a-imgChange .no3.-sp6 {
   animation-duration: 6s;
 }
-.a-bg-color.-sp65, .a-text-color.-sp65, .a-rotate-bg.-sp65, .a-fade.-sp65, .a-fadeUp.-sp65, .a-fadeDown.-sp65, .a-fadeLeft.-sp65, .a-fadeRight.-sp65, .a-flipDown.-sp65, .a-flipLeft.-sp65, .a-flipRight.-sp65, .a-moveUp.-sp65, .a-moveDown.-sp65, .a-scOutImg.-sp65, .a-bird_r.-sp65, .a-bird_l01.-sp65, .a-bird_l02.-sp65, .a-purupuru.-sp65, .a-imgChange .no1.-sp65, .a-imgChange .no2.-sp65, .a-imgChange .no3.-sp65 {
+.a-bg-color.-sp6 img, .a-text-color.-sp6 img, .a-rotate-bg.-sp6 img, .a-fade.-sp6 img, .a-fadeUp.-sp6 img, .a-fadeDown.-sp6 img, .a-fadeLeft.-sp6 img, .a-fadeRight.-sp6 img, .a-flipDown.-sp6 img, .a-flipLeft.-sp6 img, .a-flipRight.-sp6 img, .a-moveUp.-sp6 img, .a-moveDown.-sp6 img, .a-scOutImg.-sp6 img, .a-bird_r.-sp6 img, .a-bird_l01.-sp6 img, .a-bird_l02.-sp6 img, .a-purupuru.-sp6 img, .a-fviewOutImg.-sp6 img, .a-fviewInImg.-sp6 img, .a-imgChange .no1.-sp6 img, .a-imgChange .no2.-sp6 img, .a-imgChange .no3.-sp6 img {
+  animation-duration: 6s;
+}
+.a-bg-color.-sp65, .a-text-color.-sp65, .a-rotate-bg.-sp65, .a-fade.-sp65, .a-fadeUp.-sp65, .a-fadeDown.-sp65, .a-fadeLeft.-sp65, .a-fadeRight.-sp65, .a-flipDown.-sp65, .a-flipLeft.-sp65, .a-flipRight.-sp65, .a-moveUp.-sp65, .a-moveDown.-sp65, .a-scOutImg.-sp65, .a-bird_r.-sp65, .a-bird_l01.-sp65, .a-bird_l02.-sp65, .a-purupuru.-sp65, .a-fviewOutImg.-sp65, .a-fviewInImg.-sp65, .a-imgChange .no1.-sp65, .a-imgChange .no2.-sp65, .a-imgChange .no3.-sp65 {
   animation-duration: 6.5s;
 }
-.a-bg-color.-sp7, .a-text-color.-sp7, .a-rotate-bg.-sp7, .a-fade.-sp7, .a-fadeUp.-sp7, .a-fadeDown.-sp7, .a-fadeLeft.-sp7, .a-fadeRight.-sp7, .a-flipDown.-sp7, .a-flipLeft.-sp7, .a-flipRight.-sp7, .a-moveUp.-sp7, .a-moveDown.-sp7, .a-scOutImg.-sp7, .a-bird_r.-sp7, .a-bird_l01.-sp7, .a-bird_l02.-sp7, .a-purupuru.-sp7, .a-imgChange .no1.-sp7, .a-imgChange .no2.-sp7, .a-imgChange .no3.-sp7 {
+.a-bg-color.-sp65 img, .a-text-color.-sp65 img, .a-rotate-bg.-sp65 img, .a-fade.-sp65 img, .a-fadeUp.-sp65 img, .a-fadeDown.-sp65 img, .a-fadeLeft.-sp65 img, .a-fadeRight.-sp65 img, .a-flipDown.-sp65 img, .a-flipLeft.-sp65 img, .a-flipRight.-sp65 img, .a-moveUp.-sp65 img, .a-moveDown.-sp65 img, .a-scOutImg.-sp65 img, .a-bird_r.-sp65 img, .a-bird_l01.-sp65 img, .a-bird_l02.-sp65 img, .a-purupuru.-sp65 img, .a-fviewOutImg.-sp65 img, .a-fviewInImg.-sp65 img, .a-imgChange .no1.-sp65 img, .a-imgChange .no2.-sp65 img, .a-imgChange .no3.-sp65 img {
+  animation-duration: 6.5s;
+}
+.a-bg-color.-sp7, .a-text-color.-sp7, .a-rotate-bg.-sp7, .a-fade.-sp7, .a-fadeUp.-sp7, .a-fadeDown.-sp7, .a-fadeLeft.-sp7, .a-fadeRight.-sp7, .a-flipDown.-sp7, .a-flipLeft.-sp7, .a-flipRight.-sp7, .a-moveUp.-sp7, .a-moveDown.-sp7, .a-scOutImg.-sp7, .a-bird_r.-sp7, .a-bird_l01.-sp7, .a-bird_l02.-sp7, .a-purupuru.-sp7, .a-fviewOutImg.-sp7, .a-fviewInImg.-sp7, .a-imgChange .no1.-sp7, .a-imgChange .no2.-sp7, .a-imgChange .no3.-sp7 {
   animation-duration: 7s;
 }
-.a-bg-color.-sp75, .a-text-color.-sp75, .a-rotate-bg.-sp75, .a-fade.-sp75, .a-fadeUp.-sp75, .a-fadeDown.-sp75, .a-fadeLeft.-sp75, .a-fadeRight.-sp75, .a-flipDown.-sp75, .a-flipLeft.-sp75, .a-flipRight.-sp75, .a-moveUp.-sp75, .a-moveDown.-sp75, .a-scOutImg.-sp75, .a-bird_r.-sp75, .a-bird_l01.-sp75, .a-bird_l02.-sp75, .a-purupuru.-sp75, .a-imgChange .no1.-sp75, .a-imgChange .no2.-sp75, .a-imgChange .no3.-sp75 {
+.a-bg-color.-sp7 img, .a-text-color.-sp7 img, .a-rotate-bg.-sp7 img, .a-fade.-sp7 img, .a-fadeUp.-sp7 img, .a-fadeDown.-sp7 img, .a-fadeLeft.-sp7 img, .a-fadeRight.-sp7 img, .a-flipDown.-sp7 img, .a-flipLeft.-sp7 img, .a-flipRight.-sp7 img, .a-moveUp.-sp7 img, .a-moveDown.-sp7 img, .a-scOutImg.-sp7 img, .a-bird_r.-sp7 img, .a-bird_l01.-sp7 img, .a-bird_l02.-sp7 img, .a-purupuru.-sp7 img, .a-fviewOutImg.-sp7 img, .a-fviewInImg.-sp7 img, .a-imgChange .no1.-sp7 img, .a-imgChange .no2.-sp7 img, .a-imgChange .no3.-sp7 img {
+  animation-duration: 7s;
+}
+.a-bg-color.-sp75, .a-text-color.-sp75, .a-rotate-bg.-sp75, .a-fade.-sp75, .a-fadeUp.-sp75, .a-fadeDown.-sp75, .a-fadeLeft.-sp75, .a-fadeRight.-sp75, .a-flipDown.-sp75, .a-flipLeft.-sp75, .a-flipRight.-sp75, .a-moveUp.-sp75, .a-moveDown.-sp75, .a-scOutImg.-sp75, .a-bird_r.-sp75, .a-bird_l01.-sp75, .a-bird_l02.-sp75, .a-purupuru.-sp75, .a-fviewOutImg.-sp75, .a-fviewInImg.-sp75, .a-imgChange .no1.-sp75, .a-imgChange .no2.-sp75, .a-imgChange .no3.-sp75 {
   animation-duration: 7.5s;
 }
-.a-bg-color.-sp8, .a-text-color.-sp8, .a-rotate-bg.-sp8, .a-fade.-sp8, .a-fadeUp.-sp8, .a-fadeDown.-sp8, .a-fadeLeft.-sp8, .a-fadeRight.-sp8, .a-flipDown.-sp8, .a-flipLeft.-sp8, .a-flipRight.-sp8, .a-moveUp.-sp8, .a-moveDown.-sp8, .a-scOutImg.-sp8, .a-bird_r.-sp8, .a-bird_l01.-sp8, .a-bird_l02.-sp8, .a-purupuru.-sp8, .a-imgChange .no1.-sp8, .a-imgChange .no2.-sp8, .a-imgChange .no3.-sp8 {
+.a-bg-color.-sp75 img, .a-text-color.-sp75 img, .a-rotate-bg.-sp75 img, .a-fade.-sp75 img, .a-fadeUp.-sp75 img, .a-fadeDown.-sp75 img, .a-fadeLeft.-sp75 img, .a-fadeRight.-sp75 img, .a-flipDown.-sp75 img, .a-flipLeft.-sp75 img, .a-flipRight.-sp75 img, .a-moveUp.-sp75 img, .a-moveDown.-sp75 img, .a-scOutImg.-sp75 img, .a-bird_r.-sp75 img, .a-bird_l01.-sp75 img, .a-bird_l02.-sp75 img, .a-purupuru.-sp75 img, .a-fviewOutImg.-sp75 img, .a-fviewInImg.-sp75 img, .a-imgChange .no1.-sp75 img, .a-imgChange .no2.-sp75 img, .a-imgChange .no3.-sp75 img {
+  animation-duration: 7.5s;
+}
+.a-bg-color.-sp8, .a-text-color.-sp8, .a-rotate-bg.-sp8, .a-fade.-sp8, .a-fadeUp.-sp8, .a-fadeDown.-sp8, .a-fadeLeft.-sp8, .a-fadeRight.-sp8, .a-flipDown.-sp8, .a-flipLeft.-sp8, .a-flipRight.-sp8, .a-moveUp.-sp8, .a-moveDown.-sp8, .a-scOutImg.-sp8, .a-bird_r.-sp8, .a-bird_l01.-sp8, .a-bird_l02.-sp8, .a-purupuru.-sp8, .a-fviewOutImg.-sp8, .a-fviewInImg.-sp8, .a-imgChange .no1.-sp8, .a-imgChange .no2.-sp8, .a-imgChange .no3.-sp8 {
   animation-duration: 8s;
 }
-.a-bg-color.-sp85, .a-text-color.-sp85, .a-rotate-bg.-sp85, .a-fade.-sp85, .a-fadeUp.-sp85, .a-fadeDown.-sp85, .a-fadeLeft.-sp85, .a-fadeRight.-sp85, .a-flipDown.-sp85, .a-flipLeft.-sp85, .a-flipRight.-sp85, .a-moveUp.-sp85, .a-moveDown.-sp85, .a-scOutImg.-sp85, .a-bird_r.-sp85, .a-bird_l01.-sp85, .a-bird_l02.-sp85, .a-purupuru.-sp85, .a-imgChange .no1.-sp85, .a-imgChange .no2.-sp85, .a-imgChange .no3.-sp85 {
+.a-bg-color.-sp8 img, .a-text-color.-sp8 img, .a-rotate-bg.-sp8 img, .a-fade.-sp8 img, .a-fadeUp.-sp8 img, .a-fadeDown.-sp8 img, .a-fadeLeft.-sp8 img, .a-fadeRight.-sp8 img, .a-flipDown.-sp8 img, .a-flipLeft.-sp8 img, .a-flipRight.-sp8 img, .a-moveUp.-sp8 img, .a-moveDown.-sp8 img, .a-scOutImg.-sp8 img, .a-bird_r.-sp8 img, .a-bird_l01.-sp8 img, .a-bird_l02.-sp8 img, .a-purupuru.-sp8 img, .a-fviewOutImg.-sp8 img, .a-fviewInImg.-sp8 img, .a-imgChange .no1.-sp8 img, .a-imgChange .no2.-sp8 img, .a-imgChange .no3.-sp8 img {
+  animation-duration: 8s;
+}
+.a-bg-color.-sp85, .a-text-color.-sp85, .a-rotate-bg.-sp85, .a-fade.-sp85, .a-fadeUp.-sp85, .a-fadeDown.-sp85, .a-fadeLeft.-sp85, .a-fadeRight.-sp85, .a-flipDown.-sp85, .a-flipLeft.-sp85, .a-flipRight.-sp85, .a-moveUp.-sp85, .a-moveDown.-sp85, .a-scOutImg.-sp85, .a-bird_r.-sp85, .a-bird_l01.-sp85, .a-bird_l02.-sp85, .a-purupuru.-sp85, .a-fviewOutImg.-sp85, .a-fviewInImg.-sp85, .a-imgChange .no1.-sp85, .a-imgChange .no2.-sp85, .a-imgChange .no3.-sp85 {
   animation-duration: 8.5s;
 }
-.a-bg-color.-sp9, .a-text-color.-sp9, .a-rotate-bg.-sp9, .a-fade.-sp9, .a-fadeUp.-sp9, .a-fadeDown.-sp9, .a-fadeLeft.-sp9, .a-fadeRight.-sp9, .a-flipDown.-sp9, .a-flipLeft.-sp9, .a-flipRight.-sp9, .a-moveUp.-sp9, .a-moveDown.-sp9, .a-scOutImg.-sp9, .a-bird_r.-sp9, .a-bird_l01.-sp9, .a-bird_l02.-sp9, .a-purupuru.-sp9, .a-imgChange .no1.-sp9, .a-imgChange .no2.-sp9, .a-imgChange .no3.-sp9 {
+.a-bg-color.-sp85 img, .a-text-color.-sp85 img, .a-rotate-bg.-sp85 img, .a-fade.-sp85 img, .a-fadeUp.-sp85 img, .a-fadeDown.-sp85 img, .a-fadeLeft.-sp85 img, .a-fadeRight.-sp85 img, .a-flipDown.-sp85 img, .a-flipLeft.-sp85 img, .a-flipRight.-sp85 img, .a-moveUp.-sp85 img, .a-moveDown.-sp85 img, .a-scOutImg.-sp85 img, .a-bird_r.-sp85 img, .a-bird_l01.-sp85 img, .a-bird_l02.-sp85 img, .a-purupuru.-sp85 img, .a-fviewOutImg.-sp85 img, .a-fviewInImg.-sp85 img, .a-imgChange .no1.-sp85 img, .a-imgChange .no2.-sp85 img, .a-imgChange .no3.-sp85 img {
+  animation-duration: 8.5s;
+}
+.a-bg-color.-sp9, .a-text-color.-sp9, .a-rotate-bg.-sp9, .a-fade.-sp9, .a-fadeUp.-sp9, .a-fadeDown.-sp9, .a-fadeLeft.-sp9, .a-fadeRight.-sp9, .a-flipDown.-sp9, .a-flipLeft.-sp9, .a-flipRight.-sp9, .a-moveUp.-sp9, .a-moveDown.-sp9, .a-scOutImg.-sp9, .a-bird_r.-sp9, .a-bird_l01.-sp9, .a-bird_l02.-sp9, .a-purupuru.-sp9, .a-fviewOutImg.-sp9, .a-fviewInImg.-sp9, .a-imgChange .no1.-sp9, .a-imgChange .no2.-sp9, .a-imgChange .no3.-sp9 {
   animation-duration: 9s;
 }
-.a-bg-color.-sp95, .a-text-color.-sp95, .a-rotate-bg.-sp95, .a-fade.-sp95, .a-fadeUp.-sp95, .a-fadeDown.-sp95, .a-fadeLeft.-sp95, .a-fadeRight.-sp95, .a-flipDown.-sp95, .a-flipLeft.-sp95, .a-flipRight.-sp95, .a-moveUp.-sp95, .a-moveDown.-sp95, .a-scOutImg.-sp95, .a-bird_r.-sp95, .a-bird_l01.-sp95, .a-bird_l02.-sp95, .a-purupuru.-sp95, .a-imgChange .no1.-sp95, .a-imgChange .no2.-sp95, .a-imgChange .no3.-sp95 {
+.a-bg-color.-sp9 img, .a-text-color.-sp9 img, .a-rotate-bg.-sp9 img, .a-fade.-sp9 img, .a-fadeUp.-sp9 img, .a-fadeDown.-sp9 img, .a-fadeLeft.-sp9 img, .a-fadeRight.-sp9 img, .a-flipDown.-sp9 img, .a-flipLeft.-sp9 img, .a-flipRight.-sp9 img, .a-moveUp.-sp9 img, .a-moveDown.-sp9 img, .a-scOutImg.-sp9 img, .a-bird_r.-sp9 img, .a-bird_l01.-sp9 img, .a-bird_l02.-sp9 img, .a-purupuru.-sp9 img, .a-fviewOutImg.-sp9 img, .a-fviewInImg.-sp9 img, .a-imgChange .no1.-sp9 img, .a-imgChange .no2.-sp9 img, .a-imgChange .no3.-sp9 img {
+  animation-duration: 9s;
+}
+.a-bg-color.-sp95, .a-text-color.-sp95, .a-rotate-bg.-sp95, .a-fade.-sp95, .a-fadeUp.-sp95, .a-fadeDown.-sp95, .a-fadeLeft.-sp95, .a-fadeRight.-sp95, .a-flipDown.-sp95, .a-flipLeft.-sp95, .a-flipRight.-sp95, .a-moveUp.-sp95, .a-moveDown.-sp95, .a-scOutImg.-sp95, .a-bird_r.-sp95, .a-bird_l01.-sp95, .a-bird_l02.-sp95, .a-purupuru.-sp95, .a-fviewOutImg.-sp95, .a-fviewInImg.-sp95, .a-imgChange .no1.-sp95, .a-imgChange .no2.-sp95, .a-imgChange .no3.-sp95 {
   animation-duration: 9.5s;
 }
-.a-bg-color.-sp10, .a-text-color.-sp10, .a-rotate-bg.-sp10, .a-fade.-sp10, .a-fadeUp.-sp10, .a-fadeDown.-sp10, .a-fadeLeft.-sp10, .a-fadeRight.-sp10, .a-flipDown.-sp10, .a-flipLeft.-sp10, .a-flipRight.-sp10, .a-moveUp.-sp10, .a-moveDown.-sp10, .a-scOutImg.-sp10, .a-bird_r.-sp10, .a-bird_l01.-sp10, .a-bird_l02.-sp10, .a-purupuru.-sp10, .a-imgChange .no1.-sp10, .a-imgChange .no2.-sp10, .a-imgChange .no3.-sp10 {
+.a-bg-color.-sp95 img, .a-text-color.-sp95 img, .a-rotate-bg.-sp95 img, .a-fade.-sp95 img, .a-fadeUp.-sp95 img, .a-fadeDown.-sp95 img, .a-fadeLeft.-sp95 img, .a-fadeRight.-sp95 img, .a-flipDown.-sp95 img, .a-flipLeft.-sp95 img, .a-flipRight.-sp95 img, .a-moveUp.-sp95 img, .a-moveDown.-sp95 img, .a-scOutImg.-sp95 img, .a-bird_r.-sp95 img, .a-bird_l01.-sp95 img, .a-bird_l02.-sp95 img, .a-purupuru.-sp95 img, .a-fviewOutImg.-sp95 img, .a-fviewInImg.-sp95 img, .a-imgChange .no1.-sp95 img, .a-imgChange .no2.-sp95 img, .a-imgChange .no3.-sp95 img {
+  animation-duration: 9.5s;
+}
+.a-bg-color.-sp10, .a-text-color.-sp10, .a-rotate-bg.-sp10, .a-fade.-sp10, .a-fadeUp.-sp10, .a-fadeDown.-sp10, .a-fadeLeft.-sp10, .a-fadeRight.-sp10, .a-flipDown.-sp10, .a-flipLeft.-sp10, .a-flipRight.-sp10, .a-moveUp.-sp10, .a-moveDown.-sp10, .a-scOutImg.-sp10, .a-bird_r.-sp10, .a-bird_l01.-sp10, .a-bird_l02.-sp10, .a-purupuru.-sp10, .a-fviewOutImg.-sp10, .a-fviewInImg.-sp10, .a-imgChange .no1.-sp10, .a-imgChange .no2.-sp10, .a-imgChange .no3.-sp10 {
   animation-duration: 10s;
 }
-.a-bg-color.-sp10 img, .a-text-color.-sp10 img, .a-rotate-bg.-sp10 img, .a-fade.-sp10 img, .a-fadeUp.-sp10 img, .a-fadeDown.-sp10 img, .a-fadeLeft.-sp10 img, .a-fadeRight.-sp10 img, .a-flipDown.-sp10 img, .a-flipLeft.-sp10 img, .a-flipRight.-sp10 img, .a-moveUp.-sp10 img, .a-moveDown.-sp10 img, .a-scOutImg.-sp10 img, .a-bird_r.-sp10 img, .a-bird_l01.-sp10 img, .a-bird_l02.-sp10 img, .a-purupuru.-sp10 img, .a-imgChange .no1.-sp10 img, .a-imgChange .no2.-sp10 img, .a-imgChange .no3.-sp10 img {
+.a-bg-color.-sp10 img, .a-text-color.-sp10 img, .a-rotate-bg.-sp10 img, .a-fade.-sp10 img, .a-fadeUp.-sp10 img, .a-fadeDown.-sp10 img, .a-fadeLeft.-sp10 img, .a-fadeRight.-sp10 img, .a-flipDown.-sp10 img, .a-flipLeft.-sp10 img, .a-flipRight.-sp10 img, .a-moveUp.-sp10 img, .a-moveDown.-sp10 img, .a-scOutImg.-sp10 img, .a-bird_r.-sp10 img, .a-bird_l01.-sp10 img, .a-bird_l02.-sp10 img, .a-purupuru.-sp10 img, .a-fviewOutImg.-sp10 img, .a-fviewInImg.-sp10 img, .a-imgChange .no1.-sp10 img, .a-imgChange .no2.-sp10 img, .a-imgChange .no3.-sp10 img {
   animation-duration: 10s;
 }
-.a-bg-color.-sc20, .a-text-color.-sc20, .a-rotate-bg.-sc20, .a-fade.-sc20, .a-fadeUp.-sc20, .a-fadeDown.-sc20, .a-fadeLeft.-sc20, .a-fadeRight.-sc20, .a-flipDown.-sc20, .a-flipLeft.-sc20, .a-flipRight.-sc20, .a-moveUp.-sc20, .a-moveDown.-sc20, .a-scOutImg.-sc20, .a-bird_r.-sc20, .a-bird_l01.-sc20, .a-bird_l02.-sc20, .a-purupuru.-sc20, .a-imgChange .no1.-sc20, .a-imgChange .no2.-sc20, .a-imgChange .no3.-sc20 {
+.a-bg-color.-sc20, .a-text-color.-sc20, .a-rotate-bg.-sc20, .a-fade.-sc20, .a-fadeUp.-sc20, .a-fadeDown.-sc20, .a-fadeLeft.-sc20, .a-fadeRight.-sc20, .a-flipDown.-sc20, .a-flipLeft.-sc20, .a-flipRight.-sc20, .a-moveUp.-sc20, .a-moveDown.-sc20, .a-scOutImg.-sc20, .a-bird_r.-sc20, .a-bird_l01.-sc20, .a-bird_l02.-sc20, .a-purupuru.-sc20, .a-fviewOutImg.-sc20, .a-fviewInImg.-sc20, .a-imgChange .no1.-sc20, .a-imgChange .no2.-sc20, .a-imgChange .no3.-sc20 {
   animation-timeline: view();
   animation-range: entry -20% contain 20%;
 }
-.a-bg-color.-sc20 img, .a-text-color.-sc20 img, .a-rotate-bg.-sc20 img, .a-fade.-sc20 img, .a-fadeUp.-sc20 img, .a-fadeDown.-sc20 img, .a-fadeLeft.-sc20 img, .a-fadeRight.-sc20 img, .a-flipDown.-sc20 img, .a-flipLeft.-sc20 img, .a-flipRight.-sc20 img, .a-moveUp.-sc20 img, .a-moveDown.-sc20 img, .a-scOutImg.-sc20 img, .a-bird_r.-sc20 img, .a-bird_l01.-sc20 img, .a-bird_l02.-sc20 img, .a-purupuru.-sc20 img, .a-imgChange .no1.-sc20 img, .a-imgChange .no2.-sc20 img, .a-imgChange .no3.-sc20 img {
+.a-bg-color.-sc20 img, .a-text-color.-sc20 img, .a-rotate-bg.-sc20 img, .a-fade.-sc20 img, .a-fadeUp.-sc20 img, .a-fadeDown.-sc20 img, .a-fadeLeft.-sc20 img, .a-fadeRight.-sc20 img, .a-flipDown.-sc20 img, .a-flipLeft.-sc20 img, .a-flipRight.-sc20 img, .a-moveUp.-sc20 img, .a-moveDown.-sc20 img, .a-scOutImg.-sc20 img, .a-bird_r.-sc20 img, .a-bird_l01.-sc20 img, .a-bird_l02.-sc20 img, .a-purupuru.-sc20 img, .a-fviewOutImg.-sc20 img, .a-fviewInImg.-sc20 img, .a-imgChange .no1.-sc20 img, .a-imgChange .no2.-sc20 img, .a-imgChange .no3.-sc20 img {
   animation-timeline: view();
   animation-range: entry -20% contain 20%;
 }
-.a-bg-color.-sc30, .a-text-color.-sc30, .a-rotate-bg.-sc30, .a-fade.-sc30, .a-fadeUp.-sc30, .a-fadeDown.-sc30, .a-fadeLeft.-sc30, .a-fadeRight.-sc30, .a-flipDown.-sc30, .a-flipLeft.-sc30, .a-flipRight.-sc30, .a-moveUp.-sc30, .a-moveDown.-sc30, .a-scOutImg.-sc30, .a-bird_r.-sc30, .a-bird_l01.-sc30, .a-bird_l02.-sc30, .a-purupuru.-sc30, .a-imgChange .no1.-sc30, .a-imgChange .no2.-sc30, .a-imgChange .no3.-sc30 {
+.a-bg-color.-sc30, .a-text-color.-sc30, .a-rotate-bg.-sc30, .a-fade.-sc30, .a-fadeUp.-sc30, .a-fadeDown.-sc30, .a-fadeLeft.-sc30, .a-fadeRight.-sc30, .a-flipDown.-sc30, .a-flipLeft.-sc30, .a-flipRight.-sc30, .a-moveUp.-sc30, .a-moveDown.-sc30, .a-scOutImg.-sc30, .a-bird_r.-sc30, .a-bird_l01.-sc30, .a-bird_l02.-sc30, .a-purupuru.-sc30, .a-fviewOutImg.-sc30, .a-fviewInImg.-sc30, .a-imgChange .no1.-sc30, .a-imgChange .no2.-sc30, .a-imgChange .no3.-sc30 {
   animation-timeline: view();
   animation-range: entry -10% contain 30%;
 }
-.a-bg-color.-sc30 img, .a-text-color.-sc30 img, .a-rotate-bg.-sc30 img, .a-fade.-sc30 img, .a-fadeUp.-sc30 img, .a-fadeDown.-sc30 img, .a-fadeLeft.-sc30 img, .a-fadeRight.-sc30 img, .a-flipDown.-sc30 img, .a-flipLeft.-sc30 img, .a-flipRight.-sc30 img, .a-moveUp.-sc30 img, .a-moveDown.-sc30 img, .a-scOutImg.-sc30 img, .a-bird_r.-sc30 img, .a-bird_l01.-sc30 img, .a-bird_l02.-sc30 img, .a-purupuru.-sc30 img, .a-imgChange .no1.-sc30 img, .a-imgChange .no2.-sc30 img, .a-imgChange .no3.-sc30 img {
+.a-bg-color.-sc30 img, .a-text-color.-sc30 img, .a-rotate-bg.-sc30 img, .a-fade.-sc30 img, .a-fadeUp.-sc30 img, .a-fadeDown.-sc30 img, .a-fadeLeft.-sc30 img, .a-fadeRight.-sc30 img, .a-flipDown.-sc30 img, .a-flipLeft.-sc30 img, .a-flipRight.-sc30 img, .a-moveUp.-sc30 img, .a-moveDown.-sc30 img, .a-scOutImg.-sc30 img, .a-bird_r.-sc30 img, .a-bird_l01.-sc30 img, .a-bird_l02.-sc30 img, .a-purupuru.-sc30 img, .a-fviewOutImg.-sc30 img, .a-fviewInImg.-sc30 img, .a-imgChange .no1.-sc30 img, .a-imgChange .no2.-sc30 img, .a-imgChange .no3.-sc30 img {
   animation-timeline: view();
   animation-range: entry -10% contain 30%;
 }
-.a-bg-color.-sc40, .a-text-color.-sc40, .a-rotate-bg.-sc40, .a-fade.-sc40, .a-fadeUp.-sc40, .a-fadeDown.-sc40, .a-fadeLeft.-sc40, .a-fadeRight.-sc40, .a-flipDown.-sc40, .a-flipLeft.-sc40, .a-flipRight.-sc40, .a-moveUp.-sc40, .a-moveDown.-sc40, .a-scOutImg.-sc40, .a-bird_r.-sc40, .a-bird_l01.-sc40, .a-bird_l02.-sc40, .a-purupuru.-sc40, .a-imgChange .no1.-sc40, .a-imgChange .no2.-sc40, .a-imgChange .no3.-sc40 {
+.a-bg-color.-sc40, .a-text-color.-sc40, .a-rotate-bg.-sc40, .a-fade.-sc40, .a-fadeUp.-sc40, .a-fadeDown.-sc40, .a-fadeLeft.-sc40, .a-fadeRight.-sc40, .a-flipDown.-sc40, .a-flipLeft.-sc40, .a-flipRight.-sc40, .a-moveUp.-sc40, .a-moveDown.-sc40, .a-scOutImg.-sc40, .a-bird_r.-sc40, .a-bird_l01.-sc40, .a-bird_l02.-sc40, .a-purupuru.-sc40, .a-fviewOutImg.-sc40, .a-fviewInImg.-sc40, .a-imgChange .no1.-sc40, .a-imgChange .no2.-sc40, .a-imgChange .no3.-sc40 {
   animation-timeline: view();
   animation-range: entry 0% contain 40%;
 }
-.a-bg-color.-sc40 img, .a-text-color.-sc40 img, .a-rotate-bg.-sc40 img, .a-fade.-sc40 img, .a-fadeUp.-sc40 img, .a-fadeDown.-sc40 img, .a-fadeLeft.-sc40 img, .a-fadeRight.-sc40 img, .a-flipDown.-sc40 img, .a-flipLeft.-sc40 img, .a-flipRight.-sc40 img, .a-moveUp.-sc40 img, .a-moveDown.-sc40 img, .a-scOutImg.-sc40 img, .a-bird_r.-sc40 img, .a-bird_l01.-sc40 img, .a-bird_l02.-sc40 img, .a-purupuru.-sc40 img, .a-imgChange .no1.-sc40 img, .a-imgChange .no2.-sc40 img, .a-imgChange .no3.-sc40 img {
+.a-bg-color.-sc40 img, .a-text-color.-sc40 img, .a-rotate-bg.-sc40 img, .a-fade.-sc40 img, .a-fadeUp.-sc40 img, .a-fadeDown.-sc40 img, .a-fadeLeft.-sc40 img, .a-fadeRight.-sc40 img, .a-flipDown.-sc40 img, .a-flipLeft.-sc40 img, .a-flipRight.-sc40 img, .a-moveUp.-sc40 img, .a-moveDown.-sc40 img, .a-scOutImg.-sc40 img, .a-bird_r.-sc40 img, .a-bird_l01.-sc40 img, .a-bird_l02.-sc40 img, .a-purupuru.-sc40 img, .a-fviewOutImg.-sc40 img, .a-fviewInImg.-sc40 img, .a-imgChange .no1.-sc40 img, .a-imgChange .no2.-sc40 img, .a-imgChange .no3.-sc40 img {
   animation-timeline: view();
   animation-range: entry 0% contain 40%;
 }
-.a-bg-color.-sh, .a-text-color.-sh, .a-rotate-bg.-sh, .a-fade.-sh, .a-fadeUp.-sh, .a-fadeDown.-sh, .a-fadeLeft.-sh, .a-fadeRight.-sh, .a-flipDown.-sh, .a-flipLeft.-sh, .a-flipRight.-sh, .a-moveUp.-sh, .a-moveDown.-sh, .a-scOutImg.-sh, .a-bird_r.-sh, .a-bird_l01.-sh, .a-bird_l02.-sh, .a-purupuru.-sh, .a-imgChange .no1.-sh, .a-imgChange .no2.-sh, .a-imgChange .no3.-sh {
+.a-bg-color.-sh, .a-text-color.-sh, .a-rotate-bg.-sh, .a-fade.-sh, .a-fadeUp.-sh, .a-fadeDown.-sh, .a-fadeLeft.-sh, .a-fadeRight.-sh, .a-flipDown.-sh, .a-flipLeft.-sh, .a-flipRight.-sh, .a-moveUp.-sh, .a-moveDown.-sh, .a-scOutImg.-sh, .a-bird_r.-sh, .a-bird_l01.-sh, .a-bird_l02.-sh, .a-purupuru.-sh, .a-fviewOutImg.-sh, .a-fviewInImg.-sh, .a-imgChange .no1.-sh, .a-imgChange .no2.-sh, .a-imgChange .no3.-sh {
   filter: drop-shadow(2px 2px 2px gray);
 }
 
@@ -6751,6 +6993,9 @@ a {
   /* ---------------------------------------
       プルプル動く
   --------------------------------------- */
+  /* ---------------------------------
+      ファーストビュー > 画像縮小, 拡大
+  --------------------------------- */
 }
 .a-bird_l01 {
   animation-name: birdLeftAnime01;
@@ -6816,21 +7061,90 @@ a {
   }
 }
 .a-purupuru {
+  display: inline-block;
   animation-name: purupuru;
-  animation-fill-mode: infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 @keyframes purupuru {
   0% {
-    transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 0.9) translate(0%, 0%);
+  }
+  10% {
+    transform: scale(1, 1.2) translate(0%, 0%) skew(0deg, 0deg);
+  }
+  15% {
+    transform: scale(1, 0.9) translate(0%, 0%) skew(0deg, 0deg);
   }
   20% {
-    transform: scale(1, 1.06) translate(-5%, -4%) skew(1deg, 0deg);
+    transform: scale(1, 1.1) translate(0%, 0%) skew(0deg, 0deg);
+  }
+  40% {
+    transform: scale(1, 0.9) translate(0%, 0%) skew(0deg, 0deg);
+  }
+  50% {
+    transform: scale(1, 1.1) translate(0%, 0%) skew(0deg, 0deg);
+  }
+  55% {
+    transform: scale(1, 0.9) translate(0%, 0%) skew(0deg, 0deg);
+  }
+  60% {
+    transform: scale(1, 1.1) translate(0%, 0%) skew(0deg, 0deg);
   }
   80% {
-    transform: scale(1, 0.97) translate(-2%, 2%) skew(-1deg, 0deg);
+    transform: scale(1, 1) translate(0%, 0%) skew(0deg, 0deg);
+  }
+  90% {
+    transform: scale(1, 1) translate(0%, 0%) skew(0deg, 0deg);
   }
   100% {
-    transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 0.9) translate(0%, 0%);
+  }
+}
+.a-fviewOutImg {
+  overflow: hidden;
+  transition: 4s all;
+}
+.a-fviewOutImg img {
+  animation-name: ZoomOut;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes ZoomOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.a-fviewInImg {
+  overflow: hidden;
+  transition: 4s all;
+}
+.a-fviewInImg img {
+  animation-name: ZoomIn;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes ZoomIn {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.85);
+    opacity: 0.85;
   }
 }
 

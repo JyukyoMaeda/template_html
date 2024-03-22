@@ -71,21 +71,76 @@
                 }
             }
         }
-
         /* ---------------------------------------
             プルプル動く
         --------------------------------------- */
         &-purupuru {
+            display: inline-block;
             animation-name: purupuru;
-            animation-fill-mode: infinite;
+            animation-fill-mode:forwards;
+            animation-iteration-count:infinite;
+            @keyframes purupuru {
+                0%   { transform: scale(1, .9)   translate(0%, 0%); }
+                10%  { transform: scale(1, 1.2) translate(0%, 0%) skew(0deg, 0deg); }
+                15%  { transform: scale(1, .9)   translate(0%, 0%) skew(0deg, 0deg); }
+                20%  { transform: scale(1, 1.1)  translate(0%, 0%) skew(0deg, 0deg); }
+                40%  { transform: scale(1, .9)   translate(0%, 0%) skew(0deg, 0deg); }
+                50%  { transform: scale(1, 1.1)  translate(0%, 0%) skew(0deg, 0deg); }
+                55%  { transform: scale(1, .9)   translate(0%, 0%) skew(0deg, 0deg); }
+                60%  { transform: scale(1, 1.1)  translate(0%, 0%) skew(0deg, 0deg); }
+                80%  { transform: scale(1, 1)   translate(0%, 0%) skew(0deg, 0deg); }
+                90%  { transform: scale(1, 1)   translate(0%, 0%) skew(0deg, 0deg); }
+                100% { transform: scale(1, .9)   translate(0%, 0%); }
+            }
         }
-        @keyframes purupuru {
-            0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
-            20%  { transform: scale(1.0, 1.06) translate(-5%, -4%) skew(1deg, 0deg); }
-            // 50%  { transform: scale(1.0, 0.94) translate(5%, 4%) skew(-1deg, 0deg); }
-            // 65%  { transform: scale(1.0, 1.03) translate(2%, -2%) skew(1deg, 0deg); }
-            80%  { transform: scale(1.0, 0.97) translate(-2%, 2%) skew(-1deg, 0deg); }
-            100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+        /* ---------------------------------
+            ファーストビュー > 画像縮小, 拡大
+        --------------------------------- */
+        &-fviewOutImg{
+            overflow: hidden;
+            transition: 4s all;
+            img{
+                animation-name: ZoomOut;
+                animation-fill-mode:forwards;
+                animation-iteration-count:infinite;
+            }
+            @keyframes ZoomOut{
+                0% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                50% {
+                    transform: scale(.85);
+                    opacity: .85;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+        &-fviewInImg{
+            overflow: hidden;
+            transition: 4s all;
+            img{
+                animation-name: ZoomIn;
+                animation-fill-mode:forwards;
+                animation-iteration-count:infinite;
+            }
+            @keyframes ZoomIn{
+                0% {
+                    transform: scale(.85);
+                    opacity: .85;
+                }
+                50% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(.85);
+                    opacity: .85;
+                }
+            }
         }
 }
 
