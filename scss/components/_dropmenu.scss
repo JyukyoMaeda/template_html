@@ -7,6 +7,9 @@
         display: block;
         z-index: 1;
         opacity: 1;
+        .d-menu__subTitle {
+            pointer-events: auto;
+        }
     }
 }
 
@@ -21,7 +24,10 @@
         height: 100% !important;
         text-align: center;
         padding: 8% 0 !important;
-        cursor:pointer
+        cursor:pointer;
+    }
+    &__subTitle{// label
+        pointer-events: none;
     }
     &__lists{// ul
         display: none;

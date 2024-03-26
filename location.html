@@ -201,7 +201,7 @@
     <main class="c-container">
         <!-- ファーストビュー -->
         <div class="c-contents -f-view w1100 mgb3 mgb5s">
-            <div class="imgBox a-fviewOutImg">
+            <div class="imgBox a-fview">
                 <!-- SPサイズ：750x500 -->
                 <img class="sp" src="https://via.placeholder.com/750x500/?text=SP 750x500">
                 <!-- TB・PCサイズ：1920x960 -->
@@ -618,17 +618,15 @@
         </div>
         <div class="c-footer__btnArea -col2 mgb4 mgb10s">
             <!-- 物件概要ボタン -->
-            <ul class="c-flex -gaiyou">
-                <li>
+            <ul class="c-flex -gaiyou -col2">
+                <li><!-- 01.物件概要 > 新築戸建 -->
                     <label class="s-S popup -color01 popup-open" for="popup01">
                         <span class="s-ML -s14 -center -ls-2">新築戸建</span><br>物件概要はこちら
                     </label>
-                    <!-- 01.物件概要 > 新地戸建 -->
-                    <input type="checkbox" id="popup01" >
+                    <input type="checkbox" id="popup01">
                     <label class="popup-overlay" for="popup01"></label>
                     <div class="popup-window">
-                        <!-- 閉じるボタン -->
-                        <label class="popup-close" for="popup01">
+                        <label class="popup-close" for="popup01"><!-- 閉じるボタン -->
                             <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                                 <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
                                 <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
@@ -638,22 +636,23 @@
                         <iframe id="inlineFrame01" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/物件ナンバー（新築戸建）"></iframe>
                     </div>
                 </li>
-                <!-- <li>
+                <li><!-- 02.物件概要 > 建築条件付き土地 -->
                     <label class="s-S popup -color02 popup-open" for="popup02">
                         <span class="s-ML -s14 -center -ls-n">建築条件付き土地</span><br>物件概要はこちら
                     </label>
                     <input type="checkbox" id="popup02" >
                     <label class="popup-overlay" for="popup02"></label>
                     <div class="popup-window">
-                        <label class="popup-close" for="popup02">
+                        <label class="popup-close" for="popup02"><!-- 閉じるボタン -->
                             <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                                 <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
                                 <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
                             </svg>
                         </label>
+                        <!-- iframe -->
                         <iframe id="inlineFrame02" title="Inline Frame Example" src="https://www.jyu-g.co.jp/contents/detail/物件ナンバー（建築条件付き土地）"></iframe>
                     </div>
-                </li> -->
+                </li>
             </ul>
             <!-- //物件概要ボタン -->
         </div>
