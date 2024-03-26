@@ -26,14 +26,18 @@
     --------------------------------------- */
     &-scOutImg,
     /* ---------------------------------------
+        imgアニメーション
+    --------------------------------------- */
+    &-imgMono,&-imgColor,
+    &-imgChange .no1,
+    &-imgChange .no2,
+    &-imgChange .no3{
+    /* ---------------------------------------
         オリジナルアニメーション
     --------------------------------------- */
     &-bird_r,&-bird_l01,&-bird_l02,// 鳥
     &-purupuru,                    // プルプル
     &-fviewOutImg,&-fviewInImg,    // 縮小、拡大
-    &-imgChange .no1,
-    &-imgChange .no2,
-    &-imgChange .no3{
     /* ---------------------------------------
         各アニメーション_オプション関係
     --------------------------------------- */
@@ -142,6 +146,11 @@
                     animation-timeline: view();
                     animation-range: entry 0% contain 40%;
                 }
+            }
+            // ループ
+            &.-loop{
+                animation-iteration-count: infinite;
+                img{animation-iteration-count: infinite;}
             }
             // シャドウ
             &.-sh{filter: drop-shadow(2px 2px 2px gray);}
