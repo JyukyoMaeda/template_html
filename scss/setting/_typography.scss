@@ -1,30 +1,37 @@
 // font-family(ローカル)
 @font-face {// 英文フォント01
     font-family: "e-font01";
-    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+    src: url("../fonts/en/BebasNeue-Regular.ttf")            format("truetype");
 }
 @font-face {// 英文フォント02
     font-family: "e-font02";
-    src: url("../fonts/impact.ttf") format("truetype");
+    src: url("../fonts/en/impact.ttf")                       format("truetype");
 }
 @font-face {// 英文フォント03
     font-family: "e-font03";
-    src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/en/EBGaramond-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {// 明朝フォント
     font-family: "mincho-font01";
-    src: url("../fonts/ShipporiMincho-Regular.ttf") format("truetype");
+    src: url("../fonts/mincho/ShipporiMincho-Regular.ttf")   format("truetype");
 }
 @font-face {// ゴシックフォント
     font-family: "gothic-font01";
-    src: url("../fonts/ZenKakuGothicNew-Regular.ttf") format("truetype");
+    // src: url("../fonts/gothic/ZenKakuGothicNew-Regular.ttf") format("truetype");
+    src: url("../fonts/gothic/FOT-RodinNTLGPro-M.otf")       format("opentype");
 }
+// @font-face {// デザインフォント(WEBでは使用できない)
+//     font-family: "d-font01";
+//     src: url("../fonts/design/DS-ayumin.ttf")                format("truetype");
+// }
 
-$f-mincho: mincho-font01;// 明朝体01
-$f-gothic: gothic-font01;// ゴシック体01
-$f-english01: e-font01;  // 英文フォント01
-$f-english02: e-font02;  // 英文フォント02
-$f-english03: e-font03;  // 英文フォント03
+
+$f-mincho:    mincho-font01; // 明朝体01
+$f-gothic:    gothic-font01; // ゴシック体01
+$f-e01:       e-font01;      // 英文フォント01
+$f-e02:       e-font02;      // 英文フォント02
+$f-e03:       e-font03;      // 英文フォント03
+// $f-d01:       d-font01;      // デザインフォント01
 
 // font-weight
 $f-n: normal;
@@ -36,7 +43,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 	color: $main-color--b;
 	// font-family: $f-mincho;
     font-family: $f-gothic;
-	font-weight: $f-n;
+    font-weight: $f-n;
     font-style: normal;
     // text-wrap: balance;
     // word-break: auto-phrase;

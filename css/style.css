@@ -116,23 +116,23 @@ p {
 }
 @font-face {
   font-family: "e-font01";
-  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  src: url("../fonts/en/BebasNeue-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "e-font02";
-  src: url("../fonts/impact.ttf") format("truetype");
+  src: url("../fonts/en/impact.ttf") format("truetype");
 }
 @font-face {
   font-family: "e-font03";
-  src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/en/EBGaramond-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "mincho-font01";
-  src: url("../fonts/ShipporiMincho-Regular.ttf") format("truetype");
+  src: url("../fonts/mincho/ShipporiMincho-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "gothic-font01";
-  src: url("../fonts/ZenKakuGothicNew-Regular.ttf") format("truetype");
+  src: url("../fonts/gothic/FOT-RodinNTLGPro-M.otf") format("opentype");
 }
 h1, h2, h3, h4, h5, h6, p, a, span, label, button {
   color: #3b3b3b;
