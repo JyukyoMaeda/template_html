@@ -104,15 +104,16 @@
     }
     // コンテンツカラム（sp:pc 2:2）
     &.-col2_2{
+        flex-wrap: wrap;
         li{
             width: calc(50% - 5px);
             margin: 0;
-            &:nth-child(1){margin-right: 5px;}
-            &:nth-child(2){margin-left: 5px;}
+            &:nth-child(odd){margin-right: 5px;}
+            &:nth-child(even){margin-left: 5px;}
             @include min(768){
                 width: calc(50% - 15px);
-                &:nth-child(1){margin-right: 15px;}
-                &:nth-child(2){margin-left: 15px;}
+                &:nth-child(odd){margin-right: 15px;}
+                &:nth-child(even){margin-left: 15px;}
             }
             &.text{
                 @include min(768){width: calc(35% - 15px);}
@@ -125,12 +126,12 @@
             li{
                 width: calc(50% - 5px);
                 margin: 0;
-                &:nth-child(1){margin-left: 5px;}
-                &:nth-child(2){margin-right: 5px;}
+                &:nth-child(odd){margin-left: 5px;}
+                &:nth-child(even){margin-right: 5px;}
                 @include min(768){
                     width: calc(50% - 15px);
-                    &:nth-child(1){margin-left: 15px;}
-                    &:nth-child(2){margin-right: 15px;}
+                    &:nth-child(odd){margin-left: 15px;}
+                    &:nth-child(even){margin-right: 15px;}
                 }
                 &.text{
                     @include min(768){width: calc(35% - 15px);}
@@ -144,21 +145,21 @@
             li{
                 width: calc(50% - 5px) !important;
                 margin: 0;
-                &:nth-child(1){
+                &:nth-child(odd){
                     margin-right: 5px !important;
                     margin-left: auto !important;
                 }
-                &:nth-child(2){
+                &:nth-child(even){
                     margin-right: auto !important;
                     margin-left: 5px !important;
                 }
                 @include min(768){
                     width: calc(50% - 15px);
-                    &:nth-child(1){
+                    &:nth-child(odd){
                         margin-right: 15px !important;
                         margin-left: auto !important;
                     }
-                    &:nth-child(2){
+                    &:nth-child(even){
                         margin-right: auto !important;
                         margin-left: 15px !important;
                     }
@@ -174,12 +175,12 @@
                 li{
                     width: calc(50% - 5px);
                     margin: 0 !important;
-                    &:nth-child(1){margin-left: 5px !important;}
-                    &:nth-child(2){margin-right: 5px !important;}
+                    &:nth-child(odd){margin-left: 5px !important;}
+                    &:nth-child(even){margin-right: 5px !important;}
                     @include min(768){
                         width: calc(50% - 15px);
-                        &:nth-child(1){margin-left: 15px !important;}
-                        &:nth-child(2){margin-right: 15px !important;}
+                        &:nth-child(odd){margin-left: 15px !important;}
+                        &:nth-child(even){margin-right: 15px !important;}
                     }
                     &.text{
                         @include min(768){width: calc(35% - 15px);}
