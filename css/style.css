@@ -4473,17 +4473,23 @@ button.swiper-pagination-bullet {
 .c-contents_title::before {
   content: "";
   position: absolute;
-  bottom: -45%;
+  bottom: -70%;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  font-size: 12px;
+  font-size: 10px;
+}
+@media (width >= 768px) {
+  .c-contents_title::before {
+    bottom: -45%;
+    font-size: 12px;
+  }
 }
 .c-contents_title.-b-btm::after {
   content: "";
   display: block;
   position: relative;
-  bottom: -20px;
+  bottom: -29px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
