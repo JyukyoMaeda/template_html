@@ -67,10 +67,22 @@
         border-right:  1px solid $main-color--w;
         border-bottom: 1px solid $main-color--b;
         // カラー変更
-        &.-c01{ border-bottom: 1px solid $site-color01;}
-        &.-c02{ border-bottom: 1px solid $site-color02;}
-        &.-c03{ border-bottom: 1px solid $site-color03;}
-        &.-c04{ border-bottom: 1px solid $site-color04;}
+        &.-c01{
+            border-bottom: 1px solid $site-color01;
+            span{color: $site-color01;}
+        }
+        &.-c02{
+            border-bottom: 1px solid $site-color02;
+            span{color: $site-color02;}
+        }
+        &.-c03{
+            border-bottom: 1px solid $site-color03;
+            span{color: $site-color03;}
+        }
+        &.-c04{
+            border-bottom: 1px solid $site-color04;
+            span{color: $site-color04;}
+        }
     }
     input:checked + .tab-item {
         border-top:    1px solid $main-color--b;
