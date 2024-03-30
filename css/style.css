@@ -4479,7 +4479,7 @@ button.swiper-pagination-bullet {
   width: auto;
   font-size: 12px;
 }
-.c-contents_title::after {
+.c-contents_title.-b-btm::after {
   content: "";
   display: block;
   position: relative;
@@ -4489,12 +4489,24 @@ button.swiper-pagination-bullet {
   width: 100%;
   max-width: 1100px;
   height: 1px;
-  background: #a0a0a0;
+  background: #3b3b3b;
 }
 @media (width >= 768px) {
-  .c-contents_title::after {
+  .c-contents_title.-b-btm::after {
     bottom: -30px;
   }
+}
+.c-contents_title.-b-btm.-c01::after {
+  background: #96bbc7 !important;
+}
+.c-contents_title.-b-btm.-c02::after {
+  background: #5a8190 !important;
+}
+.c-contents_title.-b-btm.-c03::after {
+  background: #f2d341 !important;
+}
+.c-contents_title.-b-btm.-c04::after {
+  background: #a0a0a0 !important;
 }
 .c-contents_title.-en-color01::before {
   color: #96bbc7;

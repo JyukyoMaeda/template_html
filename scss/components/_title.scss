@@ -11,20 +11,28 @@
         width: auto;
         font-size: 12px;
     }
-    &::after{
-        content: "";
-        display: block;
-        position: relative;
-        bottom: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        max-width: 1100px;
-        height: 1px;
-        background: $site-color04;
-        @include min(768){
-            bottom: -30px;
+    // コンテンツタイトル > ボーダーライン
+    &.-b-btm{
+        &::after{// 基本設定
+            content: "";
+            display: block;
+            position: relative;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 1100px;
+            height: 1px;
+            background: $main-color--b;
+            @include min(768){
+                bottom: -30px;
+            }
         }
+        // 色指定
+        &.-c01{&::after{background: $site-color01 !important;}}
+        &.-c02{&::after{background: $site-color02 !important;}}
+        &.-c03{&::after{background: $site-color03 !important;}}
+        &.-c04{&::after{background: $site-color04 !important;}}
     }
 
 
