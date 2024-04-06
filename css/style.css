@@ -3375,7 +3375,7 @@ button.swiper-pagination-bullet {
 .c-footer__navArea .c-footer__navLists li:first-child::before {
   content: "";
   position: absolute;
-  top: 59%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
   height: 40%;
@@ -3390,7 +3390,7 @@ button.swiper-pagination-bullet {
 .c-footer__navArea .c-footer__navLists li::after {
   content: "";
   position: absolute;
-  top: 59%;
+  top: 50%;
   right: 0;
   transform: translateY(-50%);
   height: 40%;
