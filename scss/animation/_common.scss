@@ -31,17 +31,102 @@
     &-imgMono,&-imgColor,
     &-imgChange .no1,
     &-imgChange .no2,
-    &-imgChange .no3{
+    &-imgChange .no3,
     /* ---------------------------------------
         オリジナルアニメーション
     --------------------------------------- */
+    &-fview,                       // fade+ぼかし
     &-bird_r,&-bird_l01,&-bird_l02,// 鳥
     &-purupuru,                    // プルプル
-    &-fviewOutImg,&-fviewInImg,    // 縮小、拡大
+    &-fviewOutImg,&-fviewInImg     // 縮小、拡大
+    {
     /* ---------------------------------------
         各アニメーション_オプション関係
     --------------------------------------- */
-            // 速度
+
+            // ----- タイミング -----
+            &.-tm05{
+                animation-delay:.5s;
+                img{animation-delay:.5s}
+            }
+            &.-tm1 {
+                animation-delay:1s;
+                img{animation-delay:1s}
+            }
+            &.-tm15{
+                animation-delay:1.5s;
+                img{animation-delay:1.5s}
+            }
+            &.-tm2 {
+                animation-delay:2s;
+                img{animation-delay:2s}
+            }
+            &.-tm25{
+                animation-delay:2.5s;
+                img{animation-delay:2.5s}
+            }
+            &.-tm3 {
+                animation-delay:3s;
+                img{animation-delay:3s}
+            }
+            &.-tm35{
+                animation-delay:3.5s;
+                img{animation-delay:3.5s}
+            }
+            &.-tm4 {
+                animation-delay:4s;
+                img{animation-delay:4s}
+            }
+            &.-tm45{
+                animation-delay:4.5s;
+                img{animation-delay:4.5s}
+            }
+            &.-tm5 {
+                animation-delay:5s;
+                img{animation-delay:5s}
+            }
+            &.-tm55{
+                animation-delay:5.5s;
+                img{animation-delay:5.5s}
+            }
+            &.-tm6 {
+                animation-delay:6s;
+                img{animation-delay:6s}
+            }
+            &.-tm65{
+                animation-delay:6.5s;
+                img{animation-delay:6.5s}
+            }
+            &.-tm7 {
+                animation-delay:7s;
+                img{animation-delay:7s}
+            }
+            &.-tm75{
+                animation-delay:7.5s;
+                img{animation-delay:7.5s}
+            }
+            &.-tm8 {
+                animation-delay:8s;
+                img{animation-delay:8s}
+            }
+            &.-tm85{
+                animation-delay:8.5s;
+                img{animation-delay:8.5s}
+            }
+            &.-tm9 {
+                animation-delay:9s;
+                img{animation-delay:9s}
+            }
+            &.-tm95{
+                animation-delay:9.5s;
+                img{animation-delay:9.5s}
+            }
+            &.-tm10{
+                animation-delay:10s;
+                img{animation-delay:10s}
+            }
+
+            // ----- 速度 -----
             &.-sp05{
                 animation-duration:.5s;
                 img{animation-duration:.5s}
@@ -122,7 +207,7 @@
                 animation-duration:10s;
                 img{animation-duration:10s}
             }
-            // スクロール化
+            // ----- スクロール量 -----
             &.-sc20{
                 animation-timeline: view();
                 animation-range: entry -20% contain 20%;
@@ -155,4 +240,5 @@
             // シャドウ
             &.-sh{filter: drop-shadow(2px 2px 2px gray);}
         }
+    
 }
