@@ -184,6 +184,7 @@
 	}
 	&.-f-view{//ファーストビュー
 		position: relative;
+		overflow: hidden;
 		.imgBox{
 			@include max(768){
 				opacity: .75;
