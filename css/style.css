@@ -5562,12 +5562,18 @@ button.swiper-pagination-bullet {
   border-left: 1px solid #96bbc7;
   border-right: 1px solid #96bbc7;
 }
+.c-tabArea input:checked + .tab-item.-c01 span {
+  color: #ffffff;
+}
 .c-tabArea input:checked + .tab-item.-c02 {
   color: #ffffff !important;
   background: #5a8190;
   border-top: 1px solid #5a8190;
   border-left: 1px solid #5a8190;
   border-right: 1px solid #5a8190;
+}
+.c-tabArea input:checked + .tab-item.-c02 span {
+  color: #ffffff;
 }
 .c-tabArea input:checked + .tab-item.-c03 {
   color: #ffffff !important;
@@ -5576,12 +5582,18 @@ button.swiper-pagination-bullet {
   border-left: 1px solid #f2d341;
   border-right: 1px solid #f2d341;
 }
+.c-tabArea input:checked + .tab-item.-c03 span {
+  color: #ffffff;
+}
 .c-tabArea input:checked + .tab-item.-c04 {
   color: #ffffff !important;
   background: #a0a0a0;
   border-top: 1px solid #a0a0a0;
   border-left: 1px solid #a0a0a0;
   border-right: 1px solid #a0a0a0;
+}
+.c-tabArea input:checked + .tab-item.-c04 span {
+  color: #ffffff;
 }
 
 html {
@@ -6299,12 +6311,18 @@ a {
   border-left: 1px solid #96bbc7;
   border-right: 1px solid #96bbc7;
 }
+.c-tabArea input:checked + .tab-item.-c01 span {
+  color: #ffffff;
+}
 .c-tabArea input:checked + .tab-item.-c02 {
   color: #ffffff !important;
   background: #5a8190;
   border-top: 1px solid #5a8190;
   border-left: 1px solid #5a8190;
   border-right: 1px solid #5a8190;
+}
+.c-tabArea input:checked + .tab-item.-c02 span {
+  color: #ffffff;
 }
 .c-tabArea input:checked + .tab-item.-c03 {
   color: #ffffff !important;
@@ -6313,12 +6331,18 @@ a {
   border-left: 1px solid #f2d341;
   border-right: 1px solid #f2d341;
 }
+.c-tabArea input:checked + .tab-item.-c03 span {
+  color: #ffffff;
+}
 .c-tabArea input:checked + .tab-item.-c04 {
   color: #ffffff !important;
   background: #a0a0a0;
   border-top: 1px solid #a0a0a0;
   border-left: 1px solid #a0a0a0;
   border-right: 1px solid #a0a0a0;
+}
+.c-tabArea input:checked + .tab-item.-c04 span {
+  color: #ffffff;
 }
 
 #d-menu__checkbox,
@@ -6409,7 +6433,7 @@ a {
 
 .p-top {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 3s forwards;
 }
 @media (width >= 768px) {
@@ -6425,7 +6449,7 @@ a {
 
 .p-concept {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6441,7 +6465,7 @@ a {
 
 .p-layout {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6457,7 +6481,7 @@ a {
 
 .p-plan {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6473,7 +6497,7 @@ a {
 
 .p-equipment {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
@@ -6489,7 +6513,7 @@ a {
 
 .p-location {
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   animation: fadeAnime 2s forwards;
 }
 @media (width >= 768px) {
