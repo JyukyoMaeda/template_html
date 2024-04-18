@@ -129,7 +129,7 @@
 						content: "";
 						position: absolute;
 						top: 50%;
-						left: -8%;
+						left: -14px;
 						transform: translateY(-50%);
 						width: 12px;
 						height: 12px;
@@ -137,18 +137,17 @@
 						background-size: contain;
 						background-repeat: no-repeat;
 						@include min(768){
-							left: -6%;
+							left: -12px;
 							width: 10px;
 							height: 10px;
 						}
 						@include min(1200){
 							top: 47%;
-							left: -12%;
+							left: -17px;
 							width: 15px;
 							height: 15px;
 						}
 						@include min(1400){
-							left: -8%;
 							width: 13px;
 							height: 13px;
 						}
