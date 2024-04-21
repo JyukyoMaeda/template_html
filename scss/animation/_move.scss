@@ -2,40 +2,68 @@
 
 
 .a{
-    &-moveUp{
-        animation-name: moveUpAnime;
-        animation-fill-mode: infinite;
-    }
-    @keyframes moveUpAnime{
-        0% {
-            transform: translateY(0px) scale(1);
-            opacity: 1;
+    /* ---------------------------------------
+        大きくなるアニメーション
+    --------------------------------------- */
+    &-moveUp{animation-name: moveUpAnime;}
+        @keyframes moveUpAnime{
+            0% {
+                transform: translateY(0px) scale(1);
+                opacity: 1;
+            }
+            50%{
+                transform: translateY(0px) scale(1.1);
+                opacity: .8;
+            }
+            100% {
+                transform: translateY(0px) scale(1);
+                opacity: 1;
+            }
         }
-        50%{
-            transform: translateY(0px) scale(1.2);
-            opacity: .8;
+
+    /* ---------------------------------------
+        小さくなるアニメーション
+    --------------------------------------- */
+    &-moveDown{animation-name: moveDownAnime;}
+        @keyframes moveDownAnime{
+            0% {
+                transform: translateY(0px) scale(1);
+                opacity: 1;
+            }
+            50%{
+                transform: translateY(0px) scale(.9);
+                opacity: .8;
+            }
+            100% {
+                transform: translateY(0px) scale(1);
+                opacity: 1;
+            }
         }
-        100% {
-            transform: translateY(0px) scale(1);
-            opacity: 1;
+
+    /* ---------------------------------------
+        小さくなるアニメーション
+    --------------------------------------- */
+    &-moveLoop{animation-name: moveLoopAnime;}
+        @keyframes moveLoopAnime{
+            0% {
+                transform: translateY(0px) scale(.9);
+                opacity: 1;
+            }
+            20% {
+                transform: translateY(0px) scale(.9);
+                opacity: 1;
+            }
+            50%{
+                transform: translateY(0px) scale(1);
+                opacity: .9;
+            }
+            30% {
+                transform: translateY(0px) scale(.9);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0px) scale(.9);
+                opacity: 1;
+            }
         }
-    }
-    &-moveDown{
-        animation-name: moveDownAnime;
-        animation-fill-mode: infinite;
-    }
-    @keyframes moveDownAnime{
-        0% {
-            transform: translateY(0px) scale(1);
-            opacity: 1;
-        }
-        50%{
-            transform: translateY(0px) scale(.8);
-            opacity: .8;
-        }
-        100% {
-            transform: translateY(0px) scale(1);
-            opacity: 1;
-        }
-    }
 }
