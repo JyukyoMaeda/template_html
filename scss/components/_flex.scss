@@ -2,6 +2,14 @@
 .c-flex{
     display: flex;
 
+    // 配置
+    &.-jc-sb{justify-content: space-between;}
+    &.-jc-c_s{
+        @include max(768){
+            justify-content: center;
+        }
+    }
+
     // 縦 > 真ん中
     &.-h-c{align-items: center;}
     &.-h-c_s{@include max(768){align-items: center;}}
