@@ -303,8 +303,8 @@
 			width: 80%;
 			margin: auto;
 			@include min(768){
-				width: 40%;
-				max-width: 450px;
+				width: 50%;
+				max-width: 550px;
 			}
 		}
 		label{
