@@ -1,5 +1,12 @@
 
 .c-video{
+	margin: auto;
+	@include min(768){
+		width: 80%;
+	}
+	@include min(1000){
+		width: 50%;
+	}
 	.c-videoWrap{
 		padding-top: 56.25%;
 		width: 100%;
@@ -13,7 +20,27 @@
 			left: 0px;
 		}
 	}
-	.sc-videoBox{
-		// margin-top: 50vh;// 画半分に達したら再生させるために
+}
+
+.c-youtubeBox{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+	aspect-ratio: 16 / 9;
+	border: 1px solid $main-color--b;
+	box-shadow: 1px 1px 5px #8d8d8d;
+	@include min(768){
+		width: 65%;
+		padding: 10px;
+
+	}
+	.c-youtubeBox-inner{
+		height: -webkit-fill-available;
+		margin: auto;
+	}
+	iframe{
+		width: 100% !important;
+		height: 100% !important;
 	}
 }

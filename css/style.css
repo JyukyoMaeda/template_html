@@ -6207,6 +6207,19 @@ a {
   }
 }
 
+.c-video {
+  margin: auto;
+}
+@media (width >= 768px) {
+  .c-video {
+    width: 80%;
+  }
+}
+@media (width >= 1000px) {
+  .c-video {
+    width: 50%;
+  }
+}
 .c-video .c-videoWrap {
   padding-top: 56.25%;
   width: 100%;
@@ -6220,6 +6233,31 @@ a {
   top: 0px;
   left: 0px;
 }
+
+.c-youtubeBox {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  aspect-ratio: 16/9;
+  border: 1px solid #3b3b3b;
+  box-shadow: 1px 1px 5px #8d8d8d;
+}
+@media (width >= 768px) {
+  .c-youtubeBox {
+    width: 65%;
+    padding: 10px;
+  }
+}
+.c-youtubeBox .c-youtubeBox-inner {
+  height: -webkit-fill-available;
+  margin: auto;
+}
+.c-youtubeBox iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .c-tabArea {
   margin: auto;
   text-align: center;
@@ -6438,39 +6476,6 @@ a {
 }
 .d-menu__link {
   padding: 8% 0 !important;
-}
-
-@media (width >= 768px) {
-  .c-postItem-lists li:first-child .detail {
-    padding: 0 0 0 40px;
-  }
-}
-.c-postItem-lists li:first-child .detail .title {
-  position: relative;
-}
-.c-postItem-lists li:first-child .detail .title::after {
-  content: "NEW";
-  position: absolute;
-  top: -80%;
-  left: 0px;
-  transform: translateY(-50%);
-  width: auto;
-  height: auto;
-  padding: 3px 5px 0;
-  background: red;
-  color: white;
-  font-size: 12px;
-  /* line-height: 1.5; */
-  text-align: center;
-  border-radius: 3px;
-}
-@media (width >= 768px) {
-  .c-postItem-lists li:first-child .detail .title::after {
-    top: 50%;
-    left: -50px;
-    padding: 2px 5px 0;
-    font-size: 14px;
-  }
 }
 
 .p-top {
@@ -6953,20 +6958,102 @@ a {
 
 @keyframes slideUp {
   0% {
-    transform: translateY(-15%);
+    background-position: 0 top;
   }
   100% {
-    transform: translateY(0%);
+    background-position: 0 bottom;
   }
 }
-@keyframes slideOut {
+@keyframes slideDown {
   0% {
-    transform: translateY(0%);
+    background-position: 0 bottom;
   }
   100% {
-    transform: translateY(10%);
+    background-position: 0 top;
   }
 }
+@keyframes slideRight {
+  0% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    background-position: right center;
+  }
+  100% {
+    background-position: left center;
+  }
+}
+@keyframes slideLeft-ver02 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+/* ---------------------------------
+    画像スライド > →
+--------------------------------- */
+.a-slideRightImg {
+  overflow: hidden;
+  transition: 10s all;
+}
+.a-slideRightImg::after {
+  animation-name: slideRight;
+  animation-fill-mode: forwards;
+  animation-duration: 20s;
+}
+
+/* ---------------------------------
+    画像スライド > ←
+--------------------------------- */
+.a-slideLeftImg {
+  overflow: hidden;
+  transition: 4s all;
+}
+.a-slideLeftImg::after {
+  top: 1px !important;
+  animation-name: slideLeft;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+.a-slideLeftImg.-ver02::after {
+  animation-name: slideLeft-ver02;
+  animation-fill-mode: forwards;
+  animation-duration: 30s;
+}
+
+/* ---------------------------------
+    画像スライド > ↑
+--------------------------------- */
+.a-slideUpImg {
+  overflow: hidden;
+  transition: 4s all;
+}
+.a-slideUpImg::after {
+  animation-name: slideUp;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+
+/* ---------------------------------
+    画像スライド > ↓
+--------------------------------- */
+.a-slideDownImg {
+  overflow: hidden;
+  transition: 4s all;
+}
+.a-slideDownImg::after {
+  animation-name: slideDown;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+
 /* ----------------------------
     背景要素に色を順番に付与する。
 ---------------------------- */
@@ -7464,14 +7551,6 @@ a {
   100% {
     transform-origin: right top;
   }
-}
-
-.a-nowLoading {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100lvw;
-  height: 100lvh;
 }
 
 /*　-------------------------------------------
