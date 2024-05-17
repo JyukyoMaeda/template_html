@@ -90,6 +90,18 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // 折り返し禁止
     &.-ws-n{white-space: nowrap}
 
+    // 縦組み
+    &.-tate{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        &_s{
+            @include max(768){
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+            }
+        }
+    }
+
     // 太さ
     &.-b{font-weight: $f-b;}
 

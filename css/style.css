@@ -231,6 +231,16 @@ h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shado
 h1.-ws-n, h2.-ws-n, h3.-ws-n, h4.-ws-n, h5.-ws-n, h6.-ws-n, p.-ws-n, a.-ws-n, span.-ws-n, label.-ws-n, button.-ws-n {
   white-space: nowrap;
 }
+h1.-tate, h2.-tate, h3.-tate, h4.-tate, h5.-tate, h6.-tate, p.-tate, a.-tate, span.-tate, label.-tate, button.-tate {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+@media (768px >= width) {
+  h1.-tate_s, h2.-tate_s, h3.-tate_s, h4.-tate_s, h5.-tate_s, h6.-tate_s, p.-tate_s, a.-tate_s, span.-tate_s, label.-tate_s, button.-tate_s {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+}
 h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b, label.-b, button.-b {
   font-weight: bold;
 }
