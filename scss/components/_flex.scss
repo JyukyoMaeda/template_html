@@ -10,10 +10,15 @@
         }
     }
 
-    // 縦 > 真ん中
+    // 縦
+    // 　> 真ん中
     &.-h-c{align-items: center;}
     &.-h-c_s{@include max(768){align-items: center;}}
     &.-h-c_pc{@include min(768){align-items: center;}}
+    // 　> 下
+    &.-h-b{align-items: flex-end;}
+    &.-h-b_pc{@include min(768){align-items: flex-end;}}
+
 
     // 反転
     &.-r{ flex-direction: row-reverse !important;}
